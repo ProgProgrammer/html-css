@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset= "utf-8">
+<title> Конвертер Валют </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+			<a href="index.php">Главная</a>
+			<span>/</span>
+			<a href="puzzles3.php">Задачки</a>
+			<span>/</span>
+			<a href="guess (2).html">Угадайка</a>
+			<span>/</span>
+			<a href="guess.html">Угадайка мультиплеер</a>
+			<span>/</span>
+			<a href="converter.html">Конвертер валют</a>
+			<span>/</span>
+			<a href="bank.html">Банковская программа</a>
+			<span>/</span>
+	</div>
+<script>
+	do {
+		var deposit = +prompt ("Введите сумму в рублях, которую Вы хотите вложить во вклад с ежегодной капитализацией.");
+	} while (deposit <= 0);
+	do {
+		var persent = +prompt ("Введите годовой процент.");
+	} while (persent <= 0);
+	var number = +prompt ("На сколько лет?");
+	for (var i = 1; i <= number; i++) {
+		deposit = deposit + deposit * persent / 100;
+		document.write("Сумма вклада за " + i + "-й год: " + deposit.toFixed(2) + " рублей." + "<br>");
+	}
+</script>
+	<div class="footer">
+		Andreev V.A. 2017 &copy <a href="https://vk.com/volodyaandr" target="_blank"> VK </a>
+	</div>
+</body>
+</html>

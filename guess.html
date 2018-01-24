@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset= "utf-8">
+<title> Угадай число </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+			<a href="index.php">Главная</a>
+			<span>/</span>
+			<a href="puzzles3.php">Задачки</a>
+			<span>/</span>
+			<a href="guess (2).html">Угадайка</a>
+			<span>/</span>
+			<a href="guess.html">Угадайка мультиплеер</a>
+			<span>/</span>
+			<a href="converter.html">Конвертер валют</a>
+			<span>/</span>
+			<a href="bank.html">Банковская программа</a>
+			<span>/</span>
+	</div>
+<script>
+	var number = 1;
+	var answer = parseInt (Math.random() * 100);
+	while (true) {
+		var userAnswer = prompt ("Угадайте число от 0 до 100, у вас много попыток. \n Если хотите выйти, нажмите клавишу q" + "\nХодит игрок № " + number);
+		if (userAnswer == "q") {
+			break;
+		}
+		userAnswer = +userAnswer;
+		if (userAnswer == answer) {
+			alert ("Вы угадали!");
+			break ;
+		} else if (userAnswer < answer) {
+			alert ("Ваш ответ слишком маленький.");
+		} else if (userAnswer > answer) {
+			alert ("Ваш ответ слишком большой.");
+		} else {
+			alert ("Вы ввели не число");
+		}
+		if (number == 1) {
+			number = 2;
+		} else {
+		number = 1;
+		}
+	}
+	alert ("Победа игрока № " + number);
+</script>
+<div class="footer">
+	Andreev V.A. 2017 &copy <a href="https://vk.com/volodyaandr" target="_blank"> VK </a>
+</div>
+</body>
+</html>
