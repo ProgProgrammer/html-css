@@ -1,0 +1,321 @@
+h1	{
+	color: #2e353d;
+	font-size: 25px;
+	font-weight: 180;
+	text-align: center;
+}
+h2	{
+	color: #2e353d;
+	font-size: 15px;
+	font-weight: 30;
+	text-align: right;
+}
+h4	{
+	color: #2e353d;
+	font-size: 15px;
+	font-weight: 30;
+	text-align: center;
+}
+h5	{
+	color: #2e353d;
+	font-size: 20px;
+	font-weight: 15px;
+	text-align: center;
+}
+h6	{
+	color: black;
+	font-size: 15px;
+	font-weight: 15px;
+	text-align: center;
+	margin-top: 0px;
+}
+BODY	{
+	background: url(img/rainbow.jpg);
+}
+.semiopacity {
+  padding: 5px;
+  background: url(img/rainbow);
+}
+.top-menu {
+  position: relative;
+  background: rgba(34,34,34, .3);
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left;}
+.right-item {float: right;}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 50px;
+  padding: 0 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+}
+.top-menutwo {
+  position: relative;
+  background: rgba(255,165,0, 0.7);
+}
+.menu-maintwo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-maintwo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-itemtwo {
+  float: left;
+  margin-left: 469px;
+}
+.right-itemtwo {
+  float: right;
+  margin-right: 402px;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-maintwo a {
+  text-decoration: none;
+  display: block;
+  line-height: 50px;
+  padding: 0 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+}
+.menu-maintwo a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-maintwo {
+  padding-top: 90px;
+  text-align: center;
+}
+.menu-maintwo li {
+  float: none;
+  display: inline-block;
+}
+.menu-maintwo a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-maintwo li {display: block;}
+}
+.contentone {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-left: 175px;
+	margin-top: 20px;
+	font-size: 17px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.contenttwo a {
+	text-decoration: none;
+}
+.contentthree {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 175px;
+	margin-top: 20px;
+	font-size: 17px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.contentthree a {
+	text-decoration: none;
+}
+.contentfour {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-left: 300px;
+	margin-top: 20px;
+	font-size: 17px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.contentfour a {
+	text-decoration: none;
+}
+.contentfive {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	font-size: 15px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.contentsix {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	font-size: 15px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.button a {
+	color: #fff;
+	user-select: none; /* Убираем текстовое выделение */
+	text-decoration: none;	/* Убираем подчеркивание */
+	outline: none; /* Убираем контур вокруг ссылки */
+	background-color: #fa8e47; /* Цвет фона */
+	padding: 1em 2em; /* Отступ от текста до рамки */
+}
+.yellow	{
+	background-color: yellow;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+}
+.pictureone {
+  float: right; /* Выравнивание по правому краю */
+  border: 1px solid #333; /* Параметры рамки */
+  padding: 10px; /* Поля внутри блока */
+  margin: 10px 5px 20px 20px; /* Отступы вокруг */
+  background: white; /* Цвет фона */ 
+}
+.pictureone figcaption a {
+  text-decoration: none;
+  color: black;
+  margin: 0 auto 5px; /* Отступы вокруг абзаца */
+}
+.pictureone figcaption: visited {
+  color: blue;
+}
+.pictureone figcaption a: hover {
+  text-decoration: underline;
+}
+.picturetwo {
+  float: right; /* Выравнивание по правому краю */
+  border: 1px solid #333; /* Параметры рамки */
+  padding: 10px; /* Поля внутри блока */
+  margin: 10px 18px 20px 20px; /* Отступы вокруг */
+  background: white; /* Цвет фона */
+}
+.picturetwo figcaption a {
+  text-decoration: none;
+  color: black;
+  margin: 0 auto 5px; /* Отступы вокруг абзаца */
+}
+.picturethree {
+  float: right;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px 18px 20px 20px;
+  background: white;
+}
+.picturethree figcaption a {
+  text-decoration: none;
+  color: black;
+  margin: 0 auto 5px;
+}
+.picturefour {
+  float: right;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px 18px 20px 20px;
+  background: white;
+}
+.picturefour figcaption a {
+  text-decoration: none;
+  color: black;
+  margin: 0 auto 5px;
+}
+.picturefive {
+  float: right;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px 18px 20px 20px;
+  background: white;
+}
+.picturefive figcaption a {
+  text-decoration: none;
+  color: black;
+  margin: 0 auto 5px;
+}
+.picturesix {
+  float: right;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px 18px 0px 20px;
+  background: white;
+}
+.picturesix figcaption a {
+  text-decoration: none;
+  color: black;
+  margin: 0 auto 5px;
+}
+.footer a { /* # == id */
+    background: rgba(128,128,128, 0.7);
+    width: 100%;
+    float: left;
+    height: 140px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 140px;
+	isplay: flex;
+	justify-content: center;
+	alight-items: center;
+	margin-top: 60px;
+}
