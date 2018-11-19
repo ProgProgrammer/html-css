@@ -1,0 +1,244 @@
+h1	{
+	color: #2e353d;
+	font-size: 25px;
+	font-weight: 180;
+	text-align: center;
+}
+h1 a	{
+	text-decoration: none;
+	color: black;
+}
+h2	{
+	color: #2e353d;
+	font-size: 15px;
+	font-weight: 30;
+	text-align: right;
+}
+h3	{
+	color: #2e353d;
+	font-size: 20px;
+	font-weight: 15px;
+	text-align: center;
+}
+BODY	{
+	background: url(img/rainbow.jpg);
+}
+.semiopacity {
+  padding: 5px;
+  background: url(img/rainbow);
+}
+.top-menu {
+  position: relative;
+  background: rgba(34,34,34, .3);
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left;}
+.right-item {float: right;}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 50px;
+  padding: 0 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+}
+.top-menutwo {
+  position: relative;
+  background: rgba(255,165,0, 0.7);
+}
+.menu-maintwo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-maintwo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-itemtwo {
+  float: left;
+  margin-left: 469px;
+}
+.right-itemtwo {
+  float: right;
+  margin-right: 402px;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-maintwo a {
+  text-decoration: none;
+  display: block;
+  line-height: 50px;
+  padding: 0 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+}
+.menu-maintwo a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-maintwo {
+  padding-top: 90px;
+  text-align: center;
+}
+.menu-maintwo li {
+  float: none;
+  display: inline-block;
+}
+.menu-maintwo a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-maintwo li {display: block;}
+}
+.contenteleven {
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	margin: 10px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.contentthirteen {
+	float: right;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 17px;
+	margin-right: 422px;
+	margin-top: 30px;
+	padding: 10px;
+	flex-wrap: wrap;
+	border: 1px solid #333;
+	display: flex;
+}
+.contentfourteen {
+	text-align: left;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	margin: 10px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.contentfourteen a {
+	text-decoration: none;
+}
+.contentfifteen {
+	float: right;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 17px;
+	margin-right: 540px;
+	margin-top: 60px;
+	padding: 10px;
+	flex-wrap: wrap;
+	border: 1px solid #333;
+	display: flex;
+}
+.contentsixteen {
+	float: right;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 17px;
+	margin-right: 520px;
+	margin-top: 10px;
+	padding: 10px;
+	flex-wrap: wrap;
+	border: 0;
+	display: flex;
+}
+.contentseventeen {
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	margin: 10px;
+	padding: 0px;
+	flex-wrap: wrap;
+	display: none;
+}
+.contenteighteen {
+	float: right;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 17px;
+	margin-right: 315px;
+	margin-top: 60px;
+	padding: 10px;
+	flex-wrap: wrap;
+	border: 1px solid #333;
+	display: flex;
+}
+.footer a { /* # == id */
+    background: rgba(128,128,128, 0.7);
+    width: 100%;
+    float: left;
+    height: 140px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 140px;
+	isplay: flex;
+	justify-content: center;
+	alight-items: center;
+	margin-top: 60px;
+}
