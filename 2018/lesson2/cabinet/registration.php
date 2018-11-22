@@ -76,7 +76,7 @@
 				</div>						
 				<input type="submit" value="OK"> <input type="reset" value="Очистить все">
 			</form>
-			<?php
+			</php
 				$bezspama = htmlspecialchars($_POST["bezspama"]);
 				if (empty($bezspama))
 					 {
