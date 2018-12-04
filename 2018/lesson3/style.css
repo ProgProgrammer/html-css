@@ -1,0 +1,607 @@
+h1	{
+	color: #2e353d;
+	font-size: 25px;
+	font-weight: 180;
+	text-align: center;
+}
+h1 a	{
+	text-decoration: none;
+	color: black;
+}
+h2, h4	{
+	color: #2e353d;
+	font-size: 15px;
+	font-weight: 30;
+	text-align: right;
+}
+h2 a:hover {
+	color: purple;
+}
+h2 a:active {
+	color: red;
+}
+h4	{
+	text-align: center;
+}
+h3	{
+	color: #2e353d;
+	font-size: 20px;
+	font-weight: 15px;
+	text-align: center;
+}
+h5	{
+	color: #2e353d;
+	font-size: 20px;
+	font-weight: 15px;
+	text-align: center;
+}
+h6	{
+	color: black;
+	font-size: 15px;
+	font-weight: 15px;
+	text-align: center;
+	margin-top: 0px;
+}
+BODY	{
+	background: url(img/rainbow.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.semiopacity {
+  padding: 5px;
+  background: url(img/rainbow);
+}
+.top-menu {
+  position: relative;
+  background: rgba(34,34,34, .3);
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {
+	float: left;
+	list-style-type: none;
+}
+.right-item {
+	float: right;
+	list-style-type: none;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 50px;
+  padding: 0 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+}
+.top-menutwo {
+  position: relative;
+  background: rgba(255,165,0, 0.7);
+}
+.menu-maintwo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-maintwo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.right-itemtwo {
+  float: right;
+  margin-right: 275px;
+}
+.right-itemthree {
+  float: right;
+  margin-right: 0px;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-maintwo a {
+  text-decoration: none;
+  display: block;
+  line-height: 50px;
+  padding: 0 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  color: white;
+  transition: .3s linear;
+}
+.menu-maintwo a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-maintwo {
+  padding-top: 90px;
+  text-align: center;
+}
+.menu-maintwo li {
+  float: none;
+  display: inline-block;
+}
+.menu-maintwo a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-maintwo li {display: block;}
+}
+#size {
+	width: 200px;
+	height: 20px;
+}
+#sizeplus {
+	width: 200px;
+	height: 20px;
+	color: red;
+}
+#sizetwo {
+	width: 100px;
+	text-align: center;
+}
+.contentone {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-left: 175px;
+	margin-top: 20px;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 14px;
+	color: #707070;
+	padding: 0px;
+	flex-wrap: wrap;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 10px;
+}
+.contentone a img {
+	border: 1px solid rgba(255, 255, 255, 0.0);
+}
+.contentone a:hover img {
+	border: 1px solid #53da3f;
+}
+.contenttwo a {
+	text-decoration: none;
+}
+.contenttwo a:hover {
+	color: purple;
+	text-decoration: underline;
+}
+.contentthree {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 175px;
+	margin-top: 20px;
+	font-size: 17px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.contentthree a {
+	text-decoration: none;
+}
+.contentfour {
+	float: left;
+	display: block;
+	align-items: center;
+	justify-content: left;
+	margin-left: 300px;
+	margin-top: 20px;
+	font-size: 17px;
+	padding: 22px;
+	flex-wrap: wrap;
+	list-style-image: url(img/system.png);
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.contentfour a {
+	text-decoration: none;
+}
+.contentfive {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	font-size: 15px;
+	padding: 0px;
+	flex-wrap: wrap;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 10px;
+}
+.contentsix {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	font-size: 15px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.contentseven {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-left: 400px;
+	margin-top: 0px;
+	font-size: 17px;
+	padding: 10px;
+	flex-wrap: wrap;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.contentseven a:active {
+	color: red;
+}
+.contenteight {
+	float: left;
+	display: block;
+	align-items: center;
+	justify-content: left;
+	margin-left: 300px;
+	margin-top: 0px;
+	font-size: 17px;
+	padding: 22px;
+	flex-wrap: wrap;
+	list-style-image: url(img/display.png);
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.contenteight a {
+	text-decoration: none;
+}
+.contenteightplus {
+	float: left;
+	display: block;
+	align-items: center;
+	justify-content: left;
+	margin-left: 370px;
+	margin-top: 0px;
+	font-size: 17px;
+	padding: 22px;
+	flex-wrap: wrap;
+	list-style-image: url(img/display.png);
+	background-color: rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+}
+.contenteightplus a {
+	text-decoration: none;
+}
+.contenteightplus a:hover {
+	color: purple;
+	text-decoration: underline;
+}
+.contenteightplus a:active {
+	color: red;
+}
+.contentnine {
+	clear: both;
+	display: block;
+	align-items: center;
+	justify-content: left;
+	margin-left: 425px;
+	margin-top: 0px;
+	font-size: 17px;
+	padding: 10px;
+	flex-wrap: wrap;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.contentnine a {
+	color: blue;
+}
+.contentnine a:active {
+	color: red;
+}
+.contentten {
+	float: left;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	margin-left: 450px;
+	padding: 0px;
+	flex-wrap: wrap;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.contenteleven {
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	margin: 10px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.contenttwelve {
+	float: right;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 17px;
+	margin-right: 470px;
+	margin-top: 60px;
+	padding: 10px;
+	flex-wrap: wrap;
+	border: 1px solid #333;
+	display: flex;
+}
+.contentthirteen {
+	float: right;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 17px;
+	margin-right: 422px;
+	margin-top: 30px;
+	padding: 10px;
+	flex-wrap: wrap;
+	border: 1px solid #333;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.contentfourteen {
+	text-align: left;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	margin: 10px;
+	padding: 0px;
+	flex-wrap: wrap;
+}
+.contentfourteen a {
+	text-decoration: none;
+}
+.contentfifteen, .contentfifteenplus {
+	float: right;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 17px;
+	margin-top: 60px;
+	padding: 10px;
+	flex-wrap: wrap;
+	border: 1px solid #333;
+	display: flex;
+}
+.contentfifteen {
+	margin-right: 332px;
+}
+.contentfifteenplus {
+	margin-right: 540px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.contentsixteen {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+.contentsixteen a {
+	text-decoration: none;
+}
+.contentsixteenplus {
+	float: right;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 17px;
+	margin-right: 527px;
+	margin-top: 10px;
+	padding: 10px;
+	flex-wrap: wrap;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.contentseventeen, .contentseventeenplus {
+	align-items: center;
+	font-size: 17px;
+	flex-wrap: wrap;
+}
+.contentseventeen {
+	float: right;
+	display: inline-block;
+	justify-content: right;
+	padding: 10px;
+	margin: 50px 20px 20px 20px;
+	padding: 0px;
+}
+.contentseventeen a img {
+	border: 1px solid rgba(255, 255, 255, 0.0);
+}
+.contentseventeen a:hover img {
+	border: 1px solid #53da3f;
+}
+.contentseventeenplus {
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	padding: 0px;
+	display: none;
+}
+.contenteighteen, .contenteighteenplus {
+	float: right;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.contenteighteen {
+	margin: 20px 20px 20px 20px;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 400;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-bottom: 10px;	
+}
+.contenteighteenplus {
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 17px;
+	margin-right: 315px;
+	margin-top: 60px;
+	padding: 10px;
+	flex-wrap: wrap;
+	border: 1px solid #333;
+	display: flex;
+}
+.button a {
+	color: #fff;
+	user-select: none; /* Убираем текстовое выделение */
+	text-decoration: none;	/* Убираем подчеркивание */
+	outline: none; /* Убираем контур вокруг ссылки */
+	background-color: #fa8e47; /* Цвет фона */
+	padding: 1em 2em; /* Отступ от текста до рамки */
+}
+.yellow	{
+	background-color: yellow;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+}
+.pictureone {
+  float: right; /* Выравнивание по правому краю */
+  padding: 10px; /* Поля внутри блока */
+  margin: 10px 5px 20px 20px; /* Отступы вокруг */
+  background-color: rgba(255, 255, 255, 0.7); /* Цвет фона */ 
+}
+.pictureone figcaption a:visited
+.picturetwo figcaption a:visited,
+.picturethree figcaption a:visited,
+.picturefour figcaption a:visited,
+.picturefive figcaption a:visitedr,
+.picturesix figcaption a:visited,
+.pictureseven figcaption a:visited,
+.pictureeight figcaption a:visited {
+  color: red;
+}
+.pictureone figcaption a:hover,
+.picturetwo figcaption a:hover,
+.picturethree figcaption a:hover,
+.picturefour figcaption a:hover,
+.picturefive figcaption a:hover,
+.picturesix figcaption a:hover,
+.pictureseven figcaption a:hover,
+.pictureeight figcaption a:hover {
+  color: blue;
+}
+.picturetwo, .picturethree, .picturefour, .picturefive {
+  float: right; /* Выравнивание по правому краю */
+  padding: 10px; /* Поля внутри блока */
+  margin: 10px 18px 20px 20px; /* Отступы вокруг */
+  background-color: rgba(255, 255, 255, 0.7); /* Цвет фона */
+}
+.picturesix {
+  float: right;
+  padding: 10px;
+  margin: 10px 18px 0px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.pictureone figcaption a,
+.picturetwo figcaption a,
+.picturethree figcaption a,
+.picturefour figcaption a,
+.picturefive figcaption a,
+.picturesix figcaption a,
+.pictureseven figcaption a,
+.pictureeight figcaption a {
+  text-decoration: none;
+  color: black;
+}
+.pictureseven, .pictureeight {
+  float: right;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.pictureseven {
+  margin: 10px 425px 0px 20px;
+}
+.pictureeight {
+  margin: 10px 18px 0px 20px;
+}
+.pictureone a img, .picturetwo a img, .picturethree a img,
+.picturefour a img, .picturefive a img, .picturesix a img,
+.pictureseven a img, .pictureeight a img {
+	border: 1px solid rgba(255, 255, 255, 0.0);
+}
+.pictureone a:hover img, .picturetwo a:hover img, .picturethree a:hover img,
+.picturefour a:hover img, .picturefive a:hover img, .picturesix a:hover img,
+.pictureseven a:hover img, .pictureeight a:hover img {
+	border: 1px solid #53da3f;
+}
+.picturenine {
+  	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 0px;
+	margin-top: 0px;
+	font-size: 17px;
+	padding: 10px;
+	flex-wrap: wrap;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.red	{
+	color: red;
+}
+.footer a { /* # == id */
+    background: rgba(128,128,128, 0.7);
+    width: 100%;
+    float: left;
+    height: 140px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 140px;
+	isplay: flex;
+	justify-content: center;
+	alight-items: center;
+	margin-top: 60px;
+}
+.footer a:hover {
+	background-color: rgba(128, 128, 128, 0.9);
+}
