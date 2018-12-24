@@ -594,7 +594,7 @@ tr:nth-child(13) {
 	justify-content: center;
 	margin: 0 0 1em 48.46938775510204%; /* 0 0 16px 570px */
 	font-size: 1.0625em; /*17px*/
-	padding: 0.625em; /*10px*/
+	padding: 0.625em 0.625em 1.25em 0.625em; /* 10px 10px 20px 10px */
 	flex-wrap: wrap;
 	background-color: rgba(255, 255, 255, 0.7);
 }
@@ -901,7 +901,8 @@ tr:nth-child(13) {
 	float: right; /* Выравнивание по правому краю */
 	padding: 0.83333333333333%; /* 10px */ /* Отступы внутри блока */
 	background-color: rgba(255, 255, 255, 0.7); /* Цвет фона */
-	width: 150px; /* 12.5% */
+	width: 150px; /* 11.9% */
+	max-height: 250px;
 	margin: 0.85034013605442% 0.85034013605442%;
 	/*flex-basis: 150px;*/
 }
@@ -921,10 +922,8 @@ tr:nth-child(13) {
   	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: 0px;
-	margin-top: 0px;
-	font-size: 17px;
-	padding: 10px;
+	margin: 1em 0 1em 0;
+	padding: 1em 0;
 	flex-wrap: wrap;
 	background-color: rgba(255, 255, 255, 0.7);
 }
@@ -932,12 +931,9 @@ tr:nth-child(13) {
 	color: red;
 }
 hr	{
-	align: center;
-	width: 300;
 	color: black;
 	position: relative;
-	margin-top: 2em;
-	width: 100%;
+	margin: 2em auto auto;
 }
 .footer {
 	background: rgba(0, 0, 0, 0.7);
@@ -945,6 +941,7 @@ hr	{
 	display: flex;
 	margin: 1em auto auto;
 	text-align: right;
+	flex-wrap: wrap;
 }
 .footer a { /* # == id */
 	width: 100%;
