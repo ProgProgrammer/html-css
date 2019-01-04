@@ -1044,7 +1044,7 @@ hr	{
 	line-height: 8,75em;
 	display: flex;
 	justify-content: right;
-	padding: 3.75em 3.75em 3.75em 0;
+	padding: 3.75em;
 }
 .footer a:hover {
 	background-color: rgba(128, 128, 128, 0.9);
@@ -1159,7 +1159,10 @@ hr	{
 		width: 42.5%;
 		margin: 3.75em 28.75%;
 	}
-	
+	.footer a {
+		padding: 3.75em auto;
+		text-align: center;
+	}
 	#size {
 		width: 12.5em; /* 200px */
 		height: 1.25em; /* 20px */
@@ -1222,6 +1225,10 @@ hr	{
 	.contentthirteen {
 		width: 16em;
 	}
+	.footer a {
+		padding: 3.75em 2em;
+		text-align: center;
+	}
 }
 @media all and (max-width: 330px) {
 	.basketone	{
@@ -1229,5 +1236,9 @@ hr	{
 	}
 	.contentthirteen {
 		width: 14em;
+	}
+	.footer a {
+		padding: 3.75em 0.5em;
+		text-align: center;
 	}
 }
