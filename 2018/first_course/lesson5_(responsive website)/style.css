@@ -82,6 +82,9 @@ h2	{
 .head h2:nth-child(3) {
 	padding-bottom: 1em;
 }
+h2 a   {
+      padding-right: 1em;  
+}
 h2 a:hover {
 	color: purple;
 	text-decoration: none;
@@ -501,9 +504,6 @@ input[type=reset] {
 	flex-wrap: wrap;
 	background-color: rgba(255, 255, 255, 0.7);
 	padding: 10px;
-}
-#layer	{
-	z-index: 1;
 }
 .map	{
 	justify-content: center;
@@ -1162,6 +1162,9 @@ hr	{
 	.footer a {
 		padding: 3.75em auto;
 		text-align: center;
+	}
+	#layer	{
+		z-index: 1;
 	}
 	#size {
 		width: 12.5em; /* 200px */
