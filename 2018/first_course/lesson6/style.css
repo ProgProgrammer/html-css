@@ -58,7 +58,7 @@ body {
 .menu a:hover {
     color: #212121;
     border-bottom: 3px solid #212121;
-    transition: .0.5s linear;
+    transition: 0.5s linear;
 }
 .menu a:active {
     color: #fc2836;
@@ -181,7 +181,7 @@ body {
     color: #212121;
     padding: 0 22px 19px 11px;
     border-bottom: 3px solid #212121;
-    transition: .0.5s linear;
+    transition: 0.5s linear;
 }
 .menutwo .lione:active {
     color: #fc2836;
