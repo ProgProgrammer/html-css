@@ -14,11 +14,11 @@
 	                <a class="logo" href="index.php"><img src="img/logo.png" alt="logotype"></a>
                     <ul class="menu">
                         <li><a class="text-style-one" href="index.php">HOME</a></li>
-                        <li><a href="product.html">PRODUCT</a></li>
-                        <li><a href="history.html">HISTORY</a></li>
-                        <li><a href="showroom.html">SHOWROOM</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                        <li><a class="search" href="search.html"><img src="img/search.png" alt="search"></a></li>
+                        <li><a href="index.php">PRODUCT</a></li>
+                        <li><a href="index.php">HISTORY</a></li>
+                        <li><a href="index.php">SHOWROOM</a></li>
+                        <li><a href="index.php">CONTACT</a></li>
+                        <li><a class="search" href="index.php"><img src="img/search.png" alt="search"></a></li>
                     </ul>
 	            </div>
 	            <div class="text-box">

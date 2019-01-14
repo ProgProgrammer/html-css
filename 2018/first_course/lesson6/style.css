@@ -58,11 +58,12 @@ body {
 .menu a:hover {
     color: #212121;
     border-bottom: 3px solid #212121;
-    transition: 0.5s linear;
+    transition: 0.1s linear;
 }
 .menu a:active {
     color: #fc2836;
     border-bottom: 3px solid #fc2836;
+    transition: none;
 }
 .clearfix:after {
     clear: both;
@@ -181,15 +182,17 @@ body {
     color: #212121;
     padding: 0 22px 19px 11px;
     border-bottom: 3px solid #212121;
-    transition: 0.5s linear;
+    transition: 0.1s linear;
 }
 .menutwo .lione:active {
     color: #fc2836;
     border-bottom: 3px solid #fc2836;
+    transition: none;
 }
 .menutwo .litwo:active {
     color: #fc2836;
     border-bottom: 3px solid #fc2836;
+    transition: none;
 }
 .explore-all {
     text-transform: uppercase;
@@ -258,11 +261,13 @@ body {
 }
 .back2:hover {
     padding: 14px 14px 14px 22px;
+    transition: 0.1s linear;
 }
 .back2:active {
     margin-top: 4.85px;
     margin-bottom: 14.15px;
     box-shadow: none;
+    transition: none;
 }
 .name2 {
     font-size: 22px;
@@ -357,6 +362,7 @@ body {
 }
 .back3:hover:after {
     margin-left: 22px;
+    transition: 0.1s linear;
 }
 .back3:active {
     margin-top: 38.85px;
