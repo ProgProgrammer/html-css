@@ -143,7 +143,12 @@ body {
     z-index: 1;
 }
 .featured {
-    padding-left: 98px;
+    padding: 0 0 120px 98px;
+}
+.featured:after {
+    display: block;
+    clear: both;
+    content: "";
 }
 .menutwo {
     display: flex;
@@ -220,30 +225,33 @@ body {
     transition: .1s linear;
 }
 .boxs {
-    height: 440px;
-    padding: 50px 98px 120px 0
+    /*height: 440px;*/
+    padding: 20px 68px 0 0;
 }
 .product1 {
     float: left;
     width: 270px;
     height: 270px;
-    margin-right: 30px;
+    background-image: url(img/product1.jpg);
+    margin: 30px 30px 0 0;
     border: 1px solid #9c9c9c;
 }
 .product1back {
     float: left;
-    margin: 1px 0 0 -299px;
+    /*margin: 1px 0 0 -299px;*/
+    /*margin: 0 1px 1px 0;*/
     width: 268px;
     height: 268px;
     background-color: #ffffff;
     opacity: 0.9;
+    justify-content: center;
 }
 .text-box2 {
     width: 270px;
     margin-top: 62px;
     float: left;
     display: block;
-    margin-left: -299px;
+    margin-left: -270px;
     position: relative;
 }
 .back2 {
@@ -287,18 +295,19 @@ body {
     float: left;
     width: 270px;
     height: 270px;
-    margin-right: 30px;
+    margin: 30px 30px 0 0;
 }
 .product3 {
     float: left;
     width: 270px;
     height: 270px;
-    margin-right: 30px;
+    margin: 30px 30px 0 0;
 }
 .product4 {
     float: left;
     width: 270px;
     height: 270px;
+    margin: 30px 30px 0 0;
 }
 .promo {
     width: 1366px;
@@ -375,4 +384,87 @@ body {
     background-image: url(img/promo-img2.jpg);
     float: left;
     padding: 228px 0 0 51px;
+}
+.products {
+    padding: 0 0 120px 98px;
+}
+.products:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.trending {
+    float: left;
+    padding-top: 119px;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+}
+.explorer-all2 {
+    float: right;
+    margin: 137px 97px 0 0;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+}
+.explorer-all2 a {
+    text-decoration: none;
+    color: #212121;
+}
+.explorer-all2:after {
+    content: url(img/arrow.png);
+    margin-left: 12px;
+}
+.explorer-all2:hover {
+    margin: 137px 89px 0 0;
+    transition: .1s linear;
+}
+.explorer-all2:hover:after {
+    content: url(img/arrow.png);
+    margin-left: 20px;
+    transition: .1s linear;
+}
+.boxs2 {
+    /*display: flex;*/
+    padding: 64px 68px 0 0;
+}
+.product5 {
+    float: left;
+    width: 370px;
+    height: 370px;
+    margin: 30px 30px 0 0;
+}
+.product6 {
+    float: left;
+    width: 370px;
+    height: 370px;
+    margin: 30px 30px 0 0;
+}
+.product7 {
+    float: left;
+    width: 370px;
+    height: 370px;
+    margin: 30px 30px 0 0;
+}
+.product8 {
+    float: left;
+    width: 370px;
+    height: 370px;
+    margin: 30px 30px 0 0;
+}
+.product9 {
+    float: left;
+    width: 370px;
+    height: 370px;
+    margin: 30px 30px 0 0;
+}
+.product10 {
+    float: left;
+    width: 370px;
+    height: 370px;
+    margin: 30px 30px 0 0;
 }

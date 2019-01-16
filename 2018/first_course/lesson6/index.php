@@ -49,26 +49,27 @@
 	            </div>
 	            <div class="boxs">
 	                <div class="product1">
-	                    <img src="img/product1.jpg" alt="product1">
-                    </div>
-	                <div class="product1back"></div>
-	                <div id="layer" class="text-box2">
-	                    <div class="back2">
-	                        <a href="index.php"><img src="img/arrow2.png" alt="arrow"></a>
-	                    </div>
-	                    <h2 id="layer2" class="name2">Fishnet Chair</h2>
-	                    <p id="layer2" class="details2">
+	                    <div class="product1back"></div>
+	                    <div id="layer" class="text-box2">
+	                        <div class="back2">
+	                            <a href="index.php"><img src="img/arrow2.png" alt="arrow"></a>
+	                        </div>
+	                        <h2 id="layer2" class="name2">Fishnet Chair</h2>
+	                        <p id="layer2" class="details2">
 	                        Seat and back with upholstery made of&nbsp;cold cure
-	                    </p>
-	                </div>
+	                        </p>
+	                    </div>
+	                    
+                    </div>
+	                
 	                <div class="product2">
-	                    <a href="index.php"><img src="img/product2.jpg" alt="product"></a>
+	                    <a href="index.php"><img src="img/product2.jpg" alt="product2"></a>
 	                </div>
 	                <div class="product3">
-	                    <a href="index.php"><img src="img/product3.jpg" alt="product"></a>
+	                    <a href="index.php"><img src="img/product3.jpg" alt="product3"></a>
 	                </div>
 	                <div class="product4">
-	                    <a href="index.php"><img src="img/product4.jpg" alt="product"></a>
+	                    <a href="index.php"><img src="img/product4.jpg" alt="product4"></a>
 	                </div>
 	            </div>
 	        </div>
@@ -91,6 +92,34 @@
                             Seat and back with upholstery made of&nbsp;cold cure foam. Steel frame, available in&nbsp;matt
                         </p>
                         <a href="index.php" class="back3">Order Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="header clearfix">
+                    <p class="trending">Trending Products</p>
+                    <div class="explorer-all2">
+                        <a href="index.php">explore all</a>
+                    </div>
+                </div>
+                <div class="boxs2">
+                    <div class="product5">
+                        <a href="index.php"><img src="img/product5.jpg" alt="product 5"></a>
+                    </div>
+                    <div class="product6">
+                        <a href="index.php"><img src="img/product6.jpg" alt="product 6"></a>
+                    </div>
+                    <div class="product7">
+                        <a href="index.php"><img src="img/product7.jpg" alt="product 7"></a>
+                    </div>
+                    <div class="product8">
+                        <a href="index.php"><img src="img/product8.jpg" alt="product 8"></a>
+                    </div>
+                    <div class="product9">
+                        <a href="index.php"><img src="img/product9.jpg" alt="product 9"></a>
+                    </div>
+                    <div class="product10">
+                        <a href="index.php"><img src="img/product10.jpg" alt="product 10"></a>
                     </div>
                 </div>
             </div>
