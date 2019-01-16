@@ -17,12 +17,12 @@
 				    <ul class="menu-main">
 				    	<li><a href="index.php">Телефоны</a></li>
 			        	<li><a href="apple.html">Apple</a></li>
-			   	    	<li><a href="samsungphone.html">Samsung</a></li>
-			   	    	<li><a href="meizuphone.html">Meizu</a></li>
+			   	    	<li><a href="apple.html">Samsung</a></li>
+			   	    	<li><a href="apple.html">Meizu</a></li>
 			   	    	<li><a href="index.php">Чехлы</a></li>
-			   	    	<li><a href="applecase.html">Apple</a></li>
-			   	    	<li><a href="samsungcase.html">Samsung</a></li>
-			   	    	<li><a href="meizucase.html">Meizu</a></li>
+			   	    	<li><a href="apple.html">Apple</a></li>
+			   	    	<li><a href="apple.html">Samsung</a></li>
+			   	    	<li><a href="apple.html">Meizu</a></li>
 			   	    	<li><a href="cabinet.html">Кабинет</a></li>
                         <li><a href="basket.html">Корзина</a></li>
                      </ul>
@@ -42,23 +42,23 @@
 		    	<h3><strong>Популярные смартфоны и чехлы</strong></h3>
 		    	<div class="figure">
 			        <figure class="pictureone">
-                        <p><a href="flamingo.html"><img src="img/flamingo.png"></a></p>
+                        <p><a href="flamingo.html"><img src="img/flamingo.jpg"></a></p>
 			            <figcaption><h4><a href="flamingo.html">Чехол Flamingo</a></h4></figcaption>
 			        </figure>
 			        <figure class="picturetwo">
-                        <p><a href="pink.html"><img src="img/pinkimg.png"></a></p>
+                        <p><a href="kry.html"><img src="img/pinkimg.jpg"></a></p>
 			            <figcaption><h4><a href="pink.html">Чехол KRY</a></h4></figcaption>
 			        </figure>
 			        <figure class="picturethree">
-			        	<p><a href="kisscase.html"><img src="img/kisscase.png" alt="чехол kisscase на iphone"></a></p>
+			        	<p><a href="kisscase.html"><img src="img/kisscase.jpg" alt="чехол kisscase на iphone"></a></p>
 			        	<figcaption><h4><a href="kisscase.html">Чехол Kisscase</a></h4></figcaption>
 			        </figure>
 			        <figure class="picturefour">
-			        	<p><a href="miezupro8.html"><img src="img/meizupro8.jpg" alt="смартфон miezu"></a></p>
-			        	<figcaption><h4><a href="miezupro8.html">Meizu Pro 8</a></h4></figcaption>
+			        	<p><a href="meizupro7plus.html"><img src="img/meizupro8.jpg" alt="смартфон miezu"></a></p>
+			        	<figcaption><h4><a href="miezupro8.html">Meizu Pro 7</a></h4></figcaption>
 			        </figure>
 			        <figure class="picturefive">
-			        	<p><a href="samsungs9.html"><img src="img/samsungs9.jpg" alt="смартфон samsung"></a></p>
+			        	<p><a href="samsunggalaxys9.html"><img src="img/samsungs9.jpg" alt="смартфон samsung"></a></p>
 			        	<figcaption><h4><a href="samsungs9.html">Samsung Galaxy S9</a></h4></figcaption>
 			        </figure>
 			        <figure class="picturesix">
