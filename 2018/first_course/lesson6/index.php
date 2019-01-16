@@ -25,8 +25,8 @@
 	                <h3 class="tag">TRENDING</h3>
 	                <h2 class="name">Fishnet Chair</h2>
 	                <p class="details">
-                        Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black
-                        or highly polished chrome.
+                        Seat and back with upholstery made of&nbsp;cold cure foam. Steel frame, available in&nbsp;matt powder-coated black
+                        or&nbsp;highly polished chrome.
                     </p>
 	                <a class="back" href="index.php">Order Us</a>
 	            </div>
@@ -58,7 +58,7 @@
 	                    </div>
 	                    <h2 id="layer2" class="name2">Fishnet Chair</h2>
 	                    <p id="layer2" class="details2">
-	                        Seat and back with upholstery made of cold cure
+	                        Seat and back with upholstery made of&nbsp;cold cure
 	                    </p>
 	                </div>
 	                <div class="product2">
@@ -78,7 +78,7 @@
                         <h3 class="tag3">exclusive</h3>
                         <h2 class="name3">Fishnet Chair</h2>
                         <p class="details3">
-                            Seat and back with upholstery made of cold cure foam. Steel frame, available in matt
+                            Seat and back with upholstery made of&nbsp;cold cure foam. Steel frame, available in&nbsp;matt
                         </p>
                         <a href="index.php" class="back3">Order Us</a>
                     </div>
@@ -88,7 +88,7 @@
                         <h3 class="tag3">exclusive</h3>
                         <h2 class="name3">Fishnet Chair</h2>
                         <p class="details3">
-                            Seat and back with upholstery made of cold cure foam. Steel frame, available in matt
+                            Seat and back with upholstery made of&nbsp;cold cure foam. Steel frame, available in&nbsp;matt
                         </p>
                         <a href="index.php" class="back3">Order Us</a>
                     </div>
