@@ -1,1 +1,0 @@
-http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fvhost68535.cpsite.ru%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=ru
