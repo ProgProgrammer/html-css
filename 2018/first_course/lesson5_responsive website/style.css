@@ -6,13 +6,25 @@
 	width: 100%;
 	height: auto;
 }
-.container {
-	width: 100%; /* 1200px */
-	margin: 0 auto;
-	background: url(img/rainbow.jpg);
+html, body {
+    height: 100%;
+}
+body {
+    background: url(img/rainbow.jpg);
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+	width: 100%; /* 1200px */
+    height: 100%;
+	margin: 0 auto;
+}
+.content {
+    flex: 1 0 auto;
+    width: 100%;
 }
 .navadaptive {
 	display: none;
@@ -116,6 +128,7 @@ h5	{
 	flex-wrap: wrap;
 	width: 100%;
 	justify-content: flex-start;
+    position: relative;
 	/*position: fixed;*/
 }
 .menu-main a {
@@ -1037,6 +1050,7 @@ hr	{
 	margin: 1em auto auto;
 	text-align: right;
 	flex-wrap: wrap;
+    flex: 0 0 auto;
 }
 .footer a { /* # == id */
 	width: 100%;
