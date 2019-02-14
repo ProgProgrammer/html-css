@@ -363,7 +363,7 @@
                             <form action="index.php">
                                 <input type="text" placeholder="Your name:" required>
                                 <input type="email" placeholder="Your email:" required>
-                                <textarea id="form_text" placeholder="Your message:" required></textarea>
+                                <textarea class="form_text" placeholder="Your message:" required></textarea>
                                 <div class="footer_contacts_block_forms_submit">
                                     <input type="submit" value="Send">
                                 </div>
