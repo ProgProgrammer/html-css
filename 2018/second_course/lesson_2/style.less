@@ -325,15 +325,6 @@ main-bg {
                 border-radius: 50%;
             }
 
-            &_triangle {
-                margin-left: 3px;
-                position: absolute;
-                /*left: -24px;*/
-                top: 26.5px;
-                border: 12px solid rgba(245, 245, 245, 0.0);
-                border-right: 12px solid rgb(236, 236, 236);
-            }
-
             &_text {
                 margin-left: 27px;
                 background: rgb(236, 236, 236);
@@ -362,6 +353,17 @@ main-bg {
                 }
             }
         }
+    }
+}
+
+@media all and (min-width: 742px) {
+    .reviews_blocks_lorem_triangle {
+        margin-left: 3px;
+        position: absolute;
+        /*left: -24px;*/
+        top: 26.5px;
+        border: 12px solid rgba(245, 245, 245, 0.0);
+        border-right: 12px solid rgb(236, 236, 236);
     }
 }
 
@@ -886,6 +888,10 @@ input[type="email"] {
     border-radius: 6px;
 }
 
+textarea {
+    resize: none;
+}
+
 input[type="submit"] {
     border: none;
     border-radius: 6px;
@@ -929,7 +935,7 @@ textarea::placeholder {
     line-height: 18px;
 }
 
-.left1 a:focus, 
+.left1 a:focus,
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="submit"]:focus,
@@ -943,8 +949,7 @@ textarea:focus {
     }
 }
 
-@media all and (min-width: 1280px) {
-
+@media all and (min-width: 1294px) {
 
     .header-bg_header,
     .bg,
@@ -963,9 +968,6 @@ textarea:focus {
     }
 
     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         min-width: 100%;
     }
 
@@ -995,9 +997,17 @@ textarea:focus {
     .main-bg_center2 {
         background: rgb(245, 245, 245);
     }
+
+    .footer_contacts {
+        max-width: @width-all;
+    }
+
+    .footer_contacts_block {
+        max-width: @width-all;
+    }
 }
 
-@media all and (min-width: 768px) and (max-width: 1279px) {
+@media all and (min-width: 768px) and (max-width: 1294px) {
 
     .container {
         width: 100%;
@@ -1033,12 +1043,73 @@ textarea:focus {
     }*/
 }
 
-@media all and (min-width: 768px) and (max-width: 1260px) {
+@media all and (min-width: 768px) and (max-width: 1261px) {
+
+    .reviews_blocks_lorem {
+        width: 574px;
+        margin-top: 24px;
+        background: rgb(245, 245, 245);
+        display: flex;
+        position: relative;
+
+        &_circle {
+            width: 75px;
+            height: 75px;
+            background-color: #445161;
+            border-radius: 50%;
+        }
+
+        &_circle img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+        }
+
+        &_triangle {
+            margin-left: 3px;
+            position: absolute;
+            /*left: -24px;*/
+            top: 26.5px;
+            border: 12px solid rgba(245, 245, 245, 0.0);
+            border-right: 12px solid rgb(236, 236, 236);
+        }
+
+        &_text {
+            margin-left: 27px;
+            background: rgb(236, 236, 236);
+            /*background-clip: padding-box;*/
+            border-radius: 6px;
+            position: relative;
+            width: 471px;
+            padding: 12px 20px 16px 15px;
+
+        }
+    }
+}
+
+@media all and (min-width: 1265px) and (max-width: 1281px) {
+    .center_reviews_blocks {
+        display: flex;
+        justify-content: center;
+    }
+
     .reviews_blocks {
         justify-content: center;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
+        width: 98%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1281px) {
+    .reviews_blocks {
+        justify-content: center;
+    }
+
+    .reviews_blocks_lorem_text {
+        /*margin-right: 16px;*/
+    }
+
+    #margin_reviews {
+        /*margin-right: 16px;*/
     }
 }
 
@@ -1094,7 +1165,7 @@ textarea:focus {
         margin-top: 20px;
         justify-content: center;
     }
-    
+
     .right2_block {
         width: 71%;
         height: auto;
@@ -1181,7 +1252,7 @@ textarea:focus {
     }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
     .container {
         width: 100%;
     }
@@ -1268,60 +1339,8 @@ textarea:focus {
         justify-content: center;
     }
 
-    .scrinshots_descriptions_description_text {
-        margin-top: 20px;
-
-        &_h3 {
-            line-height: 30px;
-            text-align: center;
-        }
-    }
-
     .reviews_blocks {
-        padding-left: 11.328125%;
-        padding-right: 11.328125%;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
-    }
-
-    .reviews_blocks_lorem {
-        width: 100%;
-        margin-top: 24px;
-        background: rgb(245, 245, 245);
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        justify-content: center;
-    }
-
-    .reviews_blocks_lorem_circle {
-        margin: 0 auto;
-    }
-
-    .center {
-        display: flex;
-        justify-content: center;
-    }
-
-    .reviews_blocks_lorem_triangle {
-        margin-left: 0;
-        position: relative;
-        width: 12px;
-        /*left: 45%;*/
-        /*top: 26.5px;*/
-        border: 12px solid rgba(245, 245, 245, 0.0);
-        border-bottom: 12px solid rgb(236, 236, 236);
-    }
-
-    .reviews_blocks_lorem_text {
-        margin: 26px 0 0;
-        background: rgb(236, 236, 236);
-        /*background-clip: padding-box;*/
-        border-radius: 6px;
-        position: relative;
-        width: 100%;
-        padding: 12px 20px 16px 15px;
     }
 
     .buy {
@@ -1437,7 +1456,197 @@ textarea:focus {
     }
 }*/
 
+@media all and (min-width: 763px) and (max-width: 767px) {
+    .scrinshots_descriptions_description_text {
+        margin-top: 0px;
+
+        &_h3 {
+            text-align: left;
+        }
+    }
+}
+
+@media all and (min-width: 763px) {
+    .scrinshots_descriptions {
+        padding-bottom: 50px;
+    }
+
+    .scrinshots_descriptions_description {
+        margin-top: 30px;
+        padding-bottom: 0px;
+    }
+}
+
+
+@media all and (min-width: 763px) and (max-width: 1025px) {
+
+    .container,
+    .left2_p1,
+    .left2_p2,
+    .bg2_delectus_block p,
+    .scrinshots_descriptions_description_text_lorem,
+    .footer_contacts_block_icons_column a,
+    input::placeholder,
+    textarea::placeholder,
+    input[type="submit"] {
+        font-size: 15px;
+    }
+
+    .left1 h1 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu li i,
+    .menu li {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .left2 h2,
+    .bg2_h2,
+    .scrinshots_h2,
+    .reviews_h2,
+    .buy_now,
+    .footer_contacts_h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .scrinshots_descriptions {
+        padding-bottom: 20px;
+    }
+
+    .scrinshots_descriptions_description {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .scrinshots_descriptions_description_text {
+        margin-top: 0px;
+
+        &_h3 {
+            line-height: 18px;
+            text-align: left;
+        }
+    }
+
+    .scrinshots_descriptions_description {
+        padding-bottom: 30px;
+    }
+
+    .reviews_h2 {
+        margin-bottom: 0;
+    }
+
+    .reviews_blocks {
+        padding-bottom: 51px;
+    }
+
+    .reviews_blocks_lorem {
+        padding-bottom: 0px;
+    }
+
+    .scrinshots_descriptions_description_text_h3,
+    .buy_block_standart_h3,
+    .buy_block_premium_h3,
+    .buy_block_lux_h3 {
+        font-size: 21px;
+    }
+
+    .left2_p1,
+    .left2_p2,
+    .bg2_delectus_block p,
+    .scrinshots_descriptions_description_text_lorem {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .buy_block_standart_h3,
+    .buy_block_premium_h3,
+    .buy_block_lux_h3 {
+        line-height: 38px;
+    }
+
+    .buy_block {
+        padding-top: 40px;
+    }
+
+    .reviews_blocks_lorem_text_p1,
+    .reviews_blocks_lorem_text_p2,
+    .buy_block_standart_text_p1,
+    .buy_block_premium_text_p1,
+    .buy_block_lux_text_p1 {
+        font-size: 13px;
+    }
+
+    .buy_block_standart_text_p1,
+    .buy_block_premium_text_p1,
+    .buy_block_lux_text_p1 {
+        line-height: 22px;
+    }
+
+    .buy_block_standart_dollar_h3,
+    .buy_block_premium_dollar_h3,
+    .buy_block_lux_dollar_h3 {
+        font-size: 35px;
+        line-height: 61px;
+    }
+
+    .buy_block_standart_text_p2 a p,
+    .buy_block_premium_text_p2 a p,
+    .buy_block_lux_text_p2 a p {
+        font-size: 18px;
+    }
+
+    .footer_contacts_block_icons_column a i {
+        font-size: 26px;
+    }
+}
+
 @media all and (max-width: 763px) {
+
+    .footer_contacts_block_icons_column a,
+    input::placeholder,
+    textarea::placeholder,
+    input[type="submit"] {
+        font-size: 14px;
+    }
+
+    .left1 h1 {
+        font-size: 32px;
+        line-height: 24px;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu li i,
+    .menu li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .left2 h2,
+    .bg2_h2,
+    .scrinshots_h2,
+    .reviews_h2,
+    .buy_now,
+    .footer_contacts_h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .scrinshots_descriptions {
+        padding-bottom: 20px;
+    }
+
     .scrinshots_descriptions_description {
         width: 100%;
         display: flex;
@@ -1448,9 +1657,164 @@ textarea:focus {
         margin-top: 20px;
 
         &_h3 {
-            line-height: 30px;
+            line-height: 24px;
             text-align: center;
         }
+    }
+
+    .scrinshots_descriptions_description {
+        padding-bottom: 30px;
+    }
+
+    .reviews_h2 {
+        margin-bottom: 0;
+    }
+
+    .reviews_blocks {
+        padding-bottom: 51px;
+    }
+
+    .reviews_blocks_lorem {
+        padding-bottom: 0px;
+    }
+
+    .scrinshots_descriptions_description_text_h3,
+    .buy_block_standart_h3,
+    .buy_block_premium_h3,
+    .buy_block_lux_h3 {
+        font-size: 18px;
+    }
+
+    .scrinshots_descriptions_description_text_h3 {
+        line-height: 24px;
+    }
+
+    .left2_p1,
+    .left2_p2,
+    .bg2_delectus_block p,
+    .scrinshots_descriptions_description_text_lorem {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .buy_block_standart_h3,
+    .buy_block_premium_h3,
+    .buy_block_lux_h3 {
+        line-height: 32px;
+    }
+
+    .buy_block {
+        padding-top: 40px;
+    }
+
+    .reviews_blocks_lorem_text_p1,
+    .reviews_blocks_lorem_text_p2,
+    .buy_block_standart_text_p1,
+    .buy_block_premium_text_p1,
+    .buy_block_lux_text_p1 {
+        font-size: 12px;
+    }
+
+    .buy_block_standart_text_p1,
+    .buy_block_premium_text_p1,
+    .buy_block_lux_text_p1 {
+        line-height: 20px;
+    }
+
+    .buy_block_standart_dollar_h3,
+    .buy_block_premium_dollar_h3,
+    .buy_block_lux_dollar_h3 {
+        font-size: 30px;
+        line-height: 51px;
+    }
+
+    .buy_block_standart_text_p2 a p,
+    .buy_block_premium_text_p2 a p,
+    .buy_block_lux_text_p2 a p {
+        font-size: 18px;
+    }
+
+    .footer_contacts_block_icons_column a i {
+        font-size: 26px;
+    }
+
+    .footer_contacts_block_icons_column a .icq {
+        width: 26px;
+        height: 26px;
+    }
+
+    .footer_contacts_block_icons_column a .phone {
+        width: 24px;
+        height: 23px;
+    }
+
+    .footer_contacts_block {
+        padding-top: 30px;
+    }
+
+    .footer_contacts_block_icons {
+        margin-top: 40px;
+    }
+
+    .twitter,
+    .facebook,
+    .linkedin,
+    .google,
+    .youtube {
+        width: 42px;
+    }
+}
+
+@media all and (max-width: 742px) {
+    .reviews_blocks {
+        padding-left: 11.328125%;
+        padding-right: 11.328125%;
+        padding-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .reviews_blocks_lorem {
+        width: 100%;
+        margin-top: 24px;
+        padding-bottom: 26px;
+        background: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+    }
+
+    .reviews_blocks_lorem_circle {
+        margin: 0 auto;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .reviews_blocks_lorem_triangle {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        /*position: relative;*/
+        width: 12px;
+        /*left: 45%;*/
+        /*top: 26.5px;*/
+        border: 12px solid rgba(245, 245, 245, 0);
+        border-bottom: 12px solid #ececec;
+    }
+
+    .reviews_blocks_lorem_text {
+        margin: 0px;
+        background: #ececec;
+        /*background-clip: padding-box;*/
+        border-radius: 6px;
+        position: relative;
+        width: 100%;
+        padding: 12px 20px 16px 15px;
     }
 }
 

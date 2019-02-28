@@ -43,7 +43,7 @@
                 </article>
                 <article class="right1">
                     <div class="right1_block">
-                        <video src="video/samsungs9.mp4" class="video" type="video/mp4" poster="video/screen.jpg" value="samsung_galaxy_s9" controls="controls" autoplay="no"></video>
+                        <video src="video/samsungs9.mp4" class="video" type="video/mp4" poster="video/screen.jpg" value="samsung_galaxy_s9" controls="controls" preload="metadata"></video>
                     </div>
                 </article>
             </section>
@@ -181,69 +181,71 @@
                     <h2 class="reviews_h2">
                         Reviews
                     </h2>
-                    <div class="reviews_blocks">
-                        <div class="reviews_blocks_lorem">
-                            <div class="reviews_blocks_lorem_circle">
-                                <img src="img/man.jpg" alt="comment">
+                    <div class="center_reviews_blocks">
+                        <div class="reviews_blocks">
+                            <div class="reviews_blocks_lorem">
+                                <div class="reviews_blocks_lorem_circle">
+                                    <img src="img/man.jpg" alt="comment">
+                                </div>
+                                <div class="center">
+                                    <div class="reviews_blocks_lorem_triangle"></div>
+                                </div>
+                                <div class="reviews_blocks_lorem_text">
+                                    <p class="reviews_blocks_lorem_text_p1">
+                                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea&nbsp;neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                                    </p>
+                                    <p class="reviews_blocks_lorem_text_p2">
+                                        Lourens S.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="center">
-                                <div class="reviews_blocks_lorem_triangle"></div>
+                            <div class="reviews_blocks_lorem">
+                                <div class="reviews_blocks_lorem_circle">
+                                    <img src="img/woman.jpg" alt="comment">
+                                </div>
+                                <div class="center">
+                                    <div class="reviews_blocks_lorem_triangle"></div>
+                                </div>
+                                <div class="reviews_blocks_lorem_text">
+                                    <p class="reviews_blocks_lorem_text_p1">
+                                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea&nbsp;neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                                    </p>
+                                    <p class="reviews_blocks_lorem_text_p2">
+                                        Lourens S.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="reviews_blocks_lorem_text">
-                                <p class="reviews_blocks_lorem1_text_p1">
-                                    Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea&nbsp;neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                                </p>
-                                <p class="reviews_blocks_lorem_text_p2">
-                                    Lourens S.
-                                </p>
+                            <div class="reviews_blocks_lorem">
+                                <div class="reviews_blocks_lorem_circle">
+                                    <img src="img/woman2.jpg" alt="comment">
+                                </div>
+                                <div class="center">
+                                    <div class="reviews_blocks_lorem_triangle"></div>
+                                </div>
+                                <div class="reviews_blocks_lorem_text">
+                                    <p class="reviews_blocks_lorem_text_p1">
+                                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea&nbsp;neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                                    </p>
+                                    <p class="reviews_blocks_lorem_text_p2">
+                                        Lourens S.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="reviews_blocks_lorem">
-                            <div class="reviews_blocks_lorem_circle">
-                                <img src="img/woman.jpg" alt="comment">
-                            </div>
-                            <div class="center">
-                                <div class="reviews_blocks_lorem_triangle"></div>
-                            </div>
-                            <div class="reviews_blocks_lorem_text">
-                                <p class="reviews_blocks_lorem_text_p1">
-                                    Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea&nbsp;neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                                </p>
-                                <p class="reviews_blocks_lorem_text_p2">
-                                    Lourens S.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="reviews_blocks_lorem">
-                            <div class="reviews_blocks_lorem_circle">
-                                <img src="img/woman2.jpg" alt="comment">
-                            </div>
-                            <div class="center">
-                                <div class="reviews_blocks_lorem_triangle"></div>
-                            </div>
-                            <div class="reviews_blocks_lorem_text">
-                                <p class="reviews_blocks_lorem_text_p1">
-                                    Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea&nbsp;neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                                </p>
-                                <p class="reviews_blocks_lorem_text_p2">
-                                    Lourens S.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="reviews_blocks_lorem">
-                            <div class="reviews_blocks_lorem_circle">
-                                <img src="img/man2.jpg" alt="comment">
-                            </div>
-                            <div class="center">
-                                <div class="reviews_blocks_lorem_triangle"></div>
-                            </div>
-                            <div class="reviews_blocks_lorem_text">
-                                <p class="reviews_blocks_lorem_text_p1">
-                                    Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea&nbsp;neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                                </p>
-                                <p class="reviews_blocks_lorem_text_p2">
-                                    Lourens S.
-                                </p>
+                            <div class="reviews_blocks_lorem">
+                                <div class="reviews_blocks_lorem_circle">
+                                    <img src="img/man2.jpg" alt="comment">
+                                </div>
+                                <div class="center">
+                                    <div class="reviews_blocks_lorem_triangle"></div>
+                                </div>
+                                <div class="reviews_blocks_lorem_text">
+                                    <p class="reviews_blocks_lorem_text_p1">
+                                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea&nbsp;neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                                    </p>
+                                    <p class="reviews_blocks_lorem_text_p2">
+                                        Lourens S.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
