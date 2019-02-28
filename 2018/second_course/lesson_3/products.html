@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEDIGREE</title>
+    <link rel="stylesheet" href="style.css?v=1">
+    <link rel="shortcut icon" href="img/logotwo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="responsive-menu.js"></script>
+    <script src="responsive-search.js"></script>
+    <script src="menu-desktop-search.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="content">
+            <header class="header">
+                <section class="header_head">
+                    <section class="centerheader">
+                        <nav class="header_head_nav_menu">
+                            <ul class="header_head_nav_menu_first">
+                                <ul class="header_head_nav_menu_first_center">
+                                    <li class="header_head_nav_menu_first_center_item"><a href="products.html"><img src="img/logotype.jpg" alt="logotype"></a></li>
+                                    <li class="header_head_nav_menu_first_center_litwo">
+                                        <ul class="header_head_nav_menu_first_center_litwo_items">
+                                            <li><a href="products.html">Каталог продуктов</a></li>
+                                            <li><a href="#">Где купить</a></li>
+                                            <li><a href="#">Отзывы</a></li>
+                                            <li><a href="#">О PEDIGREE®</a></li>
+                                            <li><a href="javascript:void(0);" onclick="myFunctionDesktopSearch()"><i class="fas fa-search"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </ul>
+
+                            <ul class="header_head_nav_menu_second">
+                                <ul class="header_head_nav_menu_second_center">
+                                    <li class="header_head_nav_menu_first_center_item">
+                                        <a href="products.html">Кормление</a>
+                                        <div class="header_head_nav_menu_second_center_submenu_center">
+                                            <div class="header_head_nav_menu_second_center_submenu_center_triangle"></div>
+                                        </div>
+                                        <ul class="header_head_nav_menu_second_center_submenu">
+                                            <li><a href="">Советы по кормлению</a></li>
+                                            <li><a href="">Правила кормления</a></li>
+                                            <li><a href="">Подбор рациона</a></li>
+                                            <li><a href="">Вопросы и статьи</a></li>
+                                            <li><a href="">Кормление миниатюрных пород</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header_head_nav_menu_first_center_item">
+                                        <a href="products.html">Все об уходе</a>
+                                        <div class="header_head_nav_menu_second_center_submenu_center">
+                                            <div class="header_head_nav_menu_second_center_submenu_center_triangletwo"></div>
+                                        </div>
+                                        <ul class="header_head_nav_menu_second_center_submenutwo">
+                                            <li><a href="">Уход за зубами</a></li>
+                                            <li><a href="">Проверьте зубы собаке</a></li>
+                                            <li><a href="">Здоровье собаки</a></li>
+                                            <li><a href="">Вопросы и статьи</a></li>
+                                            <li><a href="">Посещение ветеринара</a></li>
+                                            <li><a href="">Игра "Зубной дозор"</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header_head_nav_menu_first_center_item">
+                                        <a href="products.html">Воспитание</a>
+                                        <div class="header_head_nav_menu_second_center_submenu_center">
+                                            <div class="header_head_nav_menu_second_center_submenu_center_trianglethree"></div>
+                                        </div>
+                                        <ul class="header_head_nav_menu_second_center_submenuthree">
+                                            <li><a href="">Общий курс</a></li>
+                                            <li><a href="">Дрессировка</a></li>
+                                            <li><a href="">Вопросы и статьи</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header_head_nav_menu_first_center_item">
+                                        <a href="products.html">Хочу собаку</a>
+                                        <div class="header_head_nav_menu_second_center_submenu_center">
+                                            <div class="header_head_nav_menu_second_center_submenu_center_trianglefour"></div>
+                                        </div>
+                                        <ul class="header_head_nav_menu_second_center_submenufour">
+                                            <li><a href="">Подбор породы</a></li>
+                                            <li><a href="">Готовы ли вы стать хозяином</a></li>
+                                            <li><a href="">Подготовка к выбору собаки</a></li>
+                                            <li><a href="">Первые дни с питомцем</a></li>
+                                            <li><a href="">1 "АФ" класс</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header_head_nav_menu_first_center_item">
+                                        <a href="products.html">Щенки</a>
+                                        <div class="header_head_nav_menu_second_center_submenu_center">
+                                            <div class="header_head_nav_menu_second_center_submenu_center_trianglefive"></div>
+                                        </div>
+                                        <ul class="header_head_nav_menu_second_center_submenufive">
+                                            <li><a href="">Подбор клички для щенка</a></li>
+                                            <li><a href="">Стадии роста щенка</a></li>
+                                            <li><a href="">Правильное питание щенка</a></li>
+                                            <li><a href="">Здоровье щенка</a></li>
+                                            <li><a href="">Щемпионат</a></li>
+                                            <li><a href="">Вопросы и статьи</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </nav>
+                    </section>
+                    <nav class="header_head_nav">
+                        <ul class="header_head_nav_menu_responsive">
+                            <li class="header_head_nav_menu_responsive_li_first">
+                                <div class="header_head_nav_menu_responsive_li_first-menu-icon">
+                                    <a href="javascript:void(0);" onclick="myFunction()">
+                                        <i class="fas fa-bars"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_second">
+                                <a href="products.html">
+                                    <img src="img/logotype.jpg" alt="logotype_pedigree">
+                                </a>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_third">
+                                <div class="header_head_nav_menu_responsive_li_third_block">
+                                    <a href="javascript:void(0);" onclick="myFunctionSearch()">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="header_head_nav_menu_responsive_li_first-menu" id="myTopnav">
+                        <ul>
+                            <li class="close">
+                                <div class="close_div"><a href="javascript:void(0);" onclick="myFunction()"><span class="close_span"></span></a></div>
+                            </li>
+                            <li><a href="products.html">Каталог продуктов</a></li>
+                            <li><a href="products.html">Сухие рационы</a></li>
+                            <li><a href="products.html">Влажные рационы</a></li>
+                            <li><a href="products.html">Уход за зубами</a></li>
+                            <li><a href="products.html">Лакомства</a></li>
+                            <li><a href="products.html">Где купить</a></li>
+                            <li><a href="products.html">Отзывы</a></li>
+                            <li><a href="products.html">О PEDIGREE®</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_head_nav_menu_responsive_li_third-search" id="myTopsearch">
+                        <div class="right">
+                            <form action="products.html" class="search">
+                                <input type="text" placeholder="Поиск" required>
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header_head_nav_menu_responsive_li_fourth-search" id="myTopsearchDesktop">
+                        <div class="right">
+                            <form action="products.html" class="search">
+                                <input type="text" placeholder="Поиск" required>
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </header>
+            <main class="main">
+                <section class="center">
+                    <section class="main_img_carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="products.html"><img src="img/pedigree-carusel.jpg" class="d-block w-100" style="width: 100%;" alt="dry ration"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="products.html"><img src="img/pedigree_3.jpg" class="d-block w-100" alt="wet ration"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="products.html"><img src="img/pedigree_4.jpg" class="d-block w-100" alt="delicacies"></a>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="main_img_carousel_responsive">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="products.html"><img src="img/dry_ration.jpg" class="d-block w-100" style="width: 100%;" alt="dry ration"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="products.html"><img src="img/wet_ration.jpg" class="d-block w-100" alt="wet ration"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="products.html"><img src="img/delicacies.jpg" class="d-block w-100" alt="delicacies"></a>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="red_strip">
+                    </section>
+                    <section class="main_products">
+                        <section class="main_center">
+                            <section class="main_center_products">
+                                <section class="main_products_center">
+                                    <article class="main_products_center_product1">
+                                        <a href="">
+                                            <h2 class="main_products_center_product1_h2">Сухие рационы</h2>
+                                            <div class="main_products_center_product1_img">
+                                                <div class="main_products_center_product1_img_hover">
+                                                    <img src="img/dry_ration.jpg" alt="dry ration">
+                                                    <div class="main_products_center_product1_img_hover_p">
+                                                        <p>Особая рецептура для поддержки здоровья вашего питомца.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main_products_center_product1_p">
+                                                <div class="main_products_center_product1_p_text">
+                                                    <p>Особая рецептура для поддержки здоровья вашего питомца.</p>
+                                                </div>
+                                            </div>
+                                            <span class="main_products_center_product1_button">Узнать больше</span>
+                                        </a>
+                                    </article>
+                                    <article class="main_products_center_product2">
+                                        <a href="">
+                                            <h2 class="main_products_center_product2_h2">Влажные рационы</h2>
+                                            <div class="main_products_center_product2_img">
+                                                <div class="main_products_center_product2_img_hover">
+                                                    <img src="img/wet_ration2.jpg" alt="wet ration">
+                                                    <div class="main_products_center_product2_img_hover_p">
+                                                        <p>Мясная порция, обеспечивающая вашей собаке необходимые ей&nbsp;жизненные силы.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main_products_center_product2_p">
+                                                <div class="main_products_center_product2_p_text">
+                                                    <p>Мясная порция, обеспечивающая вашей собаке необходимые ей&nbsp;жизненные силы.</p>
+                                                </div>
+                                            </div>
+                                            <span class="main_products_center_product2_button">Узнать больше</span>
+                                        </a>
+                                    </article>
+                                    <article class="main_products_center_product3">
+                                        <a href="">
+                                            <h2 class="main_products_center_product3_h2">Лакомства</h2>
+                                            <div class="main_products_center_product3_img">
+                                                <div class="main_products_center_product3_img_hover">
+                                                    <img src="img/delicacies.jpg" alt="delicacies">
+                                                    <div class="main_products_center_product3_img_hover_p">
+                                                        <p>Лакомства PEDIGREE&nbsp;&mdash; это вкусный и&nbsp;полезный способ сблизиться с&nbsp;собакой.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main_products_center_product3_p">
+                                                <div class="main_products_center_product3_p_text">
+                                                    <p>Лакомства PEDIGREE&nbsp;&mdash; это вкусный и&nbsp;полезный способ сблизиться с&nbsp;собакой.</p>
+                                                </div>
+                                            </div>
+                                            <span class="main_products_center_product3_button">Узнать больше</span>
+                                        </a>
+                                    </article>
+                                </section>
+                                <section class="main_buy">
+                                    <article class="main_buy_where">
+                                        <h3>Где купить?</h3>
+                                        <p>Посетите сайты наших партнеров, чтобы купить рационы Pedigree<sup class="reg">&reg;</sup> для своего питомца онлайн.</p>
+                                    </article>
+                                    <section class="main_buy_basket">
+                                        <div class="main_buy_basket_img">
+                                            <img src="img/buy-online-cart.png" alt="image">
+                                        </div>
+                                    </section>
+                                    <article class="main_buy_img">
+                                        <div class="main_buy_img_partners"><a href="https://lubimchik.ru/search/?q=pedigree" target="_blank"><img src="img/bo1.png" alt=""></a></div>
+                                        <div class="main_buy_img_partners"><a href="https://www.petshop.ru/search/?q=pedigree" target="_blank"><img src="img/bo2.png" alt=""></a></div>
+                                        <div class="main_buy_img_partners"><a href="https://www.ozon.ru/?context=search&text=pedigree&group=div_animals" target="_blank"><img src="img/bo3.png" alt=""></a></div>
+                                        <div class="main_buy_img_partners"><a href="https://www.mirkorma.ru/search/?searchid=2298389&text=pedigree&web=0" target="_blank"><img src="img/bo4.png" alt=""></a></div>
+                                        <div class="main_buy_img_partners"><a href="https://zoomag.ru/products.html?keywords=pedigree" target="_blank"><img src="img/bo5.png" alt=""></a></div>
+                                        <div class="main_buy_img_partners"><a href="https://www.okeydostavka.ru/webapp/wcs/stores/servlet/SearchDisplay?categoryId=&storeId=10151&catalogId=12051&langId=-20&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=72&searchTerm=pedigree" target="_blank"><img src="img/bo6.png" alt=""></a></div>
+                                    </article>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="main_bottom_img">
+                        <img src="img/girl-with-dog.jpg" alt="girl-with-dog">
+                    </section>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <section class="footer_section">
+                <section class="footer_section_center">
+                    <article class="footer_section_one">
+                        <div class="footer_section_one_left">
+                            <ul>
+                                <li><a href="">
+                                        <h4>О PEDIGREE®</h4>
+                                    </a></li>
+                                <li><a href="">Задать вопрос по&nbsp;продукту</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">
+                                        <h4>Каталог продуктов</h4>
+                                    </a></li>
+                                <li><a href="">Сухой рацион</a></li>
+                                <li><a href="">Влажный рацион</a></li>
+                                <li><a href="">Уход за&nbsp;зубами</a></li>
+                                <li><a href="">Лакомства</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">
+                                        <h4>Хочу собаку</h4>
+                                    </a></li>
+                                <li><a href="">Подбор породы</a></li>
+                                <li><a href="">Подготовка к&nbsp;выбору собаки</a></li>
+                                <li><a href="">Первые дни с&nbsp;питомцем</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_section_one_right">
+                            <a href="https://www.youtube.com/user/PedigreeVideo" target="_blank">
+                                <div class="footer_section_one_right_icon"></div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="footer_section_two">
+                        <div class="footer_section_two_information">
+                            <ul>
+                                <li><a href="https://www.mars.com/global/policies/privacy/pp-russian" target="_blank">
+                                        <h5>Конфиденциальность</h5>
+                                    </a></li>
+                                <li><a href="https://github.com/ProgProgrammer" target="_blank">
+                                        <h5>Владелец сайта</h5>
+                                    </a></li>
+                                <li><a href="https://www.mars.com/global/policies/legal/ld-russian" target="_blank">
+                                        <h5>Юридические условия</h5>
+                                    </a></li>
+                                <li><a href="https://www.mars.com/global/policies/cookie/cn-russian" target="_blank">
+                                        <h5>Использование cookies</h5>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <section class="footer_section_three">
+                        <section class="footer_section_three_copy">
+                            <article>
+                                <h6>&copy;&nbsp;2019&nbsp;ProgProgrammer. Все права защищены.</h6>
+                            </article>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
