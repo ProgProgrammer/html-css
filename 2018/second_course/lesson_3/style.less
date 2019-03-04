@@ -519,6 +519,13 @@ footer {
                                 text-transform: uppercase;
                                 color: black;
                                 font-weight: bold;
+                                
+                                & h1 {
+                                    font-size: 16px !important;
+                                    margin-bottom: 0 !important;
+                                    font-weight: bold;
+                                    line-height: 24px;
+                                }
                             }
 
                             & li a:hover,
@@ -583,12 +590,14 @@ footer {
                         margin-left: auto;
                         margin-right: auto;
                         padding: 7.5px;
-                        display: none;
+                        display: flex;
+                        visibility: hidden;
                         flex-direction: column;
                         width: 250px;
                         position: absolute;
                         background: rgb(255, 255, 255);
                         border-radius: 6px;
+                        transition: 0.03s;
 
                         & li {
                             margin-top: 7.5px;
@@ -611,7 +620,9 @@ footer {
                         }
 
                         &_center {
-                            display: none;
+                            display: flex;
+                            visibility: hidden;
+                            transition: 0.03s;
                             width: 100%;
                             top: 16px;
                             position: absolute;
@@ -730,12 +741,64 @@ footer {
                         height: 60px;
                         display: flex;
                         flex-direction: column;
-                        /*position: relative;*/
+                        position: relative;
                         line-height: 60px;
                         list-style-type: none;
 
+                        &_arrow {
+                            width: 32px;
+                            height: 60px;
+                            font-size: 16px;
+                            right: 0;
+                            color: white;
+                            border-right: 1px solid white;
+                            border-left: 1px solid white;
+                            position: absolute;
+
+                            & button {
+                                color: white;
+                                width: 32px;
+                                height: 60px;
+                                background: rgba(251, 187, 1, 0.0);
+                                border: none;
+                                border-right: 1px solid white;
+                                border-left: 1px solid white;
+                            }
+
+                            & button:focus {
+                                outline: none;
+                            }
+                        }
+
+                        &_arrow:before {
+                            content: "\f107";
+                            font-family: Font Awesome\ 5 Free;
+                            color: white;
+                            font-weight: 900;
+                        }
+
+                        &_arrow.bottom {
+                            width: 32px;
+                            height: 60px;
+                            font-size: 16px;
+                            right: 0;
+                            color: white;
+                            border: 1px solid white;
+                            border-left: 1.5px solid white;
+                            position: absolute;
+                            background: rgb(251, 187, 1);
+                            z-index: 4;
+                        }
+
+                        &_arrow.bottom:before {
+                            content: "\f106";
+                            font-family: Font Awesome\ 5 Free;
+                            color: white;
+                            font-weight: 900;
+                        }
+
                         & li {
-                            width: 460%;
+                            width: 100%;
                             line-height: 60px;
                             display: flex;
                             justify-content: center;
@@ -751,6 +814,7 @@ footer {
                         & li a {
                             color: white;
                             text-decoration: none;
+                            font-weight: 900;
                         }
                     }
                 }
@@ -792,31 +856,197 @@ footer {
 
 .header_head_nav_menu_first_center_item:hover .header_head_nav_menu_second_center_submenu {
     display: flex;
+    visibility: visible;
+    transition-delay: .0s;
 }
 
 .header_head_nav_menu_first_center_item:hover .header_head_nav_menu_second_center_submenutwo {
     display: flex;
+    visibility: visible;
+    transition-delay: .0s;
 }
 
 .header_head_nav_menu_first_center_item:hover .header_head_nav_menu_second_center_submenuthree {
     display: flex;
+    visibility: visible;
+    transition-delay: .0s;
 }
 
 .header_head_nav_menu_first_center_item:hover .header_head_nav_menu_second_center_submenufour {
     display: flex;
+    visibility: visible;
+    transition-delay: .0s;
 }
 
 .header_head_nav_menu_first_center_item:hover .header_head_nav_menu_second_center_submenufive {
     display: flex;
+    visibility: visible;
+    /*transition-delay: .0s;*/
 }
 
 .header_head_nav_menu_first_center_item:hover .header_head_nav_menu_second_center_submenu_center {
     display: flex;
+    visibility: visible;
+    /*transition-delay: .0s;*/
 }
 
 .header_head_nav_menu_responsive_li_first-menu {
     display: none;
+
+    &_ul {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 3;
+        overflow-y: auto;
+        background: rgb(251, 187, 1);
+        list-style-type: none;
+
+        & li {
+            clear: both;
+            position: relative;
+            
+            & a {
+                width: 70%;
+                
+                & h1 {
+                    font-size: 16px !important;
+                    margin-bottom: 0 !important;
+                    font-weight: bold;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
 }
+
+.submenu_responsive,
+.submenu_responsive2,
+.submenu_responsive3,
+.submenu_responsive4,
+.submenu_responsive5,
+.submenu_responsive6 {
+    display: none;
+}
+
+.submenu_responsive.on,
+.submenu_responsive2.on,
+.submenu_responsive3.on,
+.submenu_responsive4.on,
+.submenu_responsive5.on,
+.submenu_responsive6.on {
+    /*padding: 0;*/
+    /*height: 0;*/
+    top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    background: rgb(186, 14, 13);
+    /*transform: translateY(150px);*/
+    transition: .5s linear;
+
+    & li {
+        width: 100%;
+        line-height: 60px;
+        display: flex;
+        position: fixed;
+        list-style-type: none;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        background: rgb(186, 14, 13);
+
+        & a {
+            text-align: center;
+            color: white;
+            font-weight: 900;
+            margin: 0 10px 0 10px;
+            width: 80%;
+        }
+
+        & a:hover,
+        & a:active {
+            color: orange !important;
+        }
+    }
+}
+
+.submenu_responsive2.on {
+    top: 60px;
+}
+
+.submenu_responsive3.on {
+    top: 60px;
+}
+
+.submenu_responsive4.on {
+    top: 60px;
+}
+
+.submenu_responsive5.on {
+    top: 60px;
+}
+
+.submenu_responsive6.on {
+    top: 60px;
+}
+
+.submenu_li {
+    line-height: 20px !important;
+}
+
+.header_head_nav_menu_responsive_li_first-menu_margin_top,
+.header_head_nav_menu_responsive_li_first-menu_margin_top2,
+.header_head_nav_menu_responsive_li_first-menu_margin_top3,
+.header_head_nav_menu_responsive_li_first-menu_margin_top4,
+.header_head_nav_menu_responsive_li_first-menu_margin_top5 {
+    margin-top: 0px;
+    
+    & li a {
+        width: 80%;
+    }
+}
+
+.header_head_nav_menu_responsive_li_first-menu_margin_top.bottom {
+    margin-top: 240px;
+}
+
+.header_head_nav_menu_responsive_li_first-menu_margin_top2.bottom {
+    margin-top: 300px;
+}
+
+.header_head_nav_menu_responsive_li_first-menu_margin_top3.bottom {
+    margin-top: 360px;
+}
+
+.header_head_nav_menu_responsive_li_first-menu_margin_top4.bottom {
+    margin-top: 180px;
+}
+
+.header_head_nav_menu_responsive_li_first-menu_margin_top5.bottom {
+    margin-top: 300px;
+}
+
+/*.header_head_nav_menu_responsive_li_first-menu_arrow_button {
+    display: none;
+}
+
+.header_head_nav_menu_responsive_li_first-menu_arrow_button.bottom {
+    display: flex;
+    color: white;
+    width: 32px;
+    height: 60px;
+    background: rgba(251, 187, 1, 0.0);
+    border: none;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    margin-top: -60px;
+    position: fixed;
+    z-index: 5;
+}*/
 
 .header_head_nav_menu_responsive_li_first-menu-icon {
     display: flex;
@@ -855,23 +1085,41 @@ footer {
 
 .header_head_nav_menu_responsive_li_first-menu.responsive {
     display: flex;
-    flex-direction: column;
+    /*justify-content: center;*/
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     /*margin-top: 60px;*/
-    position: fixed;
+    /*position: fixed;*/
     z-index: 3;
+
+    & ul {
+        /*position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;*/
+        /*z-index: 4;*/
+    }
 
     & li {
         width: 100%;
         line-height: 60px;
         height: 60px;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         opacity: 1 !important;
         text-transform: uppercase;
+        position: relative;
         list-style-type: none;
+        /*border-right: 1px solid white;*/
 
         & a {
             color: white;
+            font-weight: 900;
+            width: 80%;
         }
 
         & a:hover,
@@ -885,17 +1133,29 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 4;
+    opacity: 1 !important;
+
+    &_center {
+        width: 90%;
+
+    }
 }
 
 .close_div {
-    width: 90%;
+    width: 10%;
     height: 60px;
-    display: flex;
+    /*display: flex;*/
     padding: 14px 0 0 8.7px;
     text-align: left;
-    position: relative;
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
+    z-index: 4;
+    /*left: 15px;*/
 
     & a {
         width: 32px;
@@ -904,9 +1164,11 @@ footer {
 }
 
 .close_span {
-    display: flex;
+    /*display: flex;*/
     width: 32px;
     height: 32px;
+    /*position: absolute;*/
+    /*z-index: 4;*/
 }
 
 .close_span:before,
@@ -916,8 +1178,8 @@ footer {
     width: 8px;
     height: 32px;
     border-radius: 4px;
-    color: white;
     background-color: white;
+    /*z-index: 4;*/
 }
 
 .close_span:before {
@@ -1519,7 +1781,7 @@ footer {
     .header_head_nav_menu {
         width: 100%;
     }
-    
+
     .header_head_nav_menu_responsive_li_fourth-search.responsive {
         width: 100%;
     }
@@ -1575,7 +1837,7 @@ footer {
     .main_products_center_product1_h2,
     .main_products_center_product2_h2,
     .main_products_center_product3_h2 {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .main_products_center_product1_img_hover_p,
@@ -1583,7 +1845,7 @@ footer {
     .main_products_center_product3_img_hover_p {
 
         & p {
-            font-size: 14px;
+            font-size: 14px !important;
         }
     }
 
@@ -1601,7 +1863,7 @@ footer {
     .main_products_center_product1_button,
     .main_products_center_product2_button,
     .main_products_center_product3_button {
-        font-size: 14px
+        font-size: 14px !important;
     }
 
     .main_products_center_product1_button:hover,
@@ -1627,11 +1889,11 @@ footer {
             }
 
             & h3 {
-                font-size: 18px;
+                font-size: 18px !important;
             }
 
             & p {
-                font-size: 14px;
+                font-size: 14px !important;
             }
 
         }
@@ -1642,19 +1904,19 @@ footer {
     }
 
     .footer_section_one_left ul li a h4 {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     .footer_section_one_left ul li a {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .footer_section_two_information ul li a h5 {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .footer_section_three_copy article h6 {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 }
 
@@ -1695,6 +1957,10 @@ footer {
 }
 
 @media all and (max-width: 767px) {
+    .header_head_nav_menu_responsive_li_first-menu.responsive li a {
+        width: 70%;
+    }
+    
     .main_img_carousel {
         display: none;
     }
@@ -1819,7 +2085,7 @@ footer {
     .main_products_center_product1_h2,
     .main_products_center_product2_h2,
     .main_products_center_product3_h2 {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     .main_products_center_product1_img_hover_p,
@@ -1827,50 +2093,50 @@ footer {
     .main_products_center_product3_img_hover_p {
 
         & p {
-            font-size: 12px;
+            font-size: 12px !important;
         }
     }
 
     .main_products_center_product1_button,
     .main_products_center_product2_button,
     .main_products_center_product3_button {
-        font-size: 12px
+        font-size: 12px !important;
     }
 
     .main_buy {
         &_where {
 
             & h3 {
-                font-size: 16px;
+                font-size: 16px !important;
             }
 
             & p {
-                font-size: 12px;
+                font-size: 12px !important;
             }
 
         }
     }
 
     .footer_section_one_left ul li a h4 {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .footer_section_one_left ul li a {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     .footer_section_two_information ul li a h5 {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     .footer_section_three_copy article h6 {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     .main_products_center_product1_p_text,
     .main_products_center_product2_p_text,
     .main_products_center_product3_p_text {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 }
 

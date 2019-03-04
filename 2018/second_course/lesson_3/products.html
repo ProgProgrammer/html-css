@@ -16,6 +16,12 @@
     <script src="responsive-menu.js"></script>
     <script src="responsive-search.js"></script>
     <script src="menu-desktop-search.js"></script>
+    <script src="responsive_submenu_sort_down.js"></script>
+    <script src="responsive_submenu_sort_down2.js"></script>
+    <script src="responsive_submenu_sort_down3.js"></script>
+    <script src="responsive_submenu_sort_down4.js"></script>
+    <script src="responsive_submenu_sort_down5.js"></script>
+    <script src="responsive_submenu_sort_down6.js"></script>
 </head>
 
 
@@ -34,7 +40,7 @@
                                             <li><a href="products.html">Каталог продуктов</a></li>
                                             <li><a href="#">Где купить</a></li>
                                             <li><a href="#">Отзывы</a></li>
-                                            <li><a href="#">О PEDIGREE®</a></li>
+                                            <li><a href="#"><h1>О PEDIGREE®</h1></a></li>
                                             <li><a href="javascript:void(0);" onclick="myFunctionDesktopSearch()"><i class="fas fa-search"></i></a></li>
                                         </ul>
                                     </li>
@@ -136,18 +142,112 @@
                         </ul>
                     </nav>
                     <nav class="header_head_nav_menu_responsive_li_first-menu" id="myTopnav">
-                        <ul>
-                            <li class="close">
-                                <div class="close_div"><a href="javascript:void(0);" onclick="myFunction()"><span class="close_span"></span></a></div>
+                        <ul class="header_head_nav_menu_responsive_li_first-menu_ul">
+                            <div class="close">
+                                <div class="close_center">
+                                    <div class="close_div"><a href="javascript:void(0);" onclick="myFunction()"><span class="close_span"></span></a></div>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="products.html">
+                                    Каталог продуктов
+                                </a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive" id="myTopSubmenu">
+                                    <li><a href="products.html">Сухие рационы</a></li>
+                                    <li><a href="products.html">Влажные рационы</a></li>
+                                    <li><a href="products.html">Уход за зубами</a></li>
+                                    <li><a href="products.html">Лакомства</a></li>
+                                </ul>
                             </li>
-                            <li><a href="products.html">Каталог продуктов</a></li>
-                            <li><a href="products.html">Сухие рационы</a></li>
-                            <li><a href="products.html">Влажные рационы</a></li>
-                            <li><a href="products.html">Уход за зубами</a></li>
-                            <li><a href="products.html">Лакомства</a></li>
-                            <li><a href="products.html">Где купить</a></li>
+                            <li class="header_head_nav_menu_responsive_li_first-menu_margin_top" id="myTopSubmenuMargin"><a href="products.html">Где купить</a></li>
                             <li><a href="products.html">Отзывы</a></li>
-                            <li><a href="products.html">О PEDIGREE®</a></li>
+                            <li><a href="products.html"><h1>О PEDIGREE®</h1></a></li>
+                            <li>
+                                <a href="products.html">Кормление</a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown2()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow2">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive2" id="myTopSubmenu2">
+                                    <li><a href="">Советы по кормлению</a></li>
+                                    <li><a href="">Правила кормления</a></li>
+                                    <li><a href="">Подбор рациона</a></li>
+                                    <li><a href="">Вопросы и статьи</a></li>
+                                    <li class="submenu_li"><a href="">Кормление миниатюрных пород</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_first-menu_margin_top2" id="myTopSubmenuMargin2">
+                                <a href="products.html">Все об уходе</a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown3()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow3">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive3" id="myTopSubmenu3">
+                                    <li><a href="">Уход за зубами</a></li>
+                                    <li><a href="">Проверьте зубы собаке</a></li>
+                                    <li><a href="">Здоровье собаки</a></li>
+                                    <li><a href="">Вопросы и статьи</a></li>
+                                    <li><a href="">Посещение ветеринара</a></li>
+                                    <li><a href="">Игра "Зубной дозор"</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_first-menu_margin_top3" id="myTopSubmenuMargin3">
+                                <a href="products.html">Воспитание</a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown4()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow4">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive4" id="myTopSubmenu4">
+                                    <li><a href="">Общий курс</a></li>
+                                    <li><a href="">Дрессировка</a></li>
+                                    <li><a href="">Вопросы и статьи</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_first-menu_margin_top4" id="myTopSubmenuMargin4">
+                                <a href="products.html">Хочу собаку</a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown5()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow5">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive5" id="myTopSubmenu5">
+                                    <li><a href="">Подбор породы</a></li>
+                                    <li><a href="">Готовы ли вы стать хозяином</a></li>
+                                    <li><a href="">Подготовка к выбору собаки</a></li>
+                                    <li><a href="">Первые дни с питомцем</a></li>
+                                    <li><a href="">1 "АФ" класс</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_first-menu_margin_top5" id="myTopSubmenuMargin5">
+                                <a href="products.html">Щенки</a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown6()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow6">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive6" id="myTopSubmenu6">
+                                    <li><a href="">Подбор клички для щенка</a></li>
+                                    <li><a href="">Стадии роста щенка</a></li>
+                                    <li><a href="">Правильное питание щенка</a></li>
+                                    <li><a href="">Здоровье щенка</a></li>
+                                    <li><a href="">Щемпионат</a></li>
+                                    <li><a href="">Вопросы и статьи</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div class="header_head_nav_menu_responsive_li_third-search" id="myTopsearch">

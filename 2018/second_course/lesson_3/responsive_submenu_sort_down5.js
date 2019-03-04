@@ -1,11 +1,19 @@
-function myFunction() {
-    var x = document.getElementById("myTopnav");
+function myFunctionSortDown5() {
+    var x = document.getElementById("myTopSubmenu5");
 
-    x.classList.toggle("responsive");
+    x.classList.toggle("on");
 
-    
-    /* Во время закрытия меню закрывает все открытые подменю. */
-    
+    var y = document.getElementById("myTopSubmenuMargin5");
+
+    y.classList.toggle("bottom");
+
+    var a = document.getElementById("myTopSubmenuArrow5");
+
+    a.classList.toggle("bottom");
+
+
+    /* Закрытие остальных выпадающих меню. */
+
 
     var x = document.getElementById("myTopSubmenu");
 
@@ -55,19 +63,6 @@ function myFunction() {
     y.classList.remove("bottom");
 
     var a = document.getElementById("myTopSubmenuArrow4");
-
-    a.classList.remove("bottom");
-
-
-    var x = document.getElementById("myTopSubmenu5");
-
-    x.classList.remove("on");
-
-    var y = document.getElementById("myTopSubmenuMargin5");
-
-    y.classList.remove("bottom");
-
-    var a = document.getElementById("myTopSubmenuArrow5");
 
     a.classList.remove("bottom");
 
