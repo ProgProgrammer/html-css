@@ -528,7 +528,7 @@ footer {
                     margin-right: auto;
                 }
             }
-            
+
             &_red {
                 width: 100%;
                 height: 70px;
@@ -975,6 +975,7 @@ footer {
     &_ul {
         width: 100%;
         height: 100vh;
+        left: 0;
         position: fixed;
         z-index: 3;
         overflow-y: auto;
@@ -2409,6 +2410,566 @@ footer {
     }
 }
 
+/* CATALOG_FOOD.HTML */
+
+.main_catalog_food {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 15px 0;
+}
+
+.main_center_catalog_food {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &_block1 {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        background: rgb(255, 177, 14);
+        margin-bottom: 10px;
+        padding: 0 5%;
+
+        & h6 {
+            line-height: 20px;
+            font-size: 14px;
+            margin-bottom: 0 !important;
+            margin-right: 10px;
+        }
+
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+
+        & a h6 {
+            margin-right: 10px;
+        }
+
+        & a h6:hover,
+        & a h6:active {
+            text-decoration: underline;
+        }
+
+        & a h6:active {
+            color: red;
+        }
+
+        & span {
+            margin-right: 10px;
+
+            & i {
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+        &_span {
+            margin-right: 10px;
+
+            & i {
+                font-size: 14px;
+                font-weight: 900;
+            }
+        }
+
+        &_bold_font {
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+        }
+
+        &_bold_font:hover,
+        &_bold_font:active {
+            text-decoration: underline;
+        }
+    }
+
+    &_block2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        &_center {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /*padding: 0 5.555555555555555%;*/
+            position: relative;
+
+            &_img {
+                width: 100%;
+                height: 270px;
+                display: flex;
+                flex-direction: column;
+                background: url(img/catalog/food/background.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                &_h2 {
+                    width: 100%;
+                    height: 270px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    &_center {
+                        display: flex;
+                        text-align: center;
+
+                        & h2 {
+                            font-size: 50px;
+                            font-weight: 900;
+                            font-family: serif;
+                            color: white;
+                            text-shadow: 1px 1px 1px black;
+                            margin-bottom: 0px !important;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                &_i {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+
+                    &_center {
+                        width: 62.5px;
+                        display: flex;
+                        position: absolute;
+                        top: -25px;
+
+                        & i {
+                            font-size: 50px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &_block3 {
+        margin: 30px 0 30px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        &_center {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0 5%;
+            text-align: center;
+
+            & h3 {
+                font-size: 22px;
+                color: white;
+                font-weight: 500;
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+
+    &_block4 {
+        margin: 30px 0 30px 0;
+        width: 100%;
+        padding: 0 5%;
+        justify-content: center;
+
+        &_center {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+
+            & a {
+                /*width: 100%;*/
+                display: flex;
+                /*height: 30px;*/
+                background: rgb(186, 14, 13);
+                text-decoration: none;
+            }
+
+            &_accordion {
+                width: 100%;
+                height: 30px;
+                position: relative;
+                text-align: center;
+
+                & h3 {
+                    text-decoration: none;
+                    margin-bottom: 0px !important;
+                    line-height: 30px;
+                    color: white;
+                    font-weight: 900;
+                }
+
+                &_arrow {
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 0px;
+                    right: 10px;
+                    background: rgb(186, 14, 13);
+                    border: none;
+                    cursor: pointer;
+                }
+
+                &_arrow:before {
+                    content: "\f107";
+                    font-size: 30px;
+                    font-family: Font Awesome\ 5 Free;
+                    font-weight: 600;
+                    color: white;
+                }
+
+                &_arrow.bottom {
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 0px;
+                    right: 10px;
+                    background: rgb(186, 14, 13);
+                    border: none;
+                    cursor: pointer;
+                }
+
+                &_arrow.bottom:before {
+                    content: "\f106";
+                    font-size: 30px;
+                    font-family: Font Awesome\ 5 Free;
+                    font-weight: 600;
+                    color: rgb(251, 187, 1);
+                }
+
+                &_arrow:focus,
+                &_arrow.bottom:focus {
+                    outline: none;
+                }
+            }
+
+            &_close {
+                display: none;
+                justify-content: center;
+                width: 100%;
+                margin-top: -150px;
+                padding: 20px 10%;
+                transition: .3s linear;
+
+                &_accordion {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    border-bottom: 1px solid rgb(251, 187, 1);
+
+                    &_h4 {
+                        display: flex;
+                        flex-direction: column;
+
+                        & h4 {
+                            font-size: 18px;
+                            font-weight: 900;
+                            margin-bottom: 4px !important;
+                        }
+
+                        &_checks {
+                            display: flex;
+                            /*flex-direction: column;*/
+                        }
+
+                        &_button {
+                            margin: 24px 0;
+                            display: flex;
+                            justify-content: center;
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            &_cancel {
+                                display: flex;
+                                padding: 0 30px;
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 40px;
+                                border: 2px solid rgb(255, 177, 14);
+                                border-radius: 40px;
+                                color: black;
+                                background: rgba(0, 0, 0, 0.0);
+                            }
+
+                            &_cancel:hover,
+                            &_cancel:active {
+                                background: rgb(255, 177, 14);
+                                color: white;
+                            }
+
+                            &_cancel:active {
+                                color: red;
+                            }
+
+                            &_cancel:focus {
+                                outline: none;
+                            }
+                        }
+
+                        & a {
+                            margin-top: 6px;
+                            display: flex;
+                            background-color: white;
+
+                            & span {
+                                width: 20px;
+                                height: 20px;
+                                border: 2px solid rgb(186, 14, 13);
+                                margin-right: 5px;
+                            }
+
+                            & p {
+                                font-size: 16px;
+                                color: black;
+                            }
+
+                            /*& input[type="checkbox"] {
+                                width: 20px;
+                                height: 20px;
+                                border: 2px solid red;
+                                color: white;
+                                background-color: white;
+                                margin-right: 5px;
+                            }
+                            
+                            & label {
+                                color: black;
+                            }*/
+                        }
+
+                        &_dry_ration_span1_responsive,
+                        &_wet_ration_span2_responsive,
+                        &_teeth_care_span3_responsive,
+                        &_delicacies_span4_responsive {
+                            display: none !important;
+
+                            & p {
+                                font-size: 16px;
+                                line-height: 25px;
+                                color: black;
+                            }
+                        }
+
+                        &_dry_ration_span1.on {
+                            background: rgb(186, 14, 13);
+                        }
+
+                        &_wet_ration_span2.on {
+                            background: rgb(186, 14, 13);
+                        }
+
+                        &_teeth_care_span3.on {
+                            background: rgb(186, 14, 13);
+                        }
+
+                        &_delicacies_span4.on {
+                            background: rgb(186, 14, 13);
+                        }
+
+                        /*&_cancel {
+                            margin: 24px 0;
+                            font-size: 16px;
+                            /*display: flex;*/
+                            /*line-height: 40px;
+                            color: rgb(251, 187, 1);
+                            border-radius: 30px;
+                            border: 2px solid rgb(251, 187, 1);
+                            background: white;
+                            text-align: center;
+                            font-weight: 900;
+                            cursor: pointer;
+                        }
+
+                        &_cancel:hover,
+                        &_cancel:active {
+                            background: rgb(251, 187, 1);
+                            color: white;
+                        }
+
+                        &_cancel p {
+                            padding: 0 30px;
+                        }
+
+                        &_cancel p:hover {
+                            color: white;
+                        }
+
+                        &_cancel p:active {
+                            color: rgb(186, 14, 13);
+                        }
+
+                        &_cancel:focus {
+                            outline: none;
+                        }*/
+                    }
+                }
+            }
+
+            &_close.open {
+                display: flex;
+                transition: .3s linear;
+                margin-top: 0px;
+            }
+
+            &_products {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background-color: white !important;
+                padding: 20px 2%;
+
+                &_dry_ration.off,
+                &_wet_ration.off,
+                &_teeth_care.off,
+                &_delicacies.off {
+                    display: none;
+                }
+
+                &_dry_ration,
+                &_wet_ration,
+                &_teeth_care,
+                &_delicacies {
+                    width: 20%;
+                    margin: 20px 20px 30px 20px;
+                    background-color: white !important;
+
+                    & a {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white !important;
+                    }
+                }
+
+                &_img {
+                    width: 180px;
+                    height: 180px;
+                    background: white;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    & img {
+                        width: 180px;
+                        height: 180px;
+                        transition: .2s linear;
+                    }
+
+                    & img:hover,
+                    & img:active {
+                        transform: scale(1.1);
+                        transition: .2s linear;
+                    }
+                }
+
+                &_text {
+                    height: 100%;
+                    background-color: white;
+                    text-align: center;
+
+                    & h5 {
+                        min-height: calc(100% - 40px);
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: black;
+                        margin-bottom: 0px !important;
+                    }
+
+                    & h5:active {
+                        color: red;
+                    }
+
+                    &_button {
+                        margin: 20px 0 10px 0;
+                        display: flex;
+                        justify-content: center;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        &_p {
+                            display: flex;
+                            padding: 0 20px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 34px;
+                            border: 2px solid rgb(255, 177, 14);
+                            border-radius: 18px;
+                            color: rgb(255, 177, 14);
+                            background: rgba(0, 0, 0, 0.0);
+                        }
+
+                        &_p:hover,
+                        &_p:active {
+                            background: rgb(255, 177, 14);
+                            color: white;
+                        }
+
+                        &_p:active {
+                            color: red;
+                        }
+
+                        &_p:focus {
+                            outline: none;
+                        }
+                    }
+
+                    &_button:focus {
+                        outline: none;
+                    }
+
+                    /*&_button {
+                        margin-top: 20px;
+                        border: 2px solid rgb(251, 187, 1);
+                        border-radius: 40px;
+                        cursor: pointer;
+                        background: white;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        & p {
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 40px;
+                            padding: 0 20px;
+                            color: rgb(251, 187, 1);
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        & p:hover,
+                        & p:active {
+                            color: white;
+                        }
+
+                        & p:active {
+                            color: rgb(186, 14, 13);
+                        }
+                    }
+
+                    &_button:hover,
+                    &_button:active {
+                        background: rgb(251, 187, 1);
+                    }*/
+                }
+            }
+        }
+    }
+}
 
 /* MEDIA-ЗАПРОСЫ */
 
@@ -2537,6 +3098,12 @@ footer {
     }
 }
 
+@media all and (min-width: 1025px) {
+    .main_center_catalog_food_block4_center_close_accordion_h4_checks {
+        flex-direction: column;
+    }
+}
+
 @media all and (min-width: 768px) {
     .footer_section_two {
         margin-top: 20px;
@@ -2623,6 +3190,10 @@ footer {
         &_img {
             width: 90%;
         }
+    }
+
+    .main_catalog_food {
+        margin: 0 0 15px 0;
     }
 
     .main_center_catalog_block1 {
@@ -2719,6 +3290,132 @@ footer {
         }
     }
 
+    .main_center_catalog_food_block1 {
+        display: none;
+    }
+
+    .main_center_catalog_food_block2_center_img_h2 h2 {
+        font-size: 35px;
+    }
+
+    .main_center_catalog_food_block3_center h3 {
+        font-size: 20px;
+    }
+
+    .main_center_catalog_food_block4 {
+        padding: 0 2.5%;
+    }
+
+    .main_center_catalog_food_block4_center_close_accordion_h4 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main_center_catalog_food_block4_center_close_accordion_h4 a {
+        justify-content: space-around;
+    }
+
+    .main_center_catalog_food_block4_center_close_accordion_h4_checks {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main_center_catalog_food_block4_center_close_accordion_h4_checks a span {
+        display: none;
+    }
+
+    .main_center_catalog_food_block4_center_close_accordion_h4_checks a p {
+        display: none;
+    }
+
+    .main_center_catalog_food_block4_center_close_accordion_h4_dry_ration_span1,
+    .main_center_catalog_food_block4_center_close_accordion_h4_wet_ration_span2,
+    .main_center_catalog_food_block4_center_close_accordion_h4_teeth_care_span3,
+    .main_center_catalog_food_block4_center_close_accordion_h4_delicacies_span4 {
+        display: none;
+    }
+
+    .main_center_catalog_food_block4_center_close_accordion_h4 a span {
+        display: none;
+    }
+
+    .main_center_catalog_food_block4_center_close_accordion_h4_dry_ration_span1_responsive,
+    .main_center_catalog_food_block4_center_close_accordion_h4_wet_ration_span2_responsive,
+    .main_center_catalog_food_block4_center_close_accordion_h4_teeth_care_span3_responsive,
+    .main_center_catalog_food_block4_center_close_accordion_h4_delicacies_span4_responsive {
+        display: block !important;
+        min-width: 150px !important;
+        height: 25px !important;
+        border: 2px solid rgb(186, 14, 13) !important;
+        margin: 10px 5px !important;
+        padding: 0 5px;
+        text-align: center;
+        vertical-align: middle;
+
+        & p {
+            display: block !important;
+            font-size: 15px;
+            line-height: 23px;
+            color: black;
+        }
+    }
+
+    .main_center_catalog_food_block4_center_close_accordion_h4_dry_ration_span1_responsive.on,
+    .main_center_catalog_food_block4_center_close_accordion_h4_wet_ration_span2_responsive.on,
+    .main_center_catalog_food_block4_center_close_accordion_h4_teeth_care_span3_responsive.on,
+    .main_center_catalog_food_block4_center_close_accordion_h4_delicacies_span4_responsive.on {
+        background: rgb(186, 14, 13);
+        vertical-align: middle;
+
+        & p {
+            color: white;
+        }
+    }
+    
+    .main_center_catalog_food_block4_center_close_accordion_h4_button_cancel:hover, 
+    .main_center_catalog_food_block4_center_close_accordion_h4_button_cancel:active {
+        color: red;
+    }
+
+    .main_center_catalog_food_block4_center_products_dry_ration,
+    .main_center_catalog_food_block4_center_products_wet_ration,
+    .main_center_catalog_food_block4_center_products_teeth_care,
+    .main_center_catalog_food_block4_center_products_delicacies {
+        width: 45%;
+        margin-bottom: 40px;
+    }
+
+    .main_center_catalog_food_block4_center_products_text h5 {
+        font-size: 15px;
+    }
+
+    .main_center_catalog_food_block4_center_products_text_button {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 0;
+        border-radius: 35px;
+    }
+
+    .main_center_catalog_food_block4_center_products_text_button_p {
+        font-size: 15px;
+        line-height: 31px;
+    }
+
+    .main_center_catalog_food_block4_center_products_img img:hover,
+    .main_center_catalog_food_block4_center_products_img img:active {
+        transform: scale(1);
+    }
+
+    .main_center_catalog_food_block4_center_products_text_button_p:hover,
+    .main_center_catalog_food_block4_center_products_text_button_p:active {
+        color: #ba0e0d;
+    }
+
+    /*.main_center_catalog_food_block4_center_products_text_button p {
+        line-height: 31px;
+    }*/
+
     .footer_section_one_left ul li a h4 {
         font-size: 16px !important;
     }
@@ -2801,6 +3498,24 @@ footer {
 @media (min-width: 768px) {
     .container {
         min-width: 100% !important;
+    }
+}
+
+@media all and (max-width: 769px) {
+
+    .main_center_catalog_food_block4_center_products_dry_ration,
+    .main_center_catalog_food_block4_center_products_wet_ration,
+    .main_center_catalog_food_block4_center_products_teeth_care,
+    .main_center_catalog_food_block4_center_products_delicacies {
+        width: 40%;
+    }
+
+    .main_center_catalog_food_block4_center_products_text h5 {
+        font-size: 14px;
+    }
+
+    .main_center_catalog_food_block4_center_products_text_button p {
+        font-size: 14px;
     }
 }
 
@@ -2924,6 +3639,10 @@ footer {
             display: flex;
             justify-content: center;
         }
+
+        &_food_block4 {
+            padding: 0;
+        }
     }
 
     .main_center_catalog_block2_section1_catalog_end,
@@ -2966,6 +3685,70 @@ footer {
         }
     }
 
+    .main_center_catalog_food_block2_center_img_h2 h2 {
+        font-size: 25px;
+    }
+
+    .main_center_catalog_food_block3_center h3 {
+        font-size: 16px;
+    }
+
+    .main_center_catalog_food_block4_center_products {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+    .main_center_catalog_food_block4_center_products_dry_ration,
+    .main_center_catalog_food_block4_center_products_wet_ration,
+    .main_center_catalog_food_block4_center_products_teeth_care,
+    .main_center_catalog_food_block4_center_products_delicacies {
+        width: 40%;
+        margin: 20px 5px 30px 5px;
+    }
+
+    .main_center_catalog_food_block4_center_products_text h5 {
+        font-size: 12px;
+    }
+
+    .main_center_catalog_food_block4_center_products_text_button {
+        margin-top: 15px;
+    }
+
+    .main_center_catalog_food_block4_center_products_text_button_p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .main_center_catalog_food_block4_center_products_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main_center_catalog_food_block4_center_products_img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main_center_catalog_food_block4_center_products_img img:hover,
+    .main_center_catalog_food_block4_center_products_img img:active {
+        transform: scale(1);
+    }
+
+    .main_center_catalog_food_block4_center_products_text_button p:hover,
+    .main_center_catalog_food_block4_center_products_text_button p:active {
+        color: #ba0e0d;
+    }
+
+    .main_center_catalog_food_block4_center_products_text_button {
+        padding: 0;
+        border-radius: 30px;
+    }
+
+    .main_center_catalog_food_block4_center_products_text_button p {
+        line-height: 26px;
+        padding: 0 10px;
+    }
 
     .footer_section_one {
         justify-content: center;
@@ -3091,10 +3874,34 @@ footer {
     }
 }
 
+@media all and (max-width: 374px) {
+    .main_center_catalog_food_block4_center_products_img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .main_center_catalog_food_block4_center_products_img img {
+        width: 125px;
+        height: 125px;
+    }
+}
+
 @media all and (max-width: 319px) {
     .main_buy_img {
         width: 90%;
         justify-content: center;
+    }
+
+    .main_center_catalog_food_block4_center_products_dry_ration,
+    .main_center_catalog_food_block4_center_products_wet_ration,
+    .main_center_catalog_food_block4_center_products_teeth_care,
+    .main_center_catalog_food_block4_center_products_delicacies {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .main_center_catalog_food_block4_center_products_text_button {
+        margin-top: 10px;
     }
 }
 
