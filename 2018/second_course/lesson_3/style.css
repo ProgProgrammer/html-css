@@ -2299,17 +2299,17 @@ footer {
   position: relative;
 }
 .main_center_catalog_food_block2_center_img_i_center {
-  width: 62.5px;
+  width: 93.75px;
   display: flex;
   position: absolute;
-  top: -25px;
+  top: -37px;
 }
 .main_center_catalog_food_block2_center_img_i_center i {
-  font-size: 50px;
+  font-size: 75px;
   color: white;
 }
 .main_center_catalog_food_block3 {
-  margin: 30px 0 30px 0;
+  margin: 35px 0 30px 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -2958,8 +2958,21 @@ footer {
   .main_center_catalog_food_block1 {
     display: none;
   }
+  .main_center_catalog_food_block2_center_img_i_center {
+    width: 62.5px;
+    display: flex;
+    position: absolute;
+    top: -25px;
+  }
+  .main_center_catalog_food_block2_center_img_i_center i {
+    font-size: 50px;
+    color: white;
+  }
   .main_center_catalog_food_block2_center_img_h2 h2 {
     font-size: 35px;
+  }
+  .main_center_catalog_food_block3 {
+    margin-top: 30px;
   }
   .main_center_catalog_food_block3_center h3 {
     font-size: 20px;
