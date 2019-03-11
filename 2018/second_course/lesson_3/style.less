@@ -2243,7 +2243,6 @@ footer {
 
                 & a {
                     width: 100%;
-                    min-height: 1005;
                     display: flex;
                     flex-direction: column;
                     text-decoration: none;
@@ -2704,6 +2703,7 @@ footer {
                                 border-radius: 40px;
                                 color: black;
                                 background: rgba(0, 0, 0, 0.0);
+                                cursor: pointer;
                             }
 
                             &_cancel:hover,
@@ -2911,6 +2911,7 @@ footer {
                             border-radius: 18px;
                             color: rgb(255, 177, 14);
                             background: rgba(0, 0, 0, 0.0);
+                            cursor: pointer;
                         }
 
                         &_p:hover,
@@ -3057,12 +3058,21 @@ footer {
     }*/
 }
 
-@media all and (min-width: 1200px) and (max-width: 1600px) {
+@media all and (min-width: 1551px) and (max-width: 1600px) {
 
     .main_center_catalog_block2_section1_catalog_p,
     .main_center_catalog_block2_section1_food_p,
     .main_center_catalog_block2_section1_buy_p {
-        padding: 10px 55px;
+        padding: 10px 55px !important;
+    }
+}
+
+@media all and (min-width: 1188px) and (max-width: 1600px) {
+
+    .main_center_catalog_block2_section1_catalog_p,
+    .main_center_catalog_block2_section1_food_p,
+    .main_center_catalog_block2_section1_buy_p {
+        padding: 10px 44px;
     }
 }
 
