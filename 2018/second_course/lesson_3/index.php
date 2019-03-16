@@ -35,7 +35,7 @@
                         </li>
                     </ul>
                     <ul class="menuend">
-                        <li class="logotype"><a href="products.html"><img src="img/logotype.jpg" alt="pedigree"></a></li>
+                        <li class="logotype"><a href="products.html"><img src="img/logotype.jpg" alt="logotype pedigree"></a></li>
                         <li><a href="index.php">О нас</a></li>
                     </ul>
                 </ul>
