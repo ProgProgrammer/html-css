@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEDIGREE</title>
+    <link rel="stylesheet" href="style.css?v=1">
+    <link rel="shortcut icon" href="img/logotwo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="myJS/responsive-menu.js"></script>
+    <script src="myJS/responsive-search.js"></script>
+    <script src="myJS/menu-desktop-search.js"></script>
+    <script src="myJS/responsive_submenu_sort_down.js"></script>
+    <script src="myJS/responsive_submenu_sort_down2.js"></script>
+    <script src="myJS/responsive_submenu_sort_down3.js"></script>
+    <script src="myJS/responsive_submenu_sort_down4.js"></script>
+    <script src="myJS/responsive_submenu_sort_down5.js"></script>
+    <script src="myJS/responsive_submenu_sort_down6.js"></script>
+    <script src="myJS/filter_catalog_food.js"></script>
+    <script src="myJS/filter_catalog_dry_ration.js"></script>
+    <script src="myJS/filter_catalog_wet_ration.js"></script>
+    <script src="myJS/filter_catalog_teeth_care.js"></script>
+    <script src="myJS/filter_catalog_delicacies.js"></script>
+    <script src="myJS/filter_catalog_filter_cancel.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="content">
+            <header class="header">
+                <section class="header_head">
+                    <section class="centerheader">
+                        <nav class="header_head_nav_menu">
+                            <ul class="header_head_nav_menu_yellow">
+                                <ul class="header_head_nav_menu_yellow_center">
+                                    <ul class="header_head_nav_menu_first">
+                                        <ul class="header_head_nav_menu_first_center">
+                                            <li class="header_head_nav_menu_first_center_item"><a href="products.html"><img src="img/logotype.jpg" alt="logotype pedigree"></a></li>
+                                            <li class="header_head_nav_menu_first_center_litwo">
+                                                <ul class="header_head_nav_menu_first_center_litwo_items">
+                                                    <li><a href="catalog.html">Каталог продуктов</a></li>
+                                                    <li><a href="buy.html">Где купить</a></li>
+                                                    <li><a href="reviews.html">Отзывы</a></li>
+                                                    <li><a href="about_us.html">
+                                                            <h1>О PEDIGREE®</h1>
+                                                        </a></li>
+                                                    <li><a href="javascript:void(0);" onclick="myFunctionDesktopSearch()"><i class="fas fa-search"></i></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                            </ul>
+                            <ul class="header_head_nav_menu_red">
+                                <ul class="header_head_nav_menu_red_center">
+                                    <ul class="header_head_nav_menu_second">
+                                        <ul class="header_head_nav_menu_second_center">
+                                            <li class="header_head_nav_menu_first_center_item">
+                                                <a href="#">Кормление</a>
+                                                <div class="header_head_nav_menu_second_center_submenu_center">
+                                                    <div class="header_head_nav_menu_second_center_submenu_center_triangle"></div>
+                                                </div>
+                                                <ul class="header_head_nav_menu_second_center_submenu">
+                                                    <li><a href="#">Советы по кормлению</a></li>
+                                                    <li><a href="#">Правила кормления</a></li>
+                                                    <li><a href="#">Подбор рациона</a></li>
+                                                    <li><a href="#">Вопросы и статьи</a></li>
+                                                    <li><a href="#">Кормление миниатюрных пород</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header_head_nav_menu_first_center_item">
+                                                <a href="#">Все об уходе</a>
+                                                <div class="header_head_nav_menu_second_center_submenu_center">
+                                                    <div class="header_head_nav_menu_second_center_submenu_center_triangletwo"></div>
+                                                </div>
+                                                <ul class="header_head_nav_menu_second_center_submenutwo">
+                                                    <li><a href="#">Уход за зубами</a></li>
+                                                    <li><a href="#">Проверьте зубы собаке</a></li>
+                                                    <li><a href="#">Здоровье собаки</a></li>
+                                                    <li><a href="#">Вопросы и статьи</a></li>
+                                                    <li><a href="#">Посещение ветеринара</a></li>
+                                                    <li><a href="#">Игра "Зубной дозор"</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header_head_nav_menu_first_center_item">
+                                                <a href="#">Воспитание</a>
+                                                <div class="header_head_nav_menu_second_center_submenu_center">
+                                                    <div class="header_head_nav_menu_second_center_submenu_center_trianglethree"></div>
+                                                </div>
+                                                <ul class="header_head_nav_menu_second_center_submenuthree">
+                                                    <li><a href="#">Общий курс</a></li>
+                                                    <li><a href="#">Дрессировка</a></li>
+                                                    <li><a href="#">Вопросы и статьи</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header_head_nav_menu_first_center_item">
+                                                <a href="#">Хочу собаку</a>
+                                                <div class="header_head_nav_menu_second_center_submenu_center">
+                                                    <div class="header_head_nav_menu_second_center_submenu_center_trianglefour"></div>
+                                                </div>
+                                                <ul class="header_head_nav_menu_second_center_submenufour">
+                                                    <li><a href="#">Подбор породы</a></li>
+                                                    <li><a href="#">Готовы ли вы стать хозяином</a></li>
+                                                    <li><a href="#">Подготовка к выбору собаки</a></li>
+                                                    <li><a href="#">Первые дни с питомцем</a></li>
+                                                    <li><a href="#">1 "АФ" класс</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header_head_nav_menu_first_center_item">
+                                                <a href="#">Щенки</a>
+                                                <div class="header_head_nav_menu_second_center_submenu_center">
+                                                    <div class="header_head_nav_menu_second_center_submenu_center_trianglefive"></div>
+                                                </div>
+                                                <ul class="header_head_nav_menu_second_center_submenufive">
+                                                    <li><a href="#">Подбор клички для щенка</a></li>
+                                                    <li><a href="#">Стадии роста щенка</a></li>
+                                                    <li><a href="#">Правильное питание щенка</a></li>
+                                                    <li><a href="#">Здоровье щенка</a></li>
+                                                    <li><a href="#">Щемпионат</a></li>
+                                                    <li><a href="#">Вопросы и статьи</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </nav>
+                    </section>
+                    <nav class="header_head_nav">
+                        <ul class="header_head_nav_menu_responsive">
+                            <li class="header_head_nav_menu_responsive_li_first">
+                                <div class="header_head_nav_menu_responsive_li_first-menu-icon">
+                                    <a href="javascript:void(0);" onclick="myFunction()">
+                                        <i class="fas fa-bars"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_second">
+                                <a href="products.html">
+                                    <img src="img/logotype.jpg" alt="logotype pedigree">
+                                </a>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_third">
+                                <div class="header_head_nav_menu_responsive_li_third_block">
+                                    <a href="javascript:void(0);" onclick="myFunctionSearch()">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="header_head_nav_menu_responsive_li_first-menu" id="myTopnav">
+                        <ul class="header_head_nav_menu_responsive_li_first-menu_ul">
+                            <div class="close">
+                                <div class="close_center">
+                                    <div class="close_div"><a href="javascript:void(0);" onclick="myFunction()"><span class="close_span"></span></a></div>
+                                </div>
+                            </div>
+                            <li>
+                                <a href="catalog.html">
+                                    Каталог продуктов
+                                </a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive" id="myTopSubmenu">
+                                    <li><a href="dry_ration.html">Сухие рационы</a></li>
+                                    <li><a href="wet_ration.html">Влажные рационы</a></li>
+                                    <li><a href="teeth_care.html">Уход за зубами</a></li>
+                                    <li><a href="delicacies.html">Лакомства</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_first-menu_margin_top" id="myTopSubmenuMargin"><a href="buy.html">Где купить</a></li>
+                            <li><a href="reviews.html">Отзывы</a></li>
+                            <li><a href="about_us.html">
+                                    <h1>О PEDIGREE®</h1>
+                                </a></li>
+                            <li>
+                                <a href="#">Кормление</a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown2()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow2">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive2" id="myTopSubmenu2">
+                                    <li><a href="#">Советы по кормлению</a></li>
+                                    <li><a href="#">Правила кормления</a></li>
+                                    <li><a href="#">Подбор рациона</a></li>
+                                    <li><a href="#">Вопросы и статьи</a></li>
+                                    <li class="submenu_li"><a href="#">Кормление миниатюрных пород</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_first-menu_margin_top2" id="myTopSubmenuMargin2">
+                                <a href="#">Все об уходе</a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown3()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow3">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive3" id="myTopSubmenu3">
+                                    <li><a href="#">Уход за зубами</a></li>
+                                    <li><a href="#">Проверьте зубы собаке</a></li>
+                                    <li><a href="#">Здоровье собаки</a></li>
+                                    <li><a href="#">Вопросы и статьи</a></li>
+                                    <li><a href="#">Посещение ветеринара</a></li>
+                                    <li><a href="#">Игра "Зубной дозор"</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_first-menu_margin_top3" id="myTopSubmenuMargin3">
+                                <a href="#">Воспитание</a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown4()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow4">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive4" id="myTopSubmenu4">
+                                    <li><a href="#">Общий курс</a></li>
+                                    <li><a href="#">Дрессировка</a></li>
+                                    <li><a href="#">Вопросы и статьи</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_first-menu_margin_top4" id="myTopSubmenuMargin4">
+                                <a href="#">Хочу собаку</a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown5()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow5">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive5" id="myTopSubmenu5">
+                                    <li><a href="#">Подбор породы</a></li>
+                                    <li><a href="#">Готовы ли вы стать хозяином</a></li>
+                                    <li><a href="#">Подготовка к выбору собаки</a></li>
+                                    <li><a href="#">Первые дни с питомцем</a></li>
+                                    <li><a href="#">1 "АФ" класс</a></li>
+                                </ul>
+                            </li>
+                            <li class="header_head_nav_menu_responsive_li_first-menu_margin_top5" id="myTopSubmenuMargin5">
+                                <a href="#">Щенки</a>
+                                <div class="header_head_nav_menu_responsive_li_first-menu_arrow">
+                                    <a href="javascript:void(0);" onclick="myFunctionSortDown6()">
+                                        <button class="header_head_nav_menu_responsive_li_first-menu_arrow" id="myTopSubmenuArrow6">
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="submenu_responsive6" id="myTopSubmenu6">
+                                    <li><a href="#">Подбор клички для щенка</a></li>
+                                    <li><a href="#">Стадии роста щенка</a></li>
+                                    <li><a href="#">Правильное питание щенка</a></li>
+                                    <li><a href="#">Здоровье щенка</a></li>
+                                    <li><a href="#">Щемпионат</a></li>
+                                    <li><a href="#">Вопросы и статьи</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header_head_nav_menu_responsive_li_third-search" id="myTopsearch">
+                        <div class="right">
+                            <form action="products.html" class="search">
+                                <input type="text" placeholder="Поиск" required>
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header_head_nav_menu_responsive_li_fourth-search" id="myTopsearchDesktop">
+                        <div class="right">
+                            <form action="products.html" class="search">
+                                <input type="text" placeholder="Поиск" required>
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </header>
+            <main class="main">
+                <section class="main_catalog_food">
+                    <section class="main_center_catalog_food">
+                        <section class="main_center_catalog_food_block1">
+                            <a href="products.html">
+                                <h6>Главная</h6>
+                            </a>
+                            <span>
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                            <h6 class="main_center_catalog_block1_bold_font">О PEDIGREE</h6>
+                        </section>
+                    </section>
+                    <section class="main_catalog_food2">
+                        <section class="main_center_catalog_food">
+                            <section class="main_center_catalog_food_block2">
+                                <section class="main_center_catalog_food_block2_center">
+                                    <section class="main_center_catalog_food_block2_center_img3">
+                                        <section class="main_center_catalog_food_block2_center_img_h1">
+                                            <article class="main_center_catalog_food_block2_center_img_h1_center">
+                                                <h1>
+                                                    О&nbsp;PEDIGREE<sup class="reg">&reg;</sup>
+                                                </h1>
+                                            </article>
+                                        </section>
+                                        <section class="main_center_catalog_food_block2_center_img_i">
+                                            <section class="main_center_catalog_food_block2_center_img_i_center2">
+                                                <i class="fas fa-dog"></i>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="main_center_catalog_food">
+                            <section class="main_center_catalog_food_article">
+                                <section class="main_center_catalog_food_article_p">
+                                    <p>
+                                        Мы&nbsp;любим собак. Все, что мы&nbsp;делаем ― ради их&nbsp;здоровья и&nbsp;комфортной социализации в&nbsp;обществе.
+                                    </p>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="main_center_catalog_food3">
+                            <section class="main_center_catalog_food3_background">
+                                <section class="main_center_catalog_food_block44">
+                                    <section class="main_center_catalog_food_block44_center">
+                                        <ul class="main_center_catalog_food_block44_center_products">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="main_center_catalog_food_block44_center_products_icon1"></div>
+                                                    <h3>Профсообщество</h3>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="main_center_catalog_food_block44_center_products_icon2"></div>
+                                                    <h3>Обучающие приложения</h3>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="main_center_catalog_food_block44_center_products_icon3"></div>
+                                                    <h3>Факты о&nbsp;нашем корме</h3>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="main_center_catalog_food_block44_center_products_icon4"></div>
+                                                    <h3>Waltham&trade;</h3>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="main_center_catalog_food_block44_center_products_icon5"></div>
+                                                    <h3>Добрый дела</h3>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="reviews.html">
+                                                    <div class="main_center_catalog_food_block44_center_products_icon6"></div>
+                                                    <h3>Отзывы о&nbsp;Pedigree<sup class="reg">&reg;</sup></h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                                <section class="main_center_catalog_food_block45">
+                                    <article class="main_center_catalog_food_block45_center">
+                                        <p>
+                                            Уже более 80&nbsp;лет мы&nbsp;производим высококачественное сбалансированное питание, доступное владельцам любых собак, и&nbsp;гордимся своей миссией!
+                                        </p>
+                                        <p>
+                                            Наша преданность и&nbsp;вера в&nbsp;свое призвание ― в&nbsp;каждом созданном продукте. Каждый день мы&nbsp;продолжаем совершенствовать состав корма и&nbsp;повышать его качество, чтобы собаки всех пород и&nbsp;возрастов были здоровыми и&nbsp;счастливыми.
+                                        </p>
+                                        <p>
+                                            Мы&nbsp;считаем, что все собаки должны питаться качественной едой, которая им&nbsp;нравится. Мы&nbsp;составляем рационы, которые сочетают в&nbsp;себе все необходимое для долгой и&nbsp;счастливой жизни вашей собаки.
+                                        </p>
+                                        <h2>
+                                            Научные исследования
+                                        </h2>
+                                        <p>
+                                            Эксперты научно-исследовательского центра WALTHAM&trade;, специалисты по&nbsp;кормам для домашних животных постоянно проводят фундаментальные исследования, чтобы узнавать больше о&nbsp;потребностях питомцев, их&nbsp;питании, здоровье и&nbsp;общем благополучии.
+                                        </p>
+                                        <p>
+                                            Подробнее об&nbsp;этом на&nbsp;<a href="https://www.waltham.com/" target="_blank">www.waltham.com</a>
+                                        </p>
+                                        <h2>
+                                            Питание
+                                        </h2>
+                                        <p>
+                                            Все сухие и&nbsp;влажные корма Pedigree<sup class="reg">&reg;</sup> являются 100% полнорационными и&nbsp;сбалансированными.
+                                        </p>
+                                        <p>
+                                            Это значит, что каждый корм содержит в&nbsp;себе все питательные вещества в&nbsp;тех количествах, которые необходимы для определенного жизненного этапа питомца.
+                                        </p>
+                                        <p>
+                                            Наши сухие и&nbsp;влажные рационы создаются на&nbsp;основе научных разработок экспертов центра WALTHAM&trade;, чтобы ваша собака получала все необходимые питательные вещества, а&nbsp;также специальные ингредиенты для:
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    Ухода за&nbsp;полостью рта и&nbsp;здоровья костей: рационы содержат оптимальный уровень кальция и&nbsp;фосфора для здоровья костей, а&nbsp;кусочки сухого корма содержат на&nbsp;поверхности активные ингредиенты, которые помогают снизить образование зубного камня.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Пищеварения: в&nbsp;состав корма входит натуральная клетчатка, которая способствует здоровой деятельности желудочно-кишечного тракта, и&nbsp;высококачественный легкоусвояемый белок.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Здоровья кожи и&nbsp;шерсти: составы специально разработаны с&nbsp;добавлением подсолнечного масла и&nbsp;цинка&nbsp;&mdash; веществ, которые положительно влияют на&nbsp;кожу и&nbsp;шерсть вашей собаки.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Иммунной системы: в&nbsp;составе рационов есть витамин&nbsp;E, антиоксиданты и&nbsp;минералы, такие как селен и&nbsp;медь; они играют ключевую роль в&nbsp;поддержке иммунной системы.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Влажный корм Pedigree<sup class="reg">&reg;</sup> на&nbsp;100% сбалансирован и&nbsp;доступен в&nbsp;пакетиках. Он&nbsp;содержит почти в&nbsp;5&nbsp;раз меньше калорий на&nbsp;грамм по&nbsp;сравнению с&nbsp;обычным сухим кормом, что помогает поддерживать здоровый вес собаки, предотвращая перекармливание. В&nbsp;нем также содержится больше влаги по&nbsp;сравнению с&nbsp;сухим кормом, что полезно для здоровья мочевыводящих путей. <a href="reviews.html">&laquo;Нажмите сюда&raquo;</a>, чтобы узнать больше.
+                                        </p>
+                                        <p>
+                                            Сухие корма Pedigree<sup class="reg">&reg;</sup> на&nbsp;100% сбалансированы. Они специально разработаны для защиты здоровья полости рта собаки, кожи и&nbsp;шерсти, пищеварительного тракта и&nbsp;иммунитета. По&nbsp;мнению ветеринарных врачей, именно эти области наиболее подвержены болезням...
+                                        </p>
+                                        <p>
+                                            Научно доказано, что Pedigree<sup class="reg">&reg;</sup> DentaStixTM и&nbsp;DentaFlexTM помогают предотвратить образование налета и&nbsp;зубного камня при регулярном использовании.&nbsp;95% ветеринарных врачей высоко оценили эффективность лакомства DentaStixTM и&nbsp;указали, что будут рекомендовать его в&nbsp;своей практике.
+                                        </p>
+                                        <h2>
+                                            Одобренные поставщики
+                                        </h2>
+                                        <p>
+                                            Все наше сырье закупается только у&nbsp;поставщиков, подтвердивших соответствие высоким стандартам качества.
+                                        </p>
+                                        <h2>
+                                            Высочайшие стандарты качества производства
+                                        </h2>
+                                        <p>
+                                            Наши фабрики соответствуют стандартам качества, принятым для предприятий, производящих питание для человека.
+                                        </p>
+                                        <h2>
+                                            Только собственное производство
+                                        </h2>
+                                        <p>
+                                            Мы&nbsp;гордимся качеством своих кормов и&nbsp;не&nbsp;производим их&nbsp;ни&nbsp;для каких иных компаний.
+                                        </p>
+                                    </article>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <section class="footer_section">
+                <section class="footer_section_center">
+                    <article class="footer_section_one">
+                        <div class="footer_section_one_left">
+                            <ul>
+                                <li><a href="about_us.html">
+                                        <h4>О PEDIGREE®</h4>
+                                    </a></li>
+                                <li><a href="#">Задать вопрос по&nbsp;продукту</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="catalog.html">
+                                        <h4>Каталог продуктов</h4>
+                                    </a></li>
+                                <li><a href="dry_ration.html">Сухой рацион</a></li>
+                                <li><a href="wet_ration.html">Влажный рацион</a></li>
+                                <li><a href="teeth_care.html">Уход за&nbsp;зубами</a></li>
+                                <li><a href="delicacies.html">Лакомства</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">
+                                        <h4>Хочу собаку</h4>
+                                    </a></li>
+                                <li><a href="#">Подбор породы</a></li>
+                                <li><a href="#">Подготовка к&nbsp;выбору собаки</a></li>
+                                <li><a href="#">Первые дни с&nbsp;питомцем</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_section_one_right">
+                            <a href="https://www.youtube.com/user/PedigreeVideo" target="_blank">
+                                <div class="footer_section_one_right_icon"></div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="footer_section_two">
+                        <div class="footer_section_two_information">
+                            <ul>
+                                <li><a href="https://www.mars.com/global/policies/privacy/pp-russian" target="_blank">
+                                        <h5>Конфиденциальность</h5>
+                                    </a></li>
+                                <li><a href="https://github.com/ProgProgrammer" target="_blank">
+                                        <h5>Владелец сайта</h5>
+                                    </a></li>
+                                <li><a href="https://www.mars.com/global/policies/legal/ld-russian" target="_blank">
+                                        <h5>Юридические условия</h5>
+                                    </a></li>
+                                <li><a href="https://www.mars.com/global/policies/cookie/cn-russian" target="_blank">
+                                        <h5>Использование cookies</h5>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <section class="footer_section_three">
+                        <section class="footer_section_three_copy">
+                            <article>
+                                <h6>&copy;&nbsp;2019&nbsp;ProgProgrammer. Все права защищены.</h6>
+                            </article>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
