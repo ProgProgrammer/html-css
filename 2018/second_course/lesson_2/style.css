@@ -802,6 +802,42 @@ input[type="submit"]:focus,
 textarea:focus {
   outline: none;
 }
+@media all and (min-width: 1259px) {
+  .container {
+    width: 100% !important;
+  }
+}
+@media all and (min-width: 1280px) {
+  .header-bg_header,
+  .bg,
+  .bg2,
+  .scrinshots,
+  .reviews,
+  .buy,
+  .footer_contacts {
+    max-width: 1280px !important;
+  }
+  .header_center,
+  .main-bg,
+  .main-bg_center1,
+  .main-bg_center2,
+  .footer,
+  .footer_center1,
+  .footer_center2 {
+    width: 100% !important;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 1280px) {
+  .header-bg_header,
+  .bg,
+  .bg2,
+  .scrinshots,
+  .reviews,
+  .buy,
+  .footer_contacts {
+    width: 100%  !important;
+  }
+}
 @media all and (max-width: 1024px) {
   input::placeholder {
     line-height: 18px;
@@ -817,7 +853,7 @@ textarea:focus {
   .footer_contacts,
   .footer_contacts_block,
   .footer_copyright_product {
-    width: 1280px;
+    width: 100%;
   }
   .footer_copyright {
     width: 100%;
@@ -853,6 +889,14 @@ textarea:focus {
   }
   .footer_contacts_block {
     max-width: 1280px;
+  }
+}
+@media all and (min-width: 1294px) and (max-width: 1314px) {
+  .bg2_delectus {
+    justify-content: center !important;
+  }
+  .scrinshots_descriptions {
+    justify-content: center !important;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1294px) {
@@ -970,7 +1014,7 @@ textarea:focus {
     margin-top: 30px;
   }
 }
-@media all and (min-width: 768px) and (max-width: 1200px) {
+@media all and (min-width: 768px) and (max-width: 1220px) {
   .bg {
     justify-content: center;
   }
