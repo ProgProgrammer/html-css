@@ -755,6 +755,7 @@ footer {
   color: white;
   width: 32px;
   height: 60px;
+  padding: 0 !important;
   background: rgba(251, 187, 1, 0);
   border: none;
   border-right: 1px solid white;
@@ -771,7 +772,7 @@ footer {
 }
 .header_head_nav_menu_responsive_li_first-menu_arrow.bottom {
   width: 32px;
-  height: 60px;
+  min-height: 60px;
   font-size: 16px;
   right: 0;
   color: white;
@@ -1090,6 +1091,7 @@ footer {
   color: white;
   font-weight: 900;
   width: 80%;
+  line-height: 58px;
 }
 .header_head_nav_menu_responsive_li_first-menu.responsive li a:hover,
 .header_head_nav_menu_responsive_li_first-menu.responsive li a:active {
@@ -1185,13 +1187,14 @@ footer {
 }
 .header_head_nav_menu_responsive_li_third-search.responsive form button[type="submit"] {
   font-size: 32px;
-  top: 4px;
+  top: 8px;
   right: 9px;
   width: 32px;
   height: 32px;
   position: absolute;
   background: rgba(252, 252, 252, 0);
   border: none;
+  padding: 0;
 }
 .header_head_nav_menu_responsive_li_third-search.responsive form button[type="submit"]:hover,
 .header_head_nav_menu_responsive_li_third-search.responsive form button[type="submit"]:active {
@@ -1235,13 +1238,14 @@ footer {
 }
 .header_head_nav_menu_responsive_li_fourth-search.responsive form button[type="submit"] {
   font-size: 32px;
-  top: 4px;
+  top: 8px;
   right: 9px;
   width: 32px;
   height: 32px;
   position: absolute;
   background: rgba(252, 252, 252, 0);
   border: none;
+  padding: 0;
 }
 .header_head_nav_menu_responsive_li_fourth-search.responsive form button[type="submit"]:hover,
 .header_head_nav_menu_responsive_li_fourth-search.responsive form button[type="submit"]:active {
