@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="style.css?v=1">
     <link rel="shortcut icon" href="img/logotwo.png" type="image/jpg">
-
+    <link rel="stylesheet" href="reset.css">
     <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
     <script src="myJS/menu_responsive_open.js"></script>
@@ -94,28 +94,28 @@
                                     </div>
                                </div>
                            </div>
-                            <li>
+                            <li alt="Home">
                                 <a href="index.php">
                                     <h2>
                                         Home
                                     </h2>
                                 </a>
                             </li>
-                            <li>
+                            <li alt="About us">
                                 <a href="#">
                                     <h2>
                                         About us
                                     </h2>
                                 </a>
                             </li>
-                            <li>
+                            <li alt="Projects">
                                 <a href="#">
                                     <h2>
                                         Projects
                                     </h2>
                                 </a>
                             </li>
-                            <li>
+                            <li alt="Contact us">
                                 <a href="#">
                                     <h2>
                                         Contact us
@@ -238,44 +238,44 @@
                             <section class="main_shopping_icons_center">
                                 <section class="main_shopping_icons_circle row">
                                     <a href="#">
-                                        <figure class="main_shopping_icons_circle_1 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                        <article class="main_shopping_icons_circle_1 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
                                             <div class="main_shopping_icons_circle_1_i">
                                                 <i class="fas fa-globe-americas"></i>
                                             </div>
-                                            <figcaption>
+                                            <h6>
                                                 Sites the world
-                                            </figcaption>
-                                        </figure>
+                                            </h6>
+                                        </article>
                                     </a>
                                     <a href="#">
-                                        <figure class="main_shopping_icons_circle_2 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                        <article class="main_shopping_icons_circle_2 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
                                             <div class="main_shopping_icons_circle_2_i">
                                                 <i class="fas fa-shopping-basket"></i>
                                             </div>
-                                            <figcaption>
+                                            <h6>
                                                 Shopping
-                                            </figcaption>
-                                        </figure>
+                                            </h6>
+                                        </article>
                                     </a>
                                     <a href="#">
-                                        <figure class="main_shopping_icons_circle_3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                        <article class="main_shopping_icons_circle_3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
                                             <div class="main_shopping_icons_circle_3_i">
                                                 <i class="fas fa-camera-retro"></i>
                                             </div>
-                                            <figcaption>
+                                            <h6>
                                                 Photography
-                                            </figcaption>
-                                        </figure>
+                                            </h6>
+                                        </article>
                                     </a>
                                     <a href="#">
-                                        <figure class="main_shopping_icons_circle_4 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                        <article class="main_shopping_icons_circle_4 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
                                             <div class="main_shopping_icons_circle_4_i">
                                                 <i class="fas fa-search"></i>
                                             </div>
-                                            <figcaption>
+                                            <h6>
                                                 Find the best
-                                            </figcaption>
-                                        </figure>
+                                            </h6>
+                                        </article>
                                     </a>
                                 </section>
                             </section>
