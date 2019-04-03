@@ -2,4 +2,4 @@ https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirec
 
 http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fa91783um.beget.tech%2Findex.php&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=ru
 
-http://a91783um.beget.tech/index.php
+http://m96169tn.beget.tech/index.php
