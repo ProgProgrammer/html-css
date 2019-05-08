@@ -16,6 +16,122 @@ button:focus
 .width_50
   width: 100% !important
 
+.window
+  width: 100%
+  height: 100vh
+  position: fixed
+  visibility: hidden
+  z-index: 11
+
+.animation_image
+  animation: open_window .5s linear
+  animation-fill-mode: forwards
+
+@keyframes open_window
+  from
+    background: rgba(255, 255, 255, 0)
+
+  to
+    background: rgba(255, 255, 255, 0.8)
+
+.animation_image_close
+  animation: close_window .3s linear
+  animation-fill-mode: forwards
+
+@keyframes close_window
+  from
+    visibility: visible
+    background: rgba(255, 255, 255, 0.8)
+
+  to
+    visibility: hidden
+    background: rgba(255, 255, 255, 0)
+
+
+.cross_cancel
+  width: 9em
+  height: 9em
+  position: absolute
+  top: 0
+  right: 0
+  display: flex
+  justify-content: center
+  align-items: center
+
+.cross_cancel:before
+  width: 2px
+  height: 2em
+  border-radius: 2px
+  background-color: black
+  transform: rotate(45deg)
+  position: absolute
+  content: ' '
+  left: 4.25em
+
+.cross_cancel:after
+  width: 2px
+  height: 2em
+  border-radius: 2px
+  background-color: black
+  transform: rotate(-45deg)
+  position: absolute
+  content: ' '
+  left: 4.25em
+
+.loader
+  width: 100%
+  height: 100%
+  display: flex
+
+  & i
+    margin: auto
+    font-size: 4.4em
+    animation: start 1s linear
+    animation-iteration-count: infinite
+    animation-play-state: running
+
+  &_window
+    width: 100%
+    height: 100%
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 12
+
+.loader_window
+  position: absolute
+
+  & img
+    max-width: 90vw
+    box-shadow: 0 1.1em 3.3em 0 rgba(0, 0, 0, 0.35)
+    animation: window_image .5s linear
+
+@keyframes window_image
+  from
+    margin-bottom: -100vh
+
+  to
+    margin-bottom: 0
+
+
+@keyframes start
+    from
+      transform: rotate(0deg)
+
+    to
+      transform: rotate(360deg)
+
+.loader_window_img_close
+  animation: window_image_close .5s linear
+
+@keyframes window_image_close
+  from
+    margin-bottom: 0
+
+  to
+    margin-bottom: -25vh
+
 .animation
   animation: animate1 1.5s linear
   animation-fill-mode: forwards
@@ -40,6 +156,17 @@ button:focus
   animation-fill-mode: forwards
 
 @keyframes animation4
+  from
+    margin-left: -60px
+
+  to
+    margin-right: 0
+
+.animationfive
+  animation: animation5 1.5s linear
+  animation-fill-mode: forwards
+
+@keyframes animation5
   from
     margin-left: -30px
 
@@ -316,6 +443,7 @@ button:focus
   height: 25vw
   object-fit: cover
   object-position: center
+  cursor: pointer
 
 .main_margin
   margin-top: 3em
@@ -545,6 +673,10 @@ textarea::placeholder
 
 
 
+@media all and (min-width: 3600px)
+  .header_block2_height
+    height: 110% !important
+
 @media all and (min-width: 1441px)
   .content
     max-width: 2880px !important
@@ -568,6 +700,14 @@ textarea::placeholder
   .header_block2_linear2
     height: 300% !important
 
+@media all and (max-width: 1229px)
+  .main_buttons
+    flex-direction: column
+    justify-content: space-around
+
+  .border_button
+    margin-left: 0
+
 @media all and (min-width: 1025px) and (max-width: 1280px)
   .header_animation2
     margin-right: 30px
@@ -581,6 +721,9 @@ textarea::placeholder
     to
       margin-top: 0
       margin-bottom: 0
+
+  .loader_window img
+    height: 90vh
 
 @media all and (max-width: 1025px)
   .container:before
@@ -751,6 +894,20 @@ textarea::placeholder
   .main_img
     margin-bottom: 0 !important
 
+  .loader_window img
+    max-width: 100vw
+    max-height: 90vh !important
+
+  .cross_cancel
+    width: 5em
+    height: 5em
+
+  .cross_cancel:before
+    left: 2.5em
+
+  .cross_cancel:after
+    left: 2.5em
+
 
   .footer
     top: 0
@@ -793,6 +950,7 @@ textarea::placeholder
 
   .main_a img
     height: 14em
+
 
   .not_background
     padding: 0 2.2em !important

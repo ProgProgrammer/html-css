@@ -10,9 +10,18 @@
     <link rel="stylesheet" href="reset.css">
     <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <noscript>Вы видите это сообщение, потому что Ваш браузер не поддерживает JavaScript.</noscript>
 </head>
 <body>
+<div id="window" class="window">
+    <div class="loader">
+        <i class="fas fa-spinner"></i>
+        <a href="javascript:void(0);" onclick="functionClose()" class="loader_window">
+            <div class="cross_cancel"></div>
+            <div id="image" class="window_img">
+            </div>
+        </a>
+    </div>
+</div>
 <div class="container">
     <div class="row content content_100">
         <header id="animateOne" class="col-md-6 header header_animation header_margin-top">
@@ -38,7 +47,7 @@
             </div>
         </header>
         <main id="animateTwo" class="col-md-6 main header_animation3">
-            <img class="main_img main_img_margin" src="img/pic01.jpg" alt="image">
+            <img class="main_img main_img_margin" src="img/pic01.jpg" alt="image1">
         </main>
     </div>
     <div id="bottom" class="row content">
@@ -55,10 +64,10 @@
                 </div>
             </div>
         </header>
-        <main class="col-md-6 main_main">
+        <div class="col-md-6 main_main">
             <p class="main_p"><strong>Lorem ipsum dolor</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.</p>
-            <img src="img/pic02.jpg" alt="" class="main_img">
-        </main>
+            <img src="img/pic02.jpg" alt="image2" class="main_img">
+        </div>
     </div>
     <div class="row content">
         <header class="col-md-6 header header_not_padding">
@@ -74,7 +83,7 @@
                 </div>
             </div>
         </header>
-        <main class="col-md-6 main_main">
+        <div class="col-md-6 main_main">
             <p class="main_p transform_none"><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p>
             <ul class="row main_ul">
                 <li class="col-md-6 main_ul_li main_ul_li_margin">
@@ -117,7 +126,7 @@
             <p class="main_p transform_none main_p_margin_bottom">
                 Vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.
             </p>
-        </main>
+        </div>
     </div>
     <div class="row content width_50">
         <header class="col-md-6 header header_not_padding">
@@ -133,9 +142,9 @@
                 </div>
             </div>
         </header>
-        <main class="col-md-6 main_main">
+        <div class="col-md-6 main_main">
             <p class="main_p transform_none"><strong>Integer mollis egestas</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
-        </main>
+        </div>
     </div>
     <div class="row content width_50">
         <header class="col-md-6 header header_not_padding not_background main_main_padding">
@@ -151,22 +160,22 @@
                 <div class="header_block2 margin_px header_block2_linear"></div>
             </div>
         </header>
-        <main class="col-md-6 main_main main_main_padding">
-            <a class="main_a" href="#">
-                <img src="img/01.jpg" alt="">
+        <div class="col-md-6 main_main main_main_padding">
+            <a class="main_a" onclick="openOne()">
+                <img src="img/01.jpg" alt="image3">
             </a>
             <div class="main_space">
-                <a class="main_a margin_top2 main_img_width" href="#">
-                    <img src="img/02.jpg" alt="">
+                <a onclick="openTwo()" class="main_a margin_top2 main_img_width">
+                    <img src="img/02.jpg" alt="image4">
                 </a>
-                <a class="main_a margin_top2 main_img_width" href="#">
-                    <img src="img/03.jpg" alt="">
+                <a onclick="openThree()" class="main_a margin_top2 main_img_width">
+                    <img src="img/03.jpg" alt="image5">
                 </a>
             </div>
-            <a class="main_a" href="#">
-                <img class="margin_top2" src="img/04.jpg" alt="">
+            <a onclick="openFour()" class="main_a">
+                <img class="margin_top2" src="img/04.jpg" alt="image6">
             </a>
-        </main>
+        </div>
     </div>
     <div class="row content width_50">
         <header class="col-md-6 header header_not_padding not_background3">
@@ -182,21 +191,21 @@
                 <div class="header_block2 margin_px header_block2_linear"></div>
             </div>
         </header>
-        <main class="col-md-6 main_main">
+        <div class="col-md-6 main_main">
             <div>
-                <a class="main_a" href="#">
-                    <img src="img/05.jpg" alt="">
+                <a onclick="openFive()" class="main_a">
+                    <img src="img/05.jpg" alt="image7">
                 </a>
                 <div class="main_space">
-                    <a class="main_a margin_top2 main_img_width" href="#">
-                        <img src="img/06.jpg" alt="">
+                    <a onclick="openSix()" class="main_a margin_top2 main_img_width">
+                        <img src="img/06.jpg" alt="image8">
                     </a>
-                    <a class="main_a margin_top2 main_img_width" href="#">
-                        <img src="img/07.jpg" alt="">
+                    <a onclick="openSeven()" class="main_a margin_top2 main_img_width">
+                        <img src="img/07.jpg" alt="image9">
                     </a>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
     <div class="row content width_50">
         <header class="col-md-6 header header_not_padding not_background4">
@@ -212,19 +221,19 @@
                 <div class="header_block2 margin_px"></div>
             </div>
         </header>
-        <main class="col-md-6 main_main main_main_padding">
+        <div class="col-md-6 main_main main_main_padding">
             <div class="main_space">
-                <a class="main_a margin_top3 main_img_width" href="#">
-                    <img src="img/08.jpg" alt="">
+                <a onclick="openEight()" class="main_a margin_top3 main_img_width">
+                    <img src="img/08.jpg" alt="image10">
                 </a>
-                <a class="main_a margin_top3 main_img_width" href="#">
-                    <img src="img/09.jpg" alt="">
+                <a onclick="openNine()" class="main_a margin_top3 main_img_width">
+                    <img src="img/09.jpg" alt="image11">
                 </a>
             </div>
-            <a class="main_a" href="#">
-                <img class="margin_top2" src="img/10.jpg" alt="">
+            <a onclick="openTen()" class="main_a">
+                <img class="margin_top2" src="img/10.jpg" alt="image12">
             </a>
-        </main>
+        </div>
     </div>
     <div class="row content width_50">
         <header class="col-md-6 header header_not_padding">
@@ -240,13 +249,13 @@
                 </div>
             </div>
         </header>
-        <main class="col-md-6 main_main">
+        <div class="col-md-6 main_main">
             <p class="main_p main_p_margin_bottom transform_none"><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
             <div class="main_buttons">
                 <a href="#" class="main_button primary">get started</a>
                 <a href="#" class="main_button border_button">learn more</a>
             </div>
-        </main>
+        </div>
     </div>
     <div class="row content content_footer width_50">
         <header class="col-md-6 header header_not_padding">
@@ -263,7 +272,7 @@
                 </div>
             </div>
         </header>
-        <main class="col-md-6 main_main">
+        <div class="col-md-6 main_main">
             <p class="main_p main_p_margin_bottom transform_none"><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
             <form action="#" class="row form">
                 <div class="form_input col-md-5">
@@ -281,8 +290,7 @@
                     </button>
                 </div>
             </form>
-
-        </main>
+        </div>
         <footer class="col-md-6 footer">
             <ul class="footer_ul">
                 <li class="footer_ul_li">
@@ -347,11 +355,12 @@
                 });
             </script>
             <script src="js/animation.js"></script>
+            <script src="js/images.js"></script>
         </footer>
     </div>
     <div class="row copyright">
         <div class="col-md-6 copyright_text">
-            &copy Untitled. All rights reserved <a href="https://github.com/ProgProgrammer">GitHub</a>. Design:
+            &copy; Untitled. All rights reserved <a href="https://github.com/ProgProgrammer">GitHub</a>. Design:
             <a href="https://html5up.net" target="_blank">HTML5 UP</a>
             . Demo Images:
             <a href="https://unsplash.com" target="_blank">Unsplash</a>
