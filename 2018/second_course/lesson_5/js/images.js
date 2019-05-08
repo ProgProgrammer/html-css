@@ -1,5 +1,5 @@
 function openOne() {
-    const window2 = document.getElementById("window").style.visibility="visible";
+    document.getElementById("window").style.visibility="visible";
     const window = document.getElementById("window");
     window.classList.add("animation_image");
     window.classList.remove("animation_image_close");
@@ -10,7 +10,7 @@ function openOne() {
 }
 
 function openTwo() {
-    const window2 = document.getElementById("window").style.visibility="visible";
+    document.getElementById("window").style.visibility="visible";
     const window = document.getElementById("window");
     window.classList.add("animation_image");
     window.classList.remove("animation_image_close");
@@ -21,7 +21,7 @@ function openTwo() {
 }
 
 function openThree() {
-    const window2 = document.getElementById("window").style.visibility="visible";
+    document.getElementById("window").style.visibility="visible";
     const window = document.getElementById("window");
     window.classList.add("animation_image");
     window.classList.remove("animation_image_close");
@@ -32,7 +32,7 @@ function openThree() {
 }
 
 function openFour() {
-    const window2 = document.getElementById("window").style.visibility="visible";
+    document.getElementById("window").style.visibility="visible";
     const window = document.getElementById("window");
     window.classList.add("animation_image");
     window.classList.remove("animation_image_close");
@@ -43,7 +43,7 @@ function openFour() {
 }
 
 function openFive() {
-    const window2 = document.getElementById("window").style.visibility="visible";
+    document.getElementById("window").style.visibility="visible";
     const window = document.getElementById("window");
     window.classList.add("animation_image");
     window.classList.remove("animation_image_close");
@@ -54,7 +54,7 @@ function openFive() {
 }
 
 function openSix() {
-    const window2 = document.getElementById("window").style.visibility="visible";
+    document.getElementById("window").style.visibility="visible";
     const window = document.getElementById("window");
     window.classList.add("animation_image");
     window.classList.remove("animation_image_close");
@@ -65,7 +65,7 @@ function openSix() {
 }
 
 function openSeven() {
-    const window2 = document.getElementById("window").style.visibility="visible";
+    document.getElementById("window").style.visibility="visible";
     const window = document.getElementById("window");
     window.classList.add("animation_image");
     window.classList.remove("animation_image_close");
@@ -76,7 +76,7 @@ function openSeven() {
 }
 
 function openEight() {
-    const window2 = document.getElementById("window").style.visibility="visible";
+    document.getElementById("window").style.visibility="visible";
     const window = document.getElementById("window");
     window.classList.add("animation_image");
     window.classList.remove("animation_image_close");
@@ -87,7 +87,7 @@ function openEight() {
 }
 
 function openNine() {
-    const window2 = document.getElementById("window").style.visibility="visible";
+    document.getElementById("window").style.visibility="visible";
     const window = document.getElementById("window");
     window.classList.add("animation_image");
     window.classList.remove("animation_image_close");
@@ -98,7 +98,7 @@ function openNine() {
 }
 
 function openTen() {
-    const window2 = document.getElementById("window").style.visibility="visible";
+    document.getElementById("window").style.visibility="visible";
     const window = document.getElementById("window");
     window.classList.add("animation_image");
     window.classList.remove("animation_image_close");
