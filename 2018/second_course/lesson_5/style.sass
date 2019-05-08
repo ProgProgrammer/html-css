@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i')
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+button:focus
+  outline: none
+
+.border_none
+  border: 0 !important
+
+.transform_none
+  text-transform: none!important
+
+.width_50
+  width: 100% !important
+
+.animation
+  animation: animate1 1.5s linear
+  animation-fill-mode: forwards
+
+.animationtwo
+  animation: animate2 1.5s linear
+  animation-fill-mode: forwards
+
+.animationthree
+  animation: animation3 1.5s linear
+  animation-fill-mode: forwards
+
+@keyframes animation3
+  from
+    margin-right: 30px
+
+  to
+    margin-right: 0
+
+.animationfour
+  animation: animation4 1.5s linear
+  animation-fill-mode: forwards
+
+@keyframes animation4
+  from
+    margin-left: -30px
+
+  to
+    margin-right: 0
+
+.header_animation
+  margin: 40px 0 0 0
+
+.header_animation3
+  margin: -40px 0 40px 0
+
+.container
+  max-width: 100% !important
+  display: flex !important
+  flex-direction: column !important
+  align-items: center !important
+  padding: 0 0 10em 0 !important
+  margin: 0 !important
+  position: relative
+
+.container:before
+  background: linear-gradient(90deg, #49fcd4 50%, transparent 50%)
+  background-attachment: fixed
+  background-color: #49fcd4
+  background-image: url(img/background.svg)
+  background-position: -50% 10%
+  background-repeat: repeat-y
+  background-size: 75% auto
+  content: ''
+  display: block
+  height: 100%
+  left: 0
+  position: absolute
+  top: 0
+  width: 50%
+  z-index: -1
+
+.row
+  padding: 0 !important
+  margin: 0 !important
+
+.content
+  max-width: 1440px !important
+
+.content:nth-child(n+2)
+  margin-top: 8.125em !important
+
+.content_100
+  min-width: 100% !important
+
+.col-md-6
+  padding: 0 !important
+  margin: 0 !important
+
+.content_footer
+  flex-wrap: wrap
+  position: relative
+
+.header
+  background-position: 25% 23%
+  background-attachment: scroll
+  padding: 69.33px 78px 0 0 !important /* padding-right: 5.416679685% */
+  text-align: right
+  display: flex
+  justify-content: flex-end
+
+.header_not_padding
+  padding-top: 0 !important
+
+.header_blocks
+  max-width: 440px
+  display: flex
+  justify-content: flex-end
+  height: 100%
+
+.header_block1
+  text-align: right
+
+  & h1
+    margin-bottom: 26px
+    font-family: 'Source Sans Pro', sans-serif
+    font-weight: 700
+    font-size: 4.5rem
+    line-height: 1.1
+
+  & h2
+    font-size: 1.4em
+    font-weight: 800
+    font-family: 'Raleway', sans-serif
+    line-height: 1.75
+    letter-spacing: 0.175em
+
+  & h3
+    font-size: 1em
+    font-weight: 600
+    font-family: 'Raleway', sans-serif
+    line-height: 1.75
+    letter-spacing: 0.175em
+    margin-bottom: 26px
+
+
+  & p
+    font-family: 'Raleway', sans-serif
+    text-transform: uppercase
+    line-height: 2.5
+    font-weight: 600
+    letter-spacing: 0.0675em
+    margin-bottom: 34.667px
+
+    & a
+      text-decoration: none
+      color: black
+
+  &_p
+    font-weight: 400 !important
+    font-size: 1em !important
+    text-transform: none !important
+    font-family: 'Source Sans Pro', sans-serif !important
+
+  &_height
+    min-height: 124.262px
+
+.header_width
+  max-width: 440px
+
+.header_margin-top1
+  margin-top: 2.5px !important
+
+.header_margin-top2
+  margin-top: 6px !important
+
+.header_margin-top3
+  margin-top: -1px !important
+
+.header_margin-top4
+  margin-top: 1px !important
+
+.header_margin-top5
+  margin-top: 2px !important
+
+.header_block1_click
+  display: flex
+  justify-content: flex-end
+
+  &_arrow
+    width: 59px
+    height: 69.325px
+    background: url(img/arrow.svg)
+    background-repeat: no-repeat
+
+.header_block2
+  margin-top: 43px
+  margin-left: 60px
+  max-width: 51.984px
+  display: flex
+  align-items: flex-start
+  height: 150%
+  border-right: 2px solid #43d9b8
+  position: relative
+
+  &_circle
+    margin-top: -3px
+    margin-left: -51.984px
+    width: 8.656px
+    height: 8.656px
+    border-radius: 50%
+    background: #43d9b8
+    position: absolute
+
+  &_line
+    margin-left: -43.328px
+    width: 43.328px
+    height: 2px
+    background: #43d9b8
+    position: absolute
+
+  &_linear
+    height: 250%
+
+  &_linear2
+    height: 350%
+
+  &_height
+    height: 100% !important
+
+.header_block2_circle2
+  width: 8.656px
+  height: 8.656px
+  bottom: 0
+  right: -6px
+  border-radius: 50%
+  background: #43d9b8
+  position: absolute
+
+.margin_px
+  margin-top: 15px
+
+.main
+  width: 100%
+
+.main_main
+  padding: 0 4.811028115121106em !important
+
+.main_img
+  width: 100%
+
+  &_margin
+    margin: 0 !important
+
+.main_p
+  letter-spacing: 0.0375em !important
+  font-family: 'Raleway', sans-serif
+  line-height: 35px
+  font-weight: 300
+  font-size: 14px !important
+
+  &_margin_bottom
+    margin-bottom: 2.1666875em
+
+.main_p strong
+  font-size: 16px !important
+  font-weight: 600
+  font-family: 'Source Sans Pro', sans-serif
+
+.main_img
+  margin: 3rem 0
+  width: 100%
+
+.main_ul
+  margin: 1.5416875em 0 3.25em 0 !important
+
+.main_ul_li
+  min-width: 250px
+  display: flex
+  &_margin
+    margin-top: 1.7083125em !important
+
+.li_geometry
+  background: url(img/hexagon.svg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+  width: 56.325px
+  height: 56.325px
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  transition: .25s linear
+
+.li_geometry i
+  font-size: 17px
+  color: black
+  position: absolute
+  transition: .25s linear
+
+.main_ul_li:hover .li_geometry
+  transform: rotateY(180deg)
+  transition: .25s linear
+
+.main_li_p
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: 300
+  margin-left: 22px
+  line-height: 56.325px
+  font-size: 1.1em
+
+.main_p_margin_bottom
+  margin-bottom: 2.1666875em
+
+.main_a img
+  width: 100%
+  height: 25vw
+  object-fit: cover
+  object-position: center
+
+.main_margin
+  margin-top: 3em
+
+.margin_top2
+  margin-top: 1.4em
+
+.main_space
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+.main_img_width
+  width: 47.5%
+
+.main_block2,
+.main_block3
+  margin-top: 8.125em
+
+.main_buttons
+  display: flex
+  flex-wrap: wrap
+
+.main_button
+  margin-bottom: 2.1666875em
+  min-width: 216.068px
+  min-height: 56.542px
+  padding: 0 3.45em
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+  border-radius: 6px
+  font-family: 'Raleway', sans-serif
+  font-weight: 600
+  letter-spacing: 0.175em
+  font-size: 14px
+  color: black
+  transition: .25s linear
+
+.primary
+  background: #49fcd4
+  line-height: 60px
+  
+.primary:hover
+  box-shadow: inset 0px 0px 0px 56.542px #93ffe7
+  transition: .25s linear
+
+.primary:active
+  box-shadow: inset 0px 0px 0px 56.542px #49fcd4
+
+.border_button
+  border: 2px solid lightgrey
+  margin-left: 20px
+  line-height: 56.542px
+
+.border_button:hover
+  color: #2ee4bb
+  border-color: #2ee4bb
+  transition: .25s linear
+
+.border_button:active
+  background: #93ffe7
+  transition: .25s linear
+
+.content
+  margin-top: 8.125em
+
+.form
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 2.1666875em !important
+
+.form_input,
+.form_input2
+  padding: 0 !important
+
+.form_input2
+  display: flex
+  justify-content: flex-end
+
+input[type="text"],
+input[type="email"]
+  width: 100% !important
+  min-height: 3.1875em
+  padding: 0 1.0833125em
+  border: 2px solid lightgrey
+  border-radius: 6px
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder
+  color: lightgrey
+  letter-spacing: 0.100em
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: 300
+  font-size: 18px
+  line-height: 46.486px
+
+.form_textarea
+  margin-top: 34.667px
+  padding: 0 !important
+
+.form_textarea textarea
+  min-width: 100% !important
+  min-height: 15.125em
+  padding: 0.8125em 1.0833125em
+  border: 2px solid lightgrey
+  border-radius: 6px
+  resize: none
+
+.main_main_button
+  margin-top: 2.1666875em
+
+.main_main_button button
+  background: #49fcd4
+  min-width: 170.043px
+  min-height: 52px
+  border-radius: 6px
+  border: none
+  text-align: center
+  text-transform: uppercase
+  line-height: 52px
+  font-family: 'Raleway', sans-serif
+  font-weight: 600
+  transition: .25s linear
+
+.main_main_button button:hover
+  box-shadow: inset 0px 0px 0px 52px #93ffe7
+  transition: .25s linear
+
+.main_main_button button:active
+  box-shadow: inset 0px 0px 0px 52px #49fcd4
+
+
+.footer
+  top: 124.262px
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  position: absolute
+
+.footer_ul
+  display: flex
+  align-items: flex-end
+  padding-right: 140px
+  flex-direction: column
+
+  &_li
+    text-align: right
+    margin-bottom: 52px
+
+    &_h3
+      font-size: 1em
+      font-weight: 600
+      font-family: 'Raleway', sans-serif
+      line-height: 1.75
+      letter-spacing: 0.175em
+      margin-bottom: 17.333px
+      text-transform: uppercase
+
+    &_a
+      text-decoration: none
+      color: #000000
+      border-bottom: dotted 1px
+      transition: 0.15s linear
+
+    &_a:hover
+      border-color: rgba(0, 0, 0, 0.0)
+      transition: 0.15s linear
+
+.footer_ul_li_ul
+  display: flex
+  justify-content: space-between
+  min-width: 280px
+
+  & li
+    width: 2.5em
+    height: 2.5em
+    text-align: center
+    display: flex
+    align-items: center
+
+    & a
+      width: 2.5em
+      height: 2.5em
+      text-align: center
+      line-height: 2.5em
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      text-decoration: none
+      transition: .1s linear
+
+    & a:hover
+      background-color: rgba(144, 144, 144, 0.1)
+      transition: .1s linear
+
+    & i
+      font-size: 1.4em
+      color: black
+
+.copyright
+  width: 100%
+  display: flex
+  justify-content: flex-end
+
+.copyright_text
+  padding: 0 4.5em !important
+  font-size: 1.1em
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: 300
+  line-height: 30px
+  letter-spacing: 0.0375em
+  color: rgba(0, 0, 0, 0.25)
+
+  & a
+    color: rgba(0, 0, 0, 0.25)
+    text-decoration: none
+    border-bottom: dotted 1px rgba(0, 0, 0, 0.25)
+    transition: 0.15s linear
+
+  & a:hover
+    border-bottom: dotted 1px rgba(0, 0, 0, 0.0)
+    transition: 0.15s linear
+
+
+
+@media all and (min-width: 1441px)
+  .content
+    max-width: 2880px !important
+
+@media all and (max-width: 1440px)
+  .content
+    min-width: 100% !important
+
+@media all and (min-width: 1281px)
+  @keyframes animate1
+    from
+      margin-top: 40px
+
+    to
+      margin-top: 0
+
+@media all and (max-width: 1281px)
+  .content:nth-child(n+2)
+    margin-top: 6.5em !important
+
+  .header_block2_linear2
+    height: 300% !important
+
+@media all and (min-width: 1025px) and (max-width: 1280px)
+  .header_animation2
+    margin-right: 30px
+
+@media all and (min-width: 1025px)
+  @keyframes animate2
+    from
+      margin-top: -40px
+      margin-bottom: 40px
+
+    to
+      margin-top: 0
+      margin-bottom: 0
+
+@media all and (max-width: 1025px)
+  .container:before
+    background: none
+
+  .content
+    flex-wrap: wrap
+
+  .content:nth-child(n+2)
+    margin-top: 0 !important
+
+  .header
+    min-width: 100% !important
+    background-position: 25% 23%
+    background-attachment: scroll
+    padding: 69.33px 0 69.33px 78px !important /* padding-right: 5.416679685% */
+    text-align: left
+    justify-content: flex-start
+
+  .header:before
+    background: linear-gradient(90deg, #49fcd4 50%, transparent 50%)
+    background-attachment: fixed
+    background-color: #49fcd4
+    background-image: url(img/background.svg)
+    /*background-position: -50% 10%
+    background-repeat: repeat-y
+    background-size: 75% auto
+    content: ''
+    display: block
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: -1
+
+  .header_block1
+    text-align: left
+
+    & h2
+      font-size: 1em !important
+
+    &_click
+      display: none
+
+    & p
+      margin-bottom: 0
+      font-size: 0.7em !important
+
+  .header_block2
+    display: none
+
+  .header_block1_height
+    min-height: 1px
+
+  .header_blocks2
+    max-width: 100%
+
+  .main,
+  .main_main
+    min-width: 100%
+
+  .main_main
+    padding: 4.8110281151em 4.8110281151em 0 4.8110281151em !important
+
+    &_padding
+      padding: 0 4.8110281151em 4.8110281151em !important
+
+  .main img
+    height: 100%
+
+  .main_a img
+    height: 25em
+
+  .main_p
+    font-size: 100% !important
+
+  .not_background
+    background: none
+    padding-bottom: 0 !important
+
+  .not_background2
+    background: none
+    padding-bottom: 0 !important
+    padding-top: 0 !important
+
+  .not_background3
+    background: none
+    padding: 0 4.8110281151em 0 4.8110281151em !important
+
+  .not_background4
+    background: none
+    padding: 0 4.8110281151em !important
+
+  .not_background:before
+    background: none
+
+  .not_background2:before
+    background: none
+
+  .not_background3:before
+    background: none
+
+  .not_background4:before
+    background: none
+
+
+  .footer
+    position: relative
+
+@media all and (max-width: 1024px)
+  .container
+    padding: 0 !important
+
+  .header_animation2
+    margin-right: -30px
+
+  .header
+    padding-right: 4.8110281151em !important
+
+  .header2
+    padding: 0 2.2em 3.3em 2.2em !important
+    min-width: 100% !important
+    text-align: left
+
+  .form
+    margin-top: 1.7em !important
+    margin-bottom: 0 !important
+
+  .form_textarea
+    margin-top: 1.7em
+
+  .mobile_none
+    display: none
+
+  .margin_none
+    margin-bottom: 0
+
+  .main_main
+    padding: 4.8110281151em !important
+
+  .border_button
+    margin-bottom: 0 !important
+
+  .primary
+    margin-top: 2.1666875em
+    margin-bottom: 2.1666875em
+
+  .main_main p
+    margin-bottom: 0 !important
+
+  .main_main2
+    padding: 0 2.2em 3.3em 2.2em !important
+
+  .main_main_button
+    min-width: 100%
+
+    & button
+      min-width: 100%
+
+  .main_buttons
+    width: 100%
+
+    & a
+      margin-left: 0 !important
+      width: 100%
+
+  .main_img
+    margin-bottom: 0 !important
+
+
+  .footer
+    top: 0
+    min-width: 100%
+    padding: 4.8110281151em !important
+    justify-content: flex-start
+
+    &_ul
+      padding-right: 0 !important
+
+      &_li
+        width: 100%
+        text-align: left
+
+  .copyright_text
+    min-width: 100% !important
+    text-align: center
+    padding-bottom: 1.5em !important
+
+
+@media all and (max-width: 767px)
+  .header
+    padding: 3.3em 2.2em !important
+
+    &_margin-top
+      padding-top: 4.5em !important
+
+    & h1
+      max-width: 300px !important
+      font-size: 3.5em
+
+    & p
+      width: 100%
+
+  .header_block1 p
+    line-height: 35px !important
+
+  .main_main
+    padding: 3.3em 2.2em !important
+
+  .main_a img
+    height: 14em
+
+  .not_background
+    padding: 0 2.2em !important
+
+  .not_background3
+    padding: 0 2.2em !important
+
+  .not_background4
+    padding: 0 2.2em !important
+
+  .form_input2
+    margin-top: 1.7em
+
+  .footer
+    padding: 3.3em 2.2em !important
+
+  .copyright_text
+    padding: 0 2.2em 1.5em 2.2em !important
