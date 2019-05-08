@@ -161,7 +161,7 @@ button:focus {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
-.loader_window_img_close {
+.loader_lightbox_img_close {
   -webkit-animation: window_image_close 0.5s linear;
           animation: window_image_close 0.5s linear; }
 
