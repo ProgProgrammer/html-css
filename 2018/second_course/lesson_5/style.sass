@@ -13,7 +13,7 @@ button:focus
 
 .transform_none
   text-transform: none!important
-
+main_ul_li
 .width_50
   width: 100% !important
 
@@ -401,7 +401,7 @@ button:focus
   margin: 1.5416875em 0 3.25em 0 !important
 
 .main_ul_li
-  min-width: 250px
+  min-width: 50%
   display: flex
   &_margin
     margin-top: 1.7083125em !important
@@ -700,6 +700,10 @@ textarea::placeholder
 
   .header_block2_linear2
     height: 300% !important
+
+@media all and (max-width: 1279px)
+  .main_ul_li
+    min-width: 250px !important
 
 @media all and (max-width: 1229px)
   .main_buttons

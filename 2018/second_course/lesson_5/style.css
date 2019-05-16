@@ -476,7 +476,7 @@ button:focus {
   margin: 1.5416875em 0 3.25em 0 !important; }
 
 .main_ul_li {
-  min-width: 250px;
+  min-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -867,6 +867,9 @@ textarea::placeholder {
 
   .header_block2_linear2 {
     height: 300% !important; } }
+@media all and (max-width: 1279px) {
+  .main_ul_li {
+    min-width: 250px !important; } }
 @media all and (max-width: 1229px) {
   .main_buttons {
     -webkit-box-orient: vertical;
