@@ -876,8 +876,7 @@ textarea::placeholder {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    justify-comain_ul_lintent: space-around; }
 
   .border_button {
     margin-left: 0; } }
