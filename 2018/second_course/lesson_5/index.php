@@ -161,7 +161,7 @@
             </div>
         </header>
         <div class="col-md-6 main_main main_main_padding">
-            <a class="main_a"">
+            <a class="main_a">
                 <img class="window_float_image" src="img/01.jpg" alt="image3">
             </a>
             <div class="main_space">
