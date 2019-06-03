@@ -1,0 +1,2184 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i|Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext')
+
+*
+  margin: 0
+  padding: 0
+
+*
+  box-sizing: border-box
+
+$size4em: 4em
+$size3_5em: 3.5em
+$size3_3em: 3.3em
+$size2_2em: 2.2em
+$size1_96875em: 1.96875em
+$size1_7em: 1.7em
+$size1_5em: 1.5em
+$size1_25em: 1.25em
+$size1_4em: 1.4em
+$size1_3em: 1.3em
+$size1_2em: 1.2em
+$size1_1em: 1.1em
+$size1em: 1em
+$size0_9em: 0.9em
+$size0_85em: 0.85em
+$size0_8em: 0.8em
+$size0_73em: 0.73em
+$size0_7em: 0.7em
+$color_eeeeee: #eeeeee
+$color_18bfef: #18bfef
+$color_656b70: #656b70
+
+li
+  list-style-type: none
+
+input[type="submit"], input[type="reset"], input[type="button"], button, .button
+  background-color: transparent
+  box-shadow: inset 0 0 0 2px #212931
+  color: #212931
+
+a:focus, li:focus, button:focus, input[type="text"]:focus,
+input[type="email"]:focus, input[type="submit"]:focus,
+input[type="reset"]:focus, input[type="radio"]:focus,
+textarea:focus, select:focus
+  outline: none
+
+a:active, li:active, div:active, button:active, input[type="text"]:active,
+input[type="submit"]:active, input[type="reset"]:active,
+input[type="radio"]:active, textarea:active
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+h1, h2, h3, h4, h5, h6, p
+  border: 0
+
+.container
+  max-width: 100% !important
+  display: flex
+  justify-content: center
+  padding: 0 !important
+  background-attachment: fixed
+  background-size: auto, auto, 100%, auto
+  background-position: center, center, top, center
+  background-repeat: no-repeat
+
+.container_background
+  animation: container_background 2s linear
+  background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/bg.jpg)
+
+@keyframes container_background
+  0%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(img/bg.jpg)
+
+  50%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(img/bg.jpg)
+
+  51%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.98)), url(img/bg.jpg)
+
+  52%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0.96)), url(img/bg.jpg)
+
+  53%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.94)), url(img/bg.jpg)
+
+  54%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url(img/bg.jpg)
+
+  55%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/bg.jpg)
+
+  56%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(img/bg.jpg)
+
+  57%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url(img/bg.jpg)
+
+  58%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84)), url(img/bg.jpg)
+
+  59%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)), url(img/bg.jpg)
+
+  60%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/bg.jpg)
+
+  61%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url(img/bg.jpg)
+
+  62%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url(img/bg.jpg)
+
+  63%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url(img/bg.jpg)
+
+  64%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), url(img/bg.jpg)
+
+  65%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/bg.jpg)
+
+  66%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(img/bg.jpg)
+
+  67%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url(img/bg.jpg)
+
+  68%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url(img/bg.jpg)
+
+  69%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url(img/bg.jpg)
+
+  70%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/bg.jpg)
+
+  71%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url(img/bg.jpg)
+
+  72%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(img/bg.jpg)
+
+  73%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url(img/bg.jpg)
+
+  74%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(img/bg.jpg)
+
+  75%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bg.jpg)
+
+  76%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url(img/bg.jpg)
+
+  77%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(img/bg.jpg)
+
+  78%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44)), url(img/bg.jpg)
+
+  79%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(img/bg.jpg)
+
+  80%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/bg.jpg)
+
+  81%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url(img/bg.jpg)
+
+  82%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(img/bg.jpg)
+
+  83%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34)), url(img/bg.jpg)
+
+  84%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(img/bg.jpg)
+
+  85%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg.jpg)
+
+  86%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)), url(img/bg.jpg)
+
+  87%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)), url(img/bg.jpg)
+
+  88%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(img/bg.jpg)
+
+  89%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)), url(img/bg.jpg)
+
+  90%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/bg.jpg)
+
+  91%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), url(img/bg.jpg)
+
+  92%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url(img/bg.jpg)
+
+  93%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.17)), url(img/bg.jpg)
+
+  94%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), url(img/bg.jpg)
+
+  95%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(img/bg.jpg)
+
+  96%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.14)), url(img/bg.jpg)
+
+  97%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), url(img/bg.jpg)
+
+  98%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), url(img/bg.jpg)
+
+  99%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.11)), url(img/bg.jpg)
+
+  100%
+    background-image: url(img/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/bg.jpg)
+
+.content
+  width: 100%
+  display: flex
+  justify-content: center
+  margin: 0 !important
+  position: relative
+
+.menu_adaptive
+  display: none
+
+.menu_block
+  display: none
+
+.header
+  width: 100%
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+  position: relative
+  overflow: hidden
+
+.header2
+  width: 100%
+  height: 20em
+  //min-height: 50vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+  position: relative
+  overflow: hidden
+
+.header_padding2
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 7.3125em 3.6875em
+  position: relative
+
+.header_padding
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 7.3125em 3.6875em 9em // 5.5em
+  position: relative
+
+.visible_on
+  animation: visible_on .5s linear
+  animation-fill-mode: forwards
+
+@keyframes visible_on
+  from
+    position: absolute
+    top: 0
+    visibility: visible
+
+  to
+    position: absolute
+    top: 1em
+    visibility: hidden
+
+.visible_off
+  animation: visible_on2 .5s linear
+  animation-fill-mode: forwards
+
+@keyframes visible_on2
+  from
+    position: relative
+    top: 1em
+    visibility: hidden
+
+  to
+    position: relative
+    top: 0
+    visibility: visible
+
+.header_h1
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 900
+  font-size: $size4em
+  line-height: 1
+  color: white
+  letter-spacing: 0.075em
+  text-transform: uppercase
+  text-align: center
+  margin-bottom: 0.5em
+  cursor: default
+
+.header_h1_margin
+  animation: margin_h1 1s linear
+  animation-fill-mode: forwards
+
+@keyframes margin_h1
+  from
+    margin-top: 64px
+
+  to
+    margin-top: 0
+
+.header_h1_off
+  animation: margin_h2 .5s linear
+  animation-fill-mode: forwards
+
+@keyframes margin_h2
+  from
+    opacity: 1
+
+  to
+    opacity: 0
+
+.header_h1_on
+  animation: margin_h3 .5s linear
+  animation-fill-mode: forwards
+
+@keyframes margin_h3
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+
+.header_p
+  font-size: $size1_25em
+  font-style: italic
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  text-align: center
+  color: white
+  line-height: 2
+  margin-bottom: 1.6em
+  cursor: default
+
+  & a
+    text-decoration: none
+    color: white
+    border-bottom: 1px dotted white
+    transition: 0.2s
+
+  & a:hover
+    color: $color_18bfef
+    border-bottom: 1px dotted black
+    transition: 0.2s
+
+.header_p_off
+  animation: header_p_off .5s linear
+  animation-fill-mode: forwards
+
+@keyframes header_p_off
+  from
+    opacity: 1
+
+  to
+    opacity: 0
+
+.header_p_on
+  animation: header_p_on .5s linear
+  animation-fill-mode: forwards
+
+@keyframes header_p_on
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+
+.header_arrow
+  min-width: 64px
+  min-height: 64px
+  margin: 0 auto
+  box-shadow: inset 0 0 0 2px white
+  border: 0 !important
+  border-radius: 50%
+  background-color: rgba(0, 0, 0, 0.0)
+  cursor: pointer
+  transition: 0.2s
+  text-decoration: none
+  display: flex
+  justify-content: center
+  align-items: center
+
+  & i
+    color: white
+    font-size: $size1_5em
+    font-weight: 900
+    transition: 0.2s
+    text-decoration: none !important
+
+.header_arrow:hover
+  box-shadow: inset 0 0 0 2px $color_18bfef
+  transition: 0.2s
+
+.header_arrow:hover i
+  color: $color_18bfef
+  transition: 0.2s
+
+.header_arrow:active
+  box-shadow: inset 0 0 0 2px $color_18bfef
+
+.header_arrow:active i
+  color: $color_18bfef
+
+.header_arrow_off
+  animation: header_arrow_off .5s linear
+  animation-fill-mode: forwards
+
+@keyframes header_arrow_off
+  from
+    opacity: 1
+
+  to
+    opacity: 0
+
+.header_arrow_on
+  animation: header_arrow_on .5s linear
+  animation-fill-mode: forwards
+
+@keyframes header_arrow_on
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+
+.nav_header
+  width: 100%
+  display: flex
+  justify-content: center
+  padding: 0 6.5em !important
+  position: absolute
+  bottom: -4em
+
+.nav_header_bottom
+  animation: menu 1s linear
+  animation-fill-mode: forwards
+
+@keyframes menu
+  from
+    bottom: -4em
+
+  to
+    bottom: 0
+
+.nav_header2
+  width: 100%
+  display: flex
+  justify-content: center
+  padding: 0 6.5em !important
+  position: absolute
+  bottom: 0
+
+.button
+  display: flex
+  line-height: 62px
+  padding: 0 1em
+  position: absolute
+  visibility: hidden
+  text-transform: uppercase
+  text-decoration: none
+  border: 5px solid white
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-size: $size1_96875em
+  font-weight: 900
+  color: white
+  transition: 0.2s
+  cursor: pointer
+
+.button:hover
+  border-color: $color_18bfef
+  color: $color_18bfef
+  transition: 0.2s
+
+.button:active
+  border-color: $color_18bfef
+  color: $color_18bfef
+
+.button3
+  display: flex
+  line-height: 62px
+  padding: 0 1em
+  text-transform: uppercase
+  text-decoration: none
+  border: 5px solid white
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-size: $size1_96875em
+  font-weight: 900
+  color: white
+  transition: 0.2s
+  cursor: pointer
+
+.button3:hover
+  border-color: $color_18bfef
+  color: $color_18bfef
+  transition: 0.2s
+
+.button3:active
+  border-color: $color_18bfef
+  color: $color_18bfef
+
+.scroll
+  visibility: visible
+  animation: button_opacity 0.5s linear
+  animation-fill-mode: forwards
+  bottom: 0.9em
+
+@keyframes button_opacity
+  from
+    bottom: 0.9em
+    opacity: 0.1
+    visibility: hidden
+
+  to
+    bottom: 2.6em
+    opacity: 1
+    visibility: visible
+
+.scroll_off
+  visibility: visible
+  animation: button_opacity1 0.5s linear
+  animation-fill-mode: forwards
+  bottom: 0.9em
+
+@keyframes button_opacity1
+  from
+    bottom: 2.6em
+    opacity: 1
+    visibility: visible
+
+  to
+    bottom: 0.9em
+    opacity: 0.1
+    visibility: hidden
+
+.nav
+  width: 100%
+  padding: 0 !important
+  margin: 0 !important
+  display: flex
+  justify-content: center
+  background: rgba(255, 255, 255, 0.175)
+
+.menu
+  padding: 0 !important
+  display: flex
+
+.menu_li a
+  text-transform: uppercase
+  color: white
+  text-decoration: none
+  font-size: $size0_8em
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 900
+
+.menu_li p
+  line-height: 5em
+  padding: 0 2em
+  letter-spacing: 0.075em
+  transition: 0.2s
+
+.menu_li a:hover p
+  background-color: rgba(255, 255, 255, 0.1)
+  transition: 0.2s
+
+
+.menu_active
+  background: white !important
+
+  & a
+    color: black !important
+
+.icons
+  padding: 0 1.6em 0 0 !important
+  display: flex
+  justify-content: space-around
+
+.icons_li
+  display: flex
+  align-items: center
+
+.icons_li i
+  font-size: $size1_4em
+  color: white
+  transition: 0.2s
+
+.icons_li:hover i
+  color: $color_18bfef
+  transition: 0.2s
+
+// MAIN
+
+.main
+  width: 100%
+  padding: 0 6.5em
+  margin: 0 !important
+  display: flex
+  align-items: center
+  flex-direction: column
+
+.main_center
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 5.5em 3.6875em 3.6875em
+  background: white
+
+.main_date
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 3.6875em
+  text-align: center
+  position: relative
+  font-family: 'Merriweather Sans', sans-serif
+  color: rgb(101,107,112)
+
+.main_date:before,
+.main_date:after
+  content: ''
+  display: block
+  top: 50%
+  width: calc(50% - 5em)
+  border-top: 2px solid $color_eeeeee
+
+.main_h2
+  font-size: $size3_3em
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 900
+  margin-bottom: 0.6em
+  text-align: center
+
+.main_h2 a,
+.main_h2 p
+  letter-spacing: 0.075em
+  text-transform: uppercase
+  text-decoration: none
+  color: #212931
+  transition: 0.2s
+
+.main_h2 p
+  cursor: default
+
+.main_h2 a:hover,
+.main_h2 a:active
+  color: $color_18bfef
+  transition: 0.2s
+
+.main_p
+  font-size: $size1em
+  font-family: 'Merriweather', serif
+  color: rgb(101,107,112)
+  text-align: center
+  line-height: 2
+
+.main_div_image,
+.main_div_image2
+  width: 100%
+  height: 100%
+  display: flex
+  margin: 3.6875em 0
+  overflow: hidden
+
+  & a
+    width: 100%
+
+.main_div_image img,
+.main_div_image2 img
+  width: 100%
+  height: 100%
+  transition: .2s linear
+
+.main_div_image:hover img,
+  transform: scale(1.1)
+  transition: .2s linear
+
+.main_div_image2 div
+  width: 100%
+
+.main_button
+  padding: 0 2.5em
+  border: 2px solid #212931
+  font-size: $size0_8em
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 900
+  letter-spacing: 0.075em
+  color: #212931
+  line-height: 3.1875em
+  text-transform: uppercase
+  text-align: center
+  background: rgba(0, 0, 0, 0)
+  transition: 0.2s
+  text-decoration: none
+
+.main_button:hover,
+.main_button:active
+  border-color: $color_18bfef
+  color: $color_18bfef
+  transition: 0.2s
+
+.main_posts
+  width: 100%
+  display: flex
+  border-top: 2px solid $color_eeeeee
+
+.main_post1,
+.main_post2
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 3.6875em
+  background: white
+  border-bottom: 2px solid $color_eeeeee
+
+.main_post1
+  border-right: 1px solid $color_eeeeee
+
+.main_post2
+  border-left: 1px solid $color_eeeeee
+
+.main_post_p
+  font-size: $size0_73em
+  font-family: 'Merriweather Sans', sans-serif
+  color: rgb(101,107,112)
+  text-align: center
+  margin-bottom: 0.9375em
+
+.main_post_h3
+  font-size: $size1_4em
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 900
+  text-align: center
+  text-transform: uppercase
+
+  & a
+    text-decoration: none
+    color: black
+    transition: 0.2s
+
+.main_post_h3:hover a
+  color: $color_18bfef
+  transition: 0.2s
+
+.main_post_img
+  width: 100%
+  display: flex
+  margin: 2.3125em 0
+  overflow: hidden
+
+  & a
+    width: 100%
+
+  & img
+    width: 100%
+    height: 100%
+    transition: .2s linear
+
+.main_post_img:hover img
+  transform: scale(1.1)
+  transition: .2s linear
+
+.main_post_p2
+  display: flex
+  flex-grow: 1
+  text-align: justify
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 300
+  line-height: 2em
+  color: $color_656b70
+  margin-bottom: 1.8125em
+
+.main_post_a
+  font-size: $size0_7em
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 900
+  letter-spacing: 0.075em
+  color: rgb(33, 41, 49)
+  line-height: 3.1875em
+  text-transform: uppercase
+  text-align: center
+  padding: 0px 2.2em
+  border-width: 2px
+  border-style: solid
+  border-color: rgb(33, 41, 49)
+  border-image: initial
+  background: rgba(0, 0, 0, 0)
+  transition: 0.2s linear
+  text-decoration: none
+
+.main_post_a:hover,
+.main_post_a:active
+  color: $color_18bfef
+  border-color: $color_18bfef
+  transition: 0.2s linear
+
+.main_p_p
+  display: flex
+  text-align: justify
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 300
+  line-height: 2em
+  color: $color_656b70
+  margin-bottom: 29px
+
+.main_pagination
+  width: 100%
+  padding: 3.6875em
+  background: white
+  display: flex
+  justify-content: center
+
+  & a
+    min-width: 40px
+    min-height: 40px
+    line-height: 40px
+    font-size: $size0_7em
+    font-family: "Source Sans Pro", Helvetica, sans-serif
+    border: 2px solid $color_eeeeee
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    color: black
+    font-weight: 900
+    transition: 0.2s linear
+    margin-left: -2px
+
+  & a:hover,
+  & a:active
+    border: 2px solid $color_18bfef
+    transition: 0.2s linear
+    color: $color_18bfef
+    z-index: 1
+
+  &_next
+    padding: 0 1.625em
+
+    & i
+      margin-left: 0.7em
+
+.main_pagination_a1
+  border-left: 2px solid $color_eeeeee !important
+
+.main_pagination_a2
+  border-right: 2px solid $color_eeeeee !important
+    
+.main_pagination_active
+  background: $color_eeeeee
+
+.footer
+  width: 100%
+  display: flex
+  justify-content: center
+
+  &_center
+    width: 100%
+    display: flex
+    justify-content: center
+    padding: 0 6.5em
+
+.footer_leftblock
+  display: flex
+  flex-direction: column
+  padding: 6.19747899159664%
+  background: #f5f5f5
+
+.footer_rightblock
+  display: flex
+  flex-direction: column
+  background: #f5f5f5
+  border-left: 2px solid #e2e2e2
+  padding: 0 !important
+
+.form
+  display: flex
+  margin: 0 !important
+
+  & label
+    font-family: "Source Sans Pro", Helvetica, sans-serif
+    font-size: $size0_7em
+    font-weight: 900
+    color: #717981
+    line-height: 1.5
+    letter-spacing: 0.075em
+    text-transform: uppercase
+    margin-bottom: 0.6875em
+
+  & input[type="text"]
+    border: 2px solid #e2e2e2
+    height: 2.5em
+    font-size: $size1em
+    min-height: 44px
+    background: transparent
+    padding: 0 0.9375em
+    margin-bottom: 22px
+
+  & textarea
+    border: 2px solid #e2e2e2
+    padding: 0.9375em 0.9375em
+    background: transparent
+    resize: none
+    font-size: $size1em
+    margin-bottom: 22px
+
+  & button
+    background-color: transparent
+    box-shadow: inset 0 0 0 2px #717981
+    border: none
+    color: #717981
+    font-family: "Source Sans Pro", Helvetica, sans-serif
+    font-size: $size0_7em
+    font-weight: 900
+    letter-spacing: 0.075em
+    height: 44px
+    min-height: 2.75em
+    line-height: 2.75em
+    padding: 0 2.5em
+    text-align: center
+    text-transform: uppercase
+    cursor: pointer
+    transition: .2s linear
+
+  & button:hover,
+  & button:active
+    box-shadow: inset 0 0 0 2px $color_18bfef
+    color: $color_18bfef
+    transition: .2s linear
+
+.input
+  display: flex
+  flex-direction: column
+  padding: 0 !important
+
+.footer_rightblock_block1
+  padding: 3.6875em 3.6875em 2.5em 3.6875em
+
+.footer_rightblock_block2,
+.footer_rightblock_block3
+  border-top: 2px solid #e2e2e2
+  padding: 2.875em 3.6875em
+
+.footer_rightblock_block4
+  border-top: 2px solid #e2e2e2
+  padding: 2.5em 3.6875em 3.6875em 3.6875em
+
+.footer_rightblock_block1,
+.footer_rightblock_block2,
+.footer_rightblock_block3,
+.footer_rightblock_block4
+  display: flex
+
+  & h4
+    width: 5.5em
+    min-width: 88px
+    font-family: "Source Sans Pro", Helvetica, sans-serif
+    font-size: $size0_7em
+    color: #717981
+    font-weight: 900
+    line-height: 2
+    letter-spacing: 0.075em
+    text-transform: uppercase
+
+  & p
+    font-size: $size0_7em
+    font-family: 'Merriweather Sans', sans-serif
+    line-height: 2.3
+    color: #909498
+
+  & a
+    text-decoration: none
+    border-bottom: 1px dotted #909498
+    color: #909498
+    transition: .2s linear
+
+  & a:hover,
+  & a:active
+    color: $color_18bfef
+    border: none
+    transition: .2s linear
+
+  &_ul
+    width: 100%
+    max-width: 170px
+    display: flex
+    justify-content: space-between
+
+    & li
+
+      & a
+        text-decoration: none
+        width: 33px
+        height: 33px
+        border-radius: 50%
+        border: 2px solid #e2e2e2
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: .2s linear
+
+        & i
+          color: #717981
+          font-size: $size0_8em
+
+      & a:hover,
+      & a:active,
+      & a:hover i,
+      & a:active i
+        color: $color_18bfef
+        transition: .2s linear
+
+      & a:hover,
+      & a:active
+        border: 2px solid $color_18bfef !important
+
+.copyright
+  width: 100%
+  display: flex
+  justify-content: center
+  padding: 3.6875em 0
+
+.copyright_ul
+  text-align: center
+  display: flex
+
+  & li
+    font-size: $size0_7em
+    text-transform: uppercase
+    font-weight: 900
+    font-family: "Source Sans Pro", Helvetica, sans-serif
+    color: rgba(255, 255, 255, 0.25)
+
+    & a
+      text-decoration: none
+      font-family: "Source Sans Pro", Helvetica, sans-serif
+      font-weight: 900
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+      color: rgba(255, 255, 255, 0.25)
+      transition: .2s linear
+
+    & a:hover,
+    & a:active
+      border: none
+      color: $color_18bfef
+      transition: .2s linear
+
+  & li:nth-child(n+2)
+    border-left: 2px solid rgba(255, 255, 255, 0.25)
+    padding-left: 0.9375em
+    margin-left: 0.9375em
+
+
+// ELEMENTS
+
+.main_center hr
+  width: 100%
+  margin: 44px 0
+  border: none
+  border-bottom: 2px solid $color_eeeeee
+
+.main_h2_blocks
+  width: 100%
+  margin: 22px 0
+  font-size: $size1_5em
+
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 900
+  line-height: 1.3
+  letter-spacing: 0.075em
+  text-transform: uppercase
+  text-align: left
+
+.main_h2_p
+  text-align: justify
+  font-size: $size1_1em
+  line-height: 1.8
+
+  & a
+    text-decoration: none
+    border-bottom: 1px dotted #212931
+    color: $color_656b70
+    transition: .2s linear
+
+  & a:hover,
+  & a:active
+    border: none
+    color: $color_18bfef
+    transition: .2s linear
+
+  & b, strong
+    color: black
+
+  & code
+    padding: 8px 4px
+    background: rgba(220, 220, 220, 0.25)
+    border: 2px solid $color_eeeeee
+
+.main_h2_p_margin
+  width: 100%
+  margin-top: -11px
+  margin-bottom: 29px
+  font-family: 'Merriweather Sans', sans-serif
+
+.main_h2_p_margin_p
+  margin-bottom: 29px
+
+.main_h2_blocks_h3,
+.main_h2_blocks_h4,
+.main_h2_blocks_h5,
+.main_h2_blocks_h6
+  width: 100%
+  line-height: 1.5em
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 900
+  letter-spacing: 0.075em
+  text-transform: uppercase
+
+.main_h2_blocks_h2
+  width: 100%
+  font-size: $size1_5em
+  margin-bottom: 22px
+  line-height: 1.3em
+  font-family: "Source Sans Pro", Helvetica, sans-serif
+  font-weight: 900
+  letter-spacing: 0.075em
+  text-transform: uppercase
+
+.main_h2_blocks_h3
+  font-size: $size1_3em
+  margin-bottom: 22px
+
+  &+p
+    font-size: $size0_9em
+
+.main_h2_blocks_dl
+  width: 100%
+  display: flex
+  flex-direction: column
+
+  & dt
+    font-size: $size1_2em
+    line-height: 1.5
+    font-weight: 600
+    margin-bottom: 15px
+
+  & dd
+    margin-left: 29px
+
+  & dd p
+    font-size: $size1_2em
+    line-height: 1.5
+    text-align: justify
+    margin-bottom: 23px
+    color: $color_656b70
+
+
+.main_h2_blocks_h4,
+.main_h2_blocks_h5,
+.main_h2_blocks_h6
+  margin-bottom: 15px
+
+.main_h2_blocks_h4
+  font-size: $size1_1em
+
+  &+p
+    font-size: $size0_8em
+
+.main_h2_blocks_h5
+  font-size: $size0_9em
+
+.main_h2_blocks_h6
+  font-size: $size0_7em
+
+.main_elements_row
+  width: 100% !important
+  display: flex
+  flex-wrap: wrap
+
+.main_elements_block
+  display: flex
+  flex-direction: column
+  padding: 0 !important
+  margin-bottom: 29px !important
+
+.main_elements_block_li1,
+.main_elements_block_li2
+  width: 100%
+  display: flex
+  flex-direction: column
+  padding-left: 15px
+
+.main_elements_block_li1 li
+  list-style-type: disc !important
+  padding-left: 7px
+  font-size: $size1_1em
+  color: $color_656b70
+  line-height: 1.8
+
+.main_elements_block_li2 li
+  list-style-type: decimal !important
+  padding-left: 7px
+  font-size: $size1_1em
+  color: $color_656b70
+  line-height: 1.8
+
+.main_elements_icons
+  width: 100%
+  max-width: 212.5px
+  display: flex
+  justify-content: space-between
+  margin-bottom: 29px
+  padding-right: 0 !important
+
+  & li
+    width: 33px !important
+    height: 33px !important
+    display: flex !important
+    justify-content: center !important
+    align-items: center !important
+
+  & li a i
+    color: black
+    font-size: $size1em
+
+.footer_rightblock_block4_ul_max_width
+  width: 100%
+  max-width: 212.5px
+
+  & li a i
+    color: black
+
+.main_h2_blocks_ul,
+.main_h2_blocks_ul_small
+  width: 100%
+  display: flex
+  margin-bottom: 29px
+  text-transform: uppercase
+
+  & li
+    margin-left: 15px
+
+  & li:first-child
+    margin: 0
+
+  & li a
+    text-decoration: none
+    font-family: "Source Sans Pro", Helvetica, sans-serif
+    font-weight: 900
+    letter-spacing: 0.075em
+
+.main_h2_blocks_ul li a p
+  padding: 0 29px
+  line-height: 44px
+  background: black
+  color: white
+  font-size: $size0_8em
+  transition: .1s linear
+
+.main_h2_blocks_ul li a p:hover,
+.main_h2_blocks_ul li a p:active,
+.main_h2_blocks_ul_small li a p:hover,
+.main_h2_blocks_ul_small li a p:active
+  background: $color_18bfef
+  transition: .1s linear
+
+.main_h2_blocks_ul_li a p
+  background: transparent !important
+  color: black !important
+  box-shadow: inset 0 0 0 2px #212931
+
+.main_h2_blocks_ul_small a p
+  padding: 0 22px
+  line-height: 36px
+  background: black
+  color: white
+  font-size: $size0_7em
+  transition: .1s linear
+
+.main_h2_blocks_ul_li a p:hover,
+.main_h2_blocks_ul_li a p:active
+  box-shadow: inset 0 0 0 2px $color_18bfef !important
+  color: $color_18bfef !important
+  transition: .1s linear !important
+  background: transparent !important
+
+.main_h2_blocks_ul_block
+  padding: 0 !important
+  margin: 0 !important
+
+.main_h2_blocks_ul_block2
+  padding-left: 22px !important
+
+.main_h2_blocks_ul_buttons
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  padding: 0 !important
+  margin: 0 !important
+
+.main_h2_blocks_ul_ul
+  display: flex !important
+  flex-direction: column !important
+
+  & li
+    display: flex
+
+.main_h2_blocks_ul_li2
+  margin: 19px 0 0 0 !important
+
+.main_h2_blocks_ul_buttons2
+  width: 100%
+  display: flex
+  flex-direction: column
+
+.main_blockquote
+  width: 100%
+  border-left: 4px solid $color_eeeeee
+  padding: 7px 0 7px 29px
+  font-style: italic
+  font-family: 'Merriweather Sans', sans-serif
+  line-height: 2
+  color: $color_656b70
+
+.main_table
+  width: 100%
+  disaply: flex
+  flex-direction: column
+  margin-bottom: 29px
+
+  & thead
+    width: 100%
+    display: flex
+    border-bottom: 1px solid $color_eeeeee
+
+  & thead tr
+    width: 100%
+    display: flex
+
+  & thead tr th
+    padding: 0 11px 11px 11px
+    font-family: "Source Sans Pro", Helvetica, sans-serif
+    font-size: $size0_8em
+    font-weight: 900
+    letter-spacing: 0.075em
+    line-height: 1.5
+    text-transform: uppercase
+
+  & thead tr th:first-child
+    width: 20%
+    text-align: left
+
+  & thead tr th:nth-child(2n)
+    width: 60%
+    text-align: left
+
+  & thead tr th:last-child
+    width: 20%
+    text-align: left
+
+  & tbody
+    width: 100%
+    display: flex
+    flex-direction: column
+
+.main_table_tbody,
+.main_table_tbody2,
+.main_table_tbody3,
+.main_table_tbody4,
+.main_table_tbody5
+  width: 100%
+  display: flex
+
+  & td
+    padding: 11px
+    font-size: $size1em
+    line-height: 1.5
+    font-weight: 300
+    color: $color_656b70
+
+  & td:first-child
+    width: 20%
+    text-align: left
+
+  & td:nth-child(2n)
+    width: 60%
+    text-align: left
+
+  & td:last-child
+    width: 20%
+    text-align: left
+
+.main_table_tbody2
+  background: rgba(220, 220, 220, 0.25)
+  border-top: 1px solid $color_eeeeee
+  border-bottom: 1px solid $color_eeeeee
+
+.main_table_tbody3 td:first-child
+    width: 80%
+    text-align: left
+
+.main_table_tbody3 td:last-child
+    width: 20%
+    text-align: left
+
+.main_table_tbody5
+  background: rgba(220, 220, 220, 0.25)
+  border: 1px solid $color_eeeeee
+
+.main_table_tbody4
+  border-left: 1px solid $color_eeeeee
+  border-right: 1px solid $color_eeeeee
+
+.main_table_tbody4 td:nth-child(2n),
+.main_table_tbody5 td:nth-child(2n)
+  border-left: 1px solid $color_eeeeee
+  border-right: 1px solid $color_eeeeee
+
+.main_h2_blocks_ul_buttons2_ul_li
+  line-height: 44px !important
+  background: black !important
+  color: white !important
+  font-size: $size0_8em !important
+  text-align: center
+
+  &_center
+    text-align: center
+
+  &_2
+    line-height: 36px !important
+    text-align: center !important
+    background: black !important
+    color: white !important
+
+.main_h2_blocks_ul_buttons2_ul_li:hover,
+.main_h2_blocks_ul_buttons2_ul_li:active
+  background: $color_18bfef !important
+
+.main_h2_blocks_ul_buttons_ul
+  width: 100%
+  display: flex
+  margin-bottom: 29px
+
+  &_li1,
+  &_li2,
+  &_li3,
+  &_li4
+    line-height: 44px
+    font-size: $size0_8em
+    text-transform: uppercase
+    font-weight: 900
+
+    & a
+      text-decoration: none
+      display: flex
+      align-items: center
+      padding: 0 29px
+
+    & label
+      display: flex
+      align-items: center
+      padding: 0 29px
+      cursor: pointer
+
+    & label span
+      display: flex
+      align-items: center
+
+    & label input[type="file"]
+      display: none
+
+    & span
+      padding: 0 29px
+      cursor: default
+
+  &_li1
+    background: black
+    color: white
+    cursor: pointer
+
+    & a
+      color: white
+
+    & p
+      margin-left: 7px
+
+  &_li2
+    box-shadow: inset 0 0 0 2px black
+    color: black
+    margin-left: 15px
+
+    & label
+      padding: 0 !important
+
+    & label span
+      cursor: pointer !important
+
+    & p
+      margin-left: 7px
+
+  &_li3
+    background: $color_eeeeee
+    color: white
+
+  &_li4
+    box-shadow: inset 0 0 0 2px $color_eeeeee
+    color: $color_eeeeee
+    margin-left: 15px
+
+.main_form_action_text,
+.main_form_action_email
+  & input
+    width: 100%
+    display: flex
+    font-size: $size1em
+    font-family: Georgia, 'Times New Roman', Times, serif
+    height: 44px
+    border: 2px solid $color_eeeeee
+    color: $color_656b70
+    padding: 0 15px
+
+.main_form_action_select
+  margin: 22px 0
+  width: 100%
+  display: flex
+  align-items: center
+  position: relative
+
+  & select
+    width: 100%
+    height: 44px
+    font-size: $size1em
+    font-family: Georgia, 'Times New Roman', Times, serif
+    height: 44px
+    border: 2px solid $color_eeeeee
+    color: $color_656b70
+    padding: 0 44px 0 15px
+    position: relative
+
+.main_form_action_select_span
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  top: 2px
+  right: 18px
+  height: 39px
+  color: $color_eeeeee
+  width: 44px
+  background: white
+
+  & i
+    line-height: 39px
+
+.main_form_action_radio input[type="radio"],
+.main_form_action_checkbox input[type="checkbox"]
+  position: absolute
+  z-index: -1
+  opacity: 0
+
+.main_form_action_radio p,
+.main_form_action_checkbox p
+    line-height: 24px
+    font-size: $size1em
+    font-family: Georgia, 'Times New Roman', Times, serif
+    color: $color_656b70
+
+.main_form_action_radio label
+    display: flex
+    cursor: pointer
+
+.main_form_action_radio
+  & input[type="radio"]
+    display: none
+
+.main_form_action_radio_span,
+.main_form_action_checkbox_span
+  display: flex
+  width: 24px
+  height: 24px
+  position: relative
+  border: 2px solid $color_eeeeee
+  border-radius: 50%
+  margin-right: 15px
+
+  &:before
+    content: ''
+    position: absolute
+    top: -2px
+    left: -2px
+    width: 24px
+    height: 24px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: black
+    color: white
+    content: '\f00c'
+    font-family: Font Awesome\ 5 Free
+    font-weight: 900
+    border-radius: 50%
+    opacity: 0
+
+input[type="radio"]:checked ~ .main_form_action_radio_span:before,
+input[type="checkbox"]:checked ~ .main_form_action_checkbox_span:before
+  opacity: 1
+
+
+.main_form_action_checkbox
+  margin-top: 22px
+  width: 24px
+  height: 24px
+
+  & label
+    display: flex
+    cursor: pointer
+
+.main_form_action_checkbox_span
+  border-radius: 0
+
+  &:before
+    border-radius: 0
+
+.main_form_action_textarea
+  margin-top: 22px
+
+  & textarea
+    width: 100%
+    resize: none
+    border: 2px solid $color_eeeeee
+    padding: 20px 15px
+    font-size: 1em
+    font-family: Georgia, "Times New Roman", Times, serif
+    color: $color_656b70
+
+.main_form_action_inputs
+  margin-top: 22px
+  width: 100%
+
+.main_form_action_inputs_ul
+  width: 100%
+  display: flex
+
+  &_submit input[type="submit"]
+    line-height: 44px
+    padding: 0 29px
+    background: black
+    font-size: 0.8em
+    font-family: "Source Sans Pro", Helvetica, sans-serif
+    color: white
+    border: none
+    font-weight: 900
+    text-transform: uppercase
+    transition: .1s linear
+    box-shadow: none !important
+    cursor: pointer
+    
+  &_submit input[type="submit"]:hover,
+  &_submit input[type="submit"]:active
+    background: $color_18bfef
+    color: white
+    transition: .1s linear
+
+  &_reset
+    margin-left: 15px
+
+  &_reset input[type="reset"]
+    line-height: 44px
+    padding: 0 29px
+    background: black
+    font-size: 0.8em
+    font-family: "Source Sans Pro", Helvetica, sans-serif
+    box-shadow: inset 0 0 0 2px black
+    color: black
+    border: none
+    background: transparent
+    font-weight: 900
+    text-transform: uppercase
+    transition: .1s linear
+    cursor: pointer
+
+  &_reset input[type="reset"]:hover,
+  &_reset input[type="reset"]:active
+    box-shadow: inset 0 0 0 2px $color_18bfef
+    color: $color_18bfef
+    transition: .1s linear
+
+.main_image
+  width: 100%
+  display: flex
+  cursor: pointer
+  overflow: hidden
+  margin: 37px 0
+
+  & img
+    width: 100%
+    height: 100%
+    transition: .2s linear
+
+.main_image:hover img,
+.main_image:active img
+    transform: scale(1.1)
+    transition: .2s linear
+
+.main_images
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  margin: 0 0 29px !important
+  padding: 0 !important
+
+  &_image
+    width: 100%
+    display: flex
+    padding: 11px 11px 0 0 !important
+    overflow: hidden
+
+    & div
+      width: 100%
+      display: flex
+      overflow: hidden
+      cursor: pointer
+
+    & img
+      width: 100%
+      height: 100%
+      transition: .2s linear
+
+  &_image:nth-child(3n)
+    padding-right: 0 !important
+
+.main_images_image:hover img,
+.main_images_image:active img
+  transform: scale(1.1)
+  transition: .2s linear
+
+.main_images_text
+  width: 100%
+  display: flex
+  flex-direction: column
+
+.main_image_p
+  width: 100%
+  text-align: justify
+  color: $color_656b70
+  font-size: $size1_1em !important
+  line-height: 2
+  margin-bottom: 29px
+
+  &_span1,
+  &_span2
+    width: 35%
+    height: 35%
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+
+    & img
+      width: 200%
+      height: 100%
+      object-fit: cover
+
+  &_span1
+    float: left
+    margin: 11px 29px 29px 0
+
+  &_span2
+    float: right
+    margin: 11px 0 29px 29px
+
+.margin_none
+  margin: 0 !important
+
+.main_box
+  width: 100%
+  padding: 22px
+  border: 2px solid $color_eeeeee
+
+  & p
+    text-align: justify
+    color: $color_656b70
+    font-size: 1.1em
+    line-height: 2
+
+pre
+  width: 100%
+  margin-bottom: 29px
+  overflow: hidden
+
+.main_code
+  width: 100%
+  display: flex
+  font-family: "Courier New", monospace
+  font-size: $size0_9em
+  border: 2px solid $color_eeeeee
+  padding: 15px 22px
+  color: $color_656b70
+  background: rgba(220, 220, 220, 0.25)
+
+
+
+
+
+@media all and (min-width: 1681px)
+  .header_arrow
+    min-width: 85px
+    min-height: 85px
+
+@media all and (min-width: 1536px)
+  .nav
+    max-width: 1536px
+
+  .main_center,
+  .main_pagination
+    max-width: 1536px
+
+  .main_posts
+    max-width: 1536px !important
+
+  .main_image_p_span1 img,
+  .main_image_p_span2 img
+    max-width: 310px
+
+  .footer
+    max-width: 1536px
+
+
+@media all and (max-width: 1280px)
+  .header_arrow
+    min-width: 59px
+    min-height: 59px
+
+@media all and (max-width: 1045px)
+  .container
+    background-size: cover !important
+
+  .nav_header,
+  .nav_header2,
+  .main,
+  .footer_center
+    padding: 0 3.70553359683794% !important
+
+@media all and (max-width: 1024px)
+  .container
+    background-size: 200% !important
+
+  .header
+    min-height: 80vh
+    align-items: flex-end
+
+  .header2
+    height: 15em
+
+  .header_h1
+    font-size: $size3_5em
+
+  .header_padding2
+    padding: 7.3125em 3.6875em 3.6875em
+
+  .menu_adaptive
+    display: flex
+    padding: 0.8em 1.25em  //padding: 0.25em 0.9375em
+    text-transform: uppercase
+    font-size: $size1em
+    font-family: "Source Sans Pro", Helvetica, sans-serif
+    font-weight: 900
+    position: fixed
+    display: flex
+    align-items: center
+    line-height: 1.2em
+    top: 0.9em
+    right: 0.9em
+    text-decoration: none
+    color: white
+
+    & i
+      margin-right: 0.5em
+
+  .menu_white
+    background: rgba(255, 255, 255, 0.875)
+    box-shadow: 0 0.125em 0.75em 0 rgba(30, 37, 45, 0.25)
+    color: black
+    z-index: 1
+
+  .menu_block
+    width: 100vw
+    height: 100vh
+    display: flex
+    position: fixed
+    background: rgba(0, 0, 0, 0.2)
+    z-index: 2
+    visibility: hidden
+
+  .menu_block_animation
+    animation: menu_block .5s linear
+    animation-fill-mode: forwards
+
+  @keyframes menu_block
+    from
+      background: rgba(0, 0, 0, 0.0)
+      visibility: hidden
+
+    to
+      background: rgba(0, 0, 0, 0.2)
+      visibility: visible
+
+  .menu_block_animation_off
+    animation: menu_block2 .5s linear
+    animation-fill-mode: forwards
+
+  @keyframes menu_block2
+    from
+      background: rgba(0, 0, 0, 0.2)
+      visibility: visible
+
+    to
+      background: rgba(0, 0, 0, 0.0)
+      visibility: hidden
+
+  .menu_absolute
+    max-width: 80vw
+    width: 18.3125em
+    height: 100vh
+    display: flex
+    flex-direction: column
+    position: absolute
+    right: 0
+    background: white
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2)
+    padding: 2.3125em 1.625em
+
+  .menu_absolute_animation
+    animation: menu_absolute .5s linear
+    animation-fill-mode: forwards
+
+  @keyframes menu_absolute
+    from
+      margin-right: -18.3125em
+
+    to
+      margin-right: 0
+
+  .menu_absolute_animation_off
+    animation: menu_absolute2 .5s linear
+    animation-fill-mode: forwards
+
+  @keyframes menu_absolute2
+    from
+      margin-right: 0
+
+    to
+      margin-right: -18.3125em
+
+  .menu_cross
+    width: 3.6875em
+    height: 3.6875em
+    position: absolute
+    top: 0
+    right: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+    & i
+      font-size: $size1em
+      color: #909498
+
+  .menu_absolute_ul
+    margin-bottom: 29px
+
+  .menu_absolute_ul_li
+    padding-left: 0.5em
+    border-bottom: 2px solid #e2e2e2
+
+    &_active a p
+      color: #721c24 !important
+
+    & a
+      line-height: 53px
+      text-decoration: none
+
+      & p
+        text-transform: uppercase
+        font-family: "Source Sans Pro", Helvetica, sans-serif
+        font-weight: 900
+        font-size: $size0_7em
+        color: black
+        letter-spacing: 0.075em
+
+    & a:active p
+      color: #721c24
+
+  .menu_absolute_ul_li:last-child
+    border: none
+
+  .pagination
+    width: 100%
+    display: flex
+
+  .pagination_li
+    width: 33px
+    height: 33px
+    margin-right: 0.8em
+
+    & a
+      width: 37px
+      height: 37px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      border: 2px solid #e2e2e2
+      text-decoration: none
+
+      & i
+        font-size: $size0_8em
+        color: black
+
+    & a:hover
+      border-color: $color_18bfef
+
+    & a:hover i
+      color: $color_18bfef
+
+  .main_post1,
+  .main_post2
+    padding: 2.3125em
+
+  .header_p br
+      display: none
+
+  .nav_header,
+  .nav_header2
+    display: none
+
+  .main
+    padding: 0 8.125%
+
+    &_p br
+      display: none
+
+  .footer_leftblock,
+  .footer_rightblock
+    min-width: 100% !important
+
+  .footer_leftblock,
+  .footer_rightblock_block1,
+  .footer_rightblock_block2,
+  .footer_rightblock_block3,
+  .footer_rightblock_block4
+    padding: 59px
+
+  .footer_rightblock_block1
+    border-top: 2px solid rgb(226, 226, 226)
+
+@media all and (max-width: 767px)
+  .container
+    background-size: 260% !important
+
+  .header
+    height: 40vh
+
+    &_arrow
+      display: none
+
+  .header2
+    height: 12em
+    //min-height: 0vh
+
+  .header_padding
+    padding: 2.75em 1.8125em 2em !important
+
+  .header_padding2
+    padding: 7.3125em 3.6875em 3.6875em
+
+  .header_h1
+    font-size: 2.2em
+    line-height: 1.1
+    margin-bottom: 0.3em
+
+  .header_p
+    font-size: $size0_8em
+    line-height: 2.2
+
+  .button3
+    border: 3px solid white
+    line-height: 52px
+    padding: 0 0.8em
+    font-size: $size1_5em
+
+  .main,
+  .footer_center
+    padding: 0 !important
+
+  .menu_adaptive
+    font-size: $size0_8em
+    line-height: 1em
+    top: 0.8em
+    right: 0.8em
+    z-index: 1
+
+  .main_center
+    padding: 3.6875em 1.8125em 1.8125em
+
+  .main_date
+    margin-bottom: 2.2em
+
+  .main_h2
+    font-size: $size1_7em
+
+  .main_p
+    font-size: $size0_8em
+
+  .main_p_p
+    font-size: $size0_85em
+
+  .main_div_image,
+  .main_div_image2
+    margin: 1.6875em 0
+
+  .main_button,
+  .main_post_a,
+  .button2,
+  .form button
+    width: 100% !important
+
+  .main_post1,
+  .main_post2
+    min-width: 100% !important
+    padding: 3.6875em 1.8125em 1.8125em
+
+  .main_post_p2
+    font-size: $size0_85em
+
+  .main_pagination_a
+    display: none
+
+  .footer_leftblock,
+  .footer_rightblock_block1,
+  .footer_rightblock_block2,
+  .footer_rightblock_block3,
+  .footer_rightblock_block4
+    padding: 1.8125em
+
+  .copyright_ul
+    flex-direction: column
+
+    & li
+      border: none !important
+      margin: 0 !important
+      padding: 0 !important
+
+  .copyright_ul li:nth-child(n+2)
+    margin-top: 1em !important
+
+@media all and (max-width: 350px)
+  .header_padding
+    padding-bottom: 1em
