@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="style.css?v=1">
     <link rel="shortcut icon" href="img/logotwo.png" type="image/jpg">
-
     <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
@@ -19,9 +18,9 @@
                     <div href="javascript:void(0);" onclick="menuCrossFunction()" class="menu_cross">
                         <i class="fas fa-times"></i>
                     </div>
-                        <ul class="menu_absolute_ul">
+                        <ul id="menu_absolute_ul" class="menu_absolute_ul">
                             <li class="menu_absolute_ul_li menu_absolute_ul_li_active">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <p>
                                         This is Massively
                                     </p>
@@ -71,50 +70,52 @@
                     <i class="fas fa-bars"></i> menu
                 </a>
                     <div id="header_padding" class="header_padding">
-                    <h1 id="header_h1" class="header_h1">THIS IS
-                        <br>
-                        MASSIVELY</h1>
-                    <p id="header_p" class="header_p">
-                        A free, fully responsive HTML5 + CSS3 site template designed by
-                        <a href="https://github.com/ProgProgrammer" target="_blank">ProgProgrammer</a>
-                        <br>
-                        for
-                        <a href="https://html5up.net/" target="_blank">HTML5 UP</a>
-                        and released for free under the
-                        <a href="https://html5up.net/license" target="_blank">Creative Commons license</a>.
-                    </p>
-                    <a href="#header_p" id="header_arrow" class="header_arrow">
-                        <i class="fas fa-arrow-down"></i>
-                    </a>
-                    <a href="index.html" id="button" class="button">massively</a>
+                        <h1 id="header_h1" class="header_h1">THIS IS
+                            <br>
+                            MASSIVELY</h1>
+                        <p id="header_p" class="header_p">
+                            A free, fully responsive HTML5 + CSS3 site template designed by
+                            <a href="https://github.com/ProgProgrammer" target="_blank">ProgProgrammer</a>
+                            <br>
+                            for
+                            <a href="https://html5up.net/" target="_blank">HTML5 UP</a>
+                            and released for free under the
+                            <a href="https://html5up.net/license" target="_blank">Creative Commons license</a>.
+                        </p>
+                        <a href="#header_p" id="header_arrow" class="header_arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <a href="index.php" id="button" class="button">massively</a>
                     </div>
                     <div id="nav_header" class="nav_header">
-                        <nav class="row nav">
-                            <ul class="col-md-9 menu">
-                                <li class="menu_li menu_active">
-                                    <a href="index.html"><p>This is Massively</p></a>
-                                </li>
-                                <li class="menu_li">
-                                    <a href="generic.html"><p>Generic Page</p></a>
-                                </li>
-                                <li class="menu_li">
-                                    <a href="elements.html"><p>Elements Reference</p></a>
-                                </li>
-                            </ul>
-                            <ul class="col-md-3 icons">
-                                <li class="icons_li"><a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a></li>
-                                <li class="icons_li"><a href="#" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a></li>
-                                <li class="icons_li"><a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a></li>
-                                <li class="icons_li"><a href="https://github.com/ProgProgrammer" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a></li>
-                            </ul>
+                        <nav id="row_nav" class="row nav">
+                            <div id="row_nav_fixed" class="row_nav_fixed">
+                                <ul class="col-md-9 menu">
+                                    <li class="menu_li menu_active">
+                                        <a href="index.php"><p>This is Massively</p></a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="generic.html"><p>Generic Page</p></a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="elements.html"><p>Elements Reference</p></a>
+                                    </li>
+                                </ul>
+                                <ul class="col-md-3 icons">
+                                    <li class="icons_li"><a href="#" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a></li>
+                                    <li class="icons_li"><a href="#" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a></li>
+                                    <li class="icons_li"><a href="#" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a></li>
+                                    <li class="icons_li"><a href="https://github.com/ProgProgrammer" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a></li>
+                                </ul>
+                            </div>
                         </nav>
                     </div>
             </header>
@@ -137,7 +138,7 @@
                     </p>
                     <div class="main_div_image">
                         <a href="#">
-                            <img src="img/pic011.jpg" alt="image1">
+                            <img src="img/pic01.jpg" alt="image1">
                         </a>
                     </div>
                     <a href="#" class="main_button">full story</a>
@@ -150,7 +151,7 @@
                             <br>
                             ipsum faucibus
                         </a></h3>
-                        <div class="main_post_img"><a href="#"><img src="img/pic021.jpg" alt="image2"></a></div>
+                        <div class="main_post_img"><a href="#"><img src="img/pic02.jpg" alt="image2"></a></div>
                         <p class="main_post_p2">
                             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.
                         </p>
@@ -165,7 +166,7 @@
                             <br>
                             imperdiet lorem
                         </a></h3>
-                        <div class="main_post_img"><a href="#"><img src="img/pic031.jpg" alt="image3"></a></div>
+                        <div class="main_post_img"><a href="#"><img src="img/pic03.jpg" alt="image3"></a></div>
                         <p class="main_post_p2">
                             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.
                         </p>
@@ -180,7 +181,7 @@
                             <br>
                             interdum dolor
                         </a></h3>
-                        <div class="main_post_img"><a href="#"><img src="img/pic041.jpg" alt="image4"></a></div>
+                        <div class="main_post_img"><a href="#"><img src="img/pic04.jpg" alt="image4"></a></div>
                         <p class="main_post_p2">
                             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.
                         </p>
@@ -195,7 +196,7 @@
                             <br>
                             nulla imperdiet
                         </a></h3>
-                        <div class="main_post_img"><a href="#"><img src="img/pic051.jpg" alt="image5"></a></div>
+                        <div class="main_post_img"><a href="#"><img src="img/pic05.jpg" alt="image5"></a></div>
                         <p class="main_post_p2">
                             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.
                         </p>
@@ -210,7 +211,7 @@
                             <br>
                             sed consectetur
                         </a></h3>
-                        <div class="main_post_img"><a href="#"><img src="img/pic061.jpg" alt="image6"></a></div>
+                        <div class="main_post_img"><a href="#"><img src="img/pic06.jpg" alt="image6"></a></div>
                         <p class="main_post_p2">
                             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.
                         </p>
@@ -225,7 +226,7 @@
                             <br>
                             primis vestibulum
                         </a></h3>
-                        <div class="main_post_img"><a href=""><img src="img/pic071.jpg" alt="image7"></a></div>
+                        <div class="main_post_img"><a href=""><img src="img/pic07.jpg" alt="image7"></a></div>
                         <p class="main_post_p2">
                             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.
                         </p>
@@ -235,14 +236,14 @@
                     </article>
                 </div>
                 <div class="main_pagination">
-                    <a class="main_pagination_a main_pagination_active" href="">1</a>
-                    <a class="main_pagination_a" href="">2</a>
-                    <a class="main_pagination_a" href="">3</a>
+                    <a class="main_pagination_a main_pagination_active" href="#">1</a>
+                    <a class="main_pagination_a" href="#">2</a>
+                    <a class="main_pagination_a" href="#">3</a>
                     <span class="main_pagination_span"></span>
-                    <a class="main_pagination_a" href="">8</a>
-                    <a class="main_pagination_a" href="">9</a>
-                    <a class="main_pagination_a" href="">10</a>
-                    <a class="main_pagination_next" href="">next <i class="fas fa-chevron-right"></i></a>
+                    <a class="main_pagination_a" href="#">8</a>
+                    <a class="main_pagination_a" href="#">9</a>
+                    <a class="main_pagination_a" href="#">10</a>
+                    <a class="main_pagination_next" href="#">next <i class="fas fa-chevron-right"></i></a>
                 </div>
             </main>
             <footer class="footer_center">
@@ -326,5 +327,6 @@
     </script>
     <script src="js/animation_menu.js"></script>
     <script src="js/menu_adaptive.js"></script>
+    <script src="js/menu_remove_add.js"></script>
 </body>
 </html>
