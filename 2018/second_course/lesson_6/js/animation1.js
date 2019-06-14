@@ -6,8 +6,11 @@ script.onload = function() {
     const x = document.getElementById("container");
     x.classList.add("container_background");
 
-    const y = document.getElementById("header_h1");
-    y.classList.add("header_h1_margin");
+    const y = document.getElementById("header_padding");
+    y.classList.add("visible_off");
+
+    /*const y = document.getElementById("header_h1");
+    y.classList.add("header_h1_margin");*/
 
     const z = document.getElementById("nav_header");
     z.classList.add("nav_header_bottom");
