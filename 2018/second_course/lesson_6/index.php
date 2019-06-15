@@ -11,7 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="container" class="container">
+    <div id="container"></div>
+    <div class="container">
         <div class="row content">
             <div id="menu_block" class="menu_block">
                 <div id="menu_absolute" class="menu_absolute">

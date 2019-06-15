@@ -39,8 +39,16 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 !important;
-  background-attachment: fixed;
+  padding: 0 !important; }
+
+.container2_background {
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center, center, top, center;
   background-repeat: no-repeat;
@@ -62,6 +70,16 @@ h1, h2, h3, h4, h5, h6, p {
   background-repeat: no-repeat; }
 
 .container_background {
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-attachment: scroll;
+  background-size: auto, auto, 100%, auto;
+  background-position: center, center, top, center;
+  background-repeat: no-repeat;
   -webkit-animation: container_background 2s linear;
           animation: container_background 2s linear;
   background-image: url(img/overlay.png), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(img/bg.jpg);
@@ -2577,7 +2595,7 @@ pre {
     min-width: 59px;
     min-height: 59px; } }
 @media all and (max-width: 1045px) {
-  .container {
+  .container_background {
     background-size: cover !important; }
 
   .nav_header,
@@ -2586,7 +2604,7 @@ pre {
   .footer_center {
     padding: 0 3.7055335968% !important; } }
 @media all and (max-width: 1024px) {
-  .container {
+  .container_background {
     background-size: 200% !important; }
 
   .header {
@@ -2845,7 +2863,7 @@ pre {
   .footer_rightblock_block1 {
     border-top: 2px solid #e2e2e2; } }
 @media all and (max-width: 767px) {
-  .container {
+  .container_background {
     background-size: 260% !important; }
 
   .header {
