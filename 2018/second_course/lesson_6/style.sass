@@ -713,14 +713,14 @@ h1, h2, h3, h4, h5, h6, p
   text-align: center
 
 .main_h2 a,
-.main_h2 p
+.main_h2_text_p
   letter-spacing: 0.075em
   text-transform: uppercase
   text-decoration: none
   color: #212931
   transition: 0.2s
 
-.main_h2 p
+.main_h2_text_p
   cursor: default
 
 .main_h2 a:hover,
@@ -1142,7 +1142,6 @@ h1, h2, h3, h4, h5, h6, p
   width: 100%
   margin: 22px 0
   font-size: $size1_5em
-
   font-family: "Source Sans Pro", Helvetica, sans-serif
   font-weight: 900
   line-height: 1.3
@@ -1563,6 +1562,11 @@ h1, h2, h3, h4, h5, h6, p
     & p
       margin-left: 7px
 
+    & span
+      margin-left: 7px
+      padding: 0 !important
+      cursor: pointer
+
   &_li2
     box-shadow: inset 0 0 0 2px black
     color: black
@@ -1576,6 +1580,11 @@ h1, h2, h3, h4, h5, h6, p
 
     & p
       margin-left: 7px
+
+    &_span
+      margin-left: 7px
+      padding: 0 !important
+      cursor: pointer
 
   &_li3
     background: $color_eeeeee
@@ -1637,8 +1646,8 @@ h1, h2, h3, h4, h5, h6, p
   z-index: -1
   opacity: 0
 
-.main_form_action_radio p,
-.main_form_action_checkbox p
+.main_form_action_radio label,
+.main_form_action_checkbox_p
     line-height: 24px
     font-size: $size1em
     font-family: Georgia, 'Times New Roman', Times, serif
@@ -2159,6 +2168,7 @@ pre
     align-items: center
     justify-content: center
     cursor: pointer
+    text-decoration: none
 
     & i
       font-size: $size1em

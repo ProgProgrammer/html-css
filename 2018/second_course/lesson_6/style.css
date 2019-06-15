@@ -1055,7 +1055,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center; }
 
 .main_h2 a,
-.main_h2 p {
+.main_h2_text_p {
   letter-spacing: 0.075em;
   text-transform: uppercase;
   text-decoration: none;
@@ -1063,7 +1063,7 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-transition: 0.2s;
   transition: 0.2s; }
 
-.main_h2 p {
+.main_h2_text_p {
   cursor: default; }
 
 .main_h2 a:hover,
@@ -2056,6 +2056,10 @@ h1, h2, h3, h4, h5, h6, p {
       color: white; }
     .main_h2_blocks_ul_buttons_ul_li1 p {
       margin-left: 7px; }
+    .main_h2_blocks_ul_buttons_ul_li1 span {
+      margin-left: 7px;
+      padding: 0 !important;
+      cursor: pointer; }
   .main_h2_blocks_ul_buttons_ul_li2 {
     -webkit-box-shadow: inset 0 0 0 2px black;
             box-shadow: inset 0 0 0 2px black;
@@ -2067,6 +2071,10 @@ h1, h2, h3, h4, h5, h6, p {
       cursor: pointer !important; }
     .main_h2_blocks_ul_buttons_ul_li2 p {
       margin-left: 7px; }
+    .main_h2_blocks_ul_buttons_ul_li2_span {
+      margin-left: 7px;
+      padding: 0 !important;
+      cursor: pointer; }
   .main_h2_blocks_ul_buttons_ul_li3 {
     background: #eeeeee;
     color: white; }
@@ -2136,8 +2144,8 @@ h1, h2, h3, h4, h5, h6, p {
   z-index: -1;
   opacity: 0; }
 
-.main_form_action_radio p,
-.main_form_action_checkbox p {
+.main_form_action_radio label,
+.main_form_action_checkbox_p {
   line-height: 24px;
   font-size: 1em;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -2771,7 +2779,8 @@ pre {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
     .menu_cross i {
       font-size: 1em;
       color: #909498; }

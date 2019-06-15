@@ -16,9 +16,9 @@
         <div class="row content">
             <div id="menu_block" class="menu_block">
                 <div id="menu_absolute" class="menu_absolute">
-                    <div href="javascript:void(0);" onclick="menuCrossFunction()" class="menu_cross">
+                    <a href="javascript:void(0);" onclick="menuCrossFunction()" class="menu_cross">
                         <i class="fas fa-times"></i>
-                    </div>
+                    </a>
                         <ul id="menu_absolute_ul" class="menu_absolute_ul">
                             <li class="menu_absolute_ul_li menu_absolute_ul_li_active">
                                 <a href="index.php">
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <header id="header" class="header">
-                <a href="javascript:void(0);" onclick="menuAdaptiveFunction()" id="menu_adaptive" class="menu_adaptive" href="">
+                <a href="javascript:void(0);" onclick="menuAdaptiveFunction()" id="menu_adaptive" class="menu_adaptive">
                     <i class="fas fa-bars"></i> menu
                 </a>
                     <div id="header_padding" class="header_padding">

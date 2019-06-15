@@ -27,9 +27,9 @@
     <div class="row content">
         <div id="menu_block" class="menu_block">
             <div id="menu_absolute" class="menu_absolute">
-                <div href="javascript:void(0);" onclick="menuCrossFunction()" class="menu_cross">
+                <a href="javascript:void(0);" onclick="menuCrossFunction()" class="menu_cross">
                     <i class="fas fa-times"></i>
-                </div>
+                </a>
                 <ul id="menu_absolute_ul" class="menu_absolute_ul">
                     <li class="menu_absolute_ul_li">
                         <a href="index.php">
@@ -78,7 +78,7 @@
             </div>
         </div>
         <header id="header" class="header2">
-            <a href="javascript:void(0);" onclick="menuAdaptiveFunction()" id="menu_adaptive" class="menu_adaptive" href="">
+            <a href="javascript:void(0);" onclick="menuAdaptiveFunction()" id="menu_adaptive" class="menu_adaptive">
                 <i class="fas fa-bars"></i> menu
             </a>
             <div class="header_padding2">
@@ -119,12 +119,10 @@
         <main id="main" class="main">
             <article class="main_center">
                 <span class="main_date">April 25, 2019</span>
-                <h2 class="main_h2">
-                    <p href="#">
+                <h2 class="main_h2 main_h2_text_p">
                         ELEMENTS
                         <br>
                         REFERENCE
-                    </p>
                 </h2>
                 <h2 class="main_h2_blocks">TEXT</h2>
                 <p class="main_h2_p">
@@ -433,15 +431,15 @@
                 </div>
                 <ul class="main_h2_blocks_ul_buttons_ul">
                     <li class="main_h2_blocks_ul_buttons_ul_li1"><a href="#">
-                        <i class="fas fa-search"></i> <p>icon</p>
+                        <i class="fas fa-search"></i> <span>icon</span>
                     </a></li>
                     <li class="main_h2_blocks_ul_buttons_ul_li2">
-                        <label><span><i class="fas fa-download"></i> <p>icon</p></span><input type="file"></label>
+                        <label><span><i class="fas fa-download"></i><span class="main_h2_blocks_ul_buttons_ul_li2_span">icon</span></span><input type="file"></label>
                     </li>
                 </ul>
                 <ul class="main_h2_blocks_ul_buttons_ul">
-                    <li class="main_h2_blocks_ul_buttons_ul_li3"><span href="#">PRIMARY</span></li>
-                    <li class="main_h2_blocks_ul_buttons_ul_li4"><span href="#">DEFAULT</span></li>
+                    <li class="main_h2_blocks_ul_buttons_ul_li3"><span>PRIMARY</span></li>
+                    <li class="main_h2_blocks_ul_buttons_ul_li4"><span>DEFAULT</span></li>
                 </ul>
                 <hr>
                 <h2 class="main_h2_blocks_h2">form</h2>
@@ -453,7 +451,7 @@
                         <input type="email" placeholder="Email">
                     </div>
                     <div class="col-md-12 main_form_action_select">
-                        <select name="" id="">
+                        <select>
                             <option value>- Category -</option>
                             <option value="1">Manufacturing</option>
                             <option value="2">Shipping</option>
@@ -468,39 +466,39 @@
                         <label>
                             <input type="radio" name="radio1/radio2/radio3" checked>
                             <span class="main_form_action_radio_span"></span>
-                            <p class="main_form_action_radio_p">Low</p>
+                            Low
                         </label>
                     </div>
                     <div class="col-md-4 main_form_action_radio">
                         <label>
                             <input type="radio" name="radio1/radio2/radio3">
                             <span class="main_form_action_radio_span"></span>
-                            <p class="main_form_action_radio_p">Normal</p>
+                            Normal
                         </label>
                     </div>
                     <div class="col-md-4 main_form_action_radio">
                         <label>
                             <input type="radio" name="radio1/radio2/radio3">
                             <span class="main_form_action_radio_span"></span>
-                            <p class="main_form_action_radio_p">High</p>
+                            High
                         </label>
                     </div>
                     <div class="col-md-6 main_form_action_checkbox">
                         <label>
                             <input type="checkbox">
                             <span class="main_form_action_checkbox_span"></span>
-                            <p class="main_form_action_checkbox_p">
+                            <span class="main_form_action_checkbox_p">
                                 Email me a copy
-                            </p>
+                            </span>
                         </label>
                     </div>
                     <div class="col-md-6 main_form_action_checkbox">
                         <label>
                             <input type="checkbox" checked>
                             <span class="main_form_action_checkbox_span"></span>
-                            <p class="main_form_action_checkbox_p">
+                            <span class="main_form_action_checkbox_p">
                                 I am a human
-                            </p>
+                            </span>
                         </label>
                     </div>
                     <div class="col-md-12 main_form_action_textarea">
