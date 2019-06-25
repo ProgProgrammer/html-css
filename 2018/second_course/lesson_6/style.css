@@ -2422,7 +2422,8 @@ pre {
   -webkit-animation: open_window 0.5s linear;
           animation: open_window 0.5s linear;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
+          animation-fill-mode: forwards;
+  z-index: 12; }
 
 @-webkit-keyframes open_window {
   from {
